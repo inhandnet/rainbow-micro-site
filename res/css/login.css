@@ -3,14 +3,9 @@ html,body{
     overflow: hidden;
 }
 .ad-wrapper{
-    text-align: center;
     height: 32%;
-    overflow: hidden;
-}
-.ad-img{
-    height: auto;
-    max-height: 100%;
-    width: 100%;
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: cover;
 }
 .config_display{
     display: none!important;
