@@ -1,0 +1,29 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.container-welcome{
+    height: 100%;
+    width: 100%;
+    background: url("../images/u0.jpg") no-repeat;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+.btn-wrapper a{
+    font-size: 44px;
+    width: 45%;
+}
+.btn-wrapper a:nth-child(1){
+    background-color: #CC0E19!important;
+}
+.btn-wrapper a:nth-child(2){
+    background-color: #008718!important;
+}
+.btn-wrapper{
+    text-align: center;
+    position: relative;
+    left: 0;
+    top: 68%;
+}
