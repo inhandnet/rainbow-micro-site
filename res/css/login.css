@@ -144,6 +144,10 @@ div.company_bg{
         line-height: 25px;
         color: #fff
     }
+    .ad-wrapper{
+        max-width: 800px;
+        margin: 0 auto;
+    }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     .pc_show{
@@ -162,6 +166,10 @@ div.company_bg{
     .all_title_div{
         line-height: 25px;
         color: #fff
+    }
+    .ad-wrapper{
+        max-width: 800px;
+        margin: 0 auto;
     }
 }
 @media (min-width: 768px) and (max-width: 991px){

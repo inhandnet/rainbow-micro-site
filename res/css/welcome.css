@@ -27,3 +27,64 @@ html,body{
     left: 0;
     top: 89%;
 }
+@media(min-width: 1200px){
+    .container-welcome{
+        max-width: 800px;
+        height: 100%;
+        margin: 0 auto;
+        background-position: center;
+        background-size: contain;
+        -o-background-size: contain;
+        -moz-background-size: contain;
+        -webkit-background-size: contain;
+    }
+    .btn-wrapper a{
+        font-size: 14px;
+        width: 20%;
+    }
+    .btn-wrapper{
+        top: 85%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container-welcome{
+        max-width: 800px;
+        height: 100%;
+        margin: 0 auto;
+        background-position: center;
+        background-size: contain;
+        -o-background-size: contain;
+        -moz-background-size: contain;
+        -webkit-background-size: contain;
+    }
+    .btn-wrapper a{
+        font-size: 14px;
+        width: 20%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    /*.container-welcome{*/
+        /*max-width: 800px;*/
+        /*height: 100%;*/
+        /*margin: 0 auto;*/
+        /*background-position: center;*/
+        /*background-size: contain;*/
+        /*-o-background-size: contain;*/
+        /*-moz-background-size: contain;*/
+        /*-webkit-background-size: contain;*/
+    /*}*/
+    /*.btn-wrapper a{*/
+        /*font-size: 14px;*/
+        /*width: 20%;*/
+    /*}*/
+}
+@media (min-width: 480px ) and (max-width: 767px){
+    .container-welcome{
+
+    }
+}
+@media (max-width: 479px) {
+    .container-welcome{
+
+    }
+}
