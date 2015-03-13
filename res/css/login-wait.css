@@ -28,7 +28,7 @@ html,body{
 }
 .add-container{
     height: 60%!important;
-    margin-left: -15px;
+    width: auto!important;
     /*background: url("../images/bg.jpg") no-repeat;*/
     /*background-size: cover;*/
 }
@@ -86,6 +86,9 @@ html,body{
     .bottom-surpport{
         font-size: 34px;
     }
+    .add-container{
+        min-width: 500px!important;
+    }
 }
 @media (min-width: 480px ) and (max-width: 767px){
     .company-name{
@@ -97,6 +100,11 @@ html,body{
     .bottom-surpport{
         font-size: 34px;
     }
+    .add-container{
+        min-width: 500px!important;
+        margin-left: 0px;
+    }
+
 }
 @media (max-width: 479px) {
     .company-name{
@@ -107,5 +115,9 @@ html,body{
     }
     .bottom-surpport{
         font-size: 34px;
+    }
+    .add-container{
+        min-width: 500px!important;
+        margin-left: 0px;
     }
 }
