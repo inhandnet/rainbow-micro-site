@@ -4,7 +4,7 @@ html,body{
     overflow: hidden;
 }
 .ad-wrapper{
-    height: 60%;
+    height: 60%!important;
     background: url("../images/bg.jpg") no-repeat;
     background-size: cover;
     /*background-color: red;*/
@@ -51,6 +51,14 @@ div.second-line:nth-child(3){
 div.second-line:nth-child(3) a{
     background-color:#2ECC40!important;
 }
+.company-name{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: blue;
+    margin: 0px;
+}
 @media(min-width: 1200px){
     .menu-item{
         height: 100px;
@@ -63,9 +71,13 @@ div.second-line:nth-child(3) a{
         font-size: 14px!important;
     }
     .layout-main{
-        max-width: 800px;
+        max-width: 500px;
         margin: 0 auto;
         height: 100%;
+        background-color: #ffffff;
+    }
+    .ad-wrapper{
+        min-width: 500px!important;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -83,6 +95,10 @@ div.second-line:nth-child(3) a{
         max-width: 600px;
         margin: 0 auto;
         height: 100%;
+        background-color: #ffffff;
+    }
+    .ad-wrapper{
+        min-width: 500px!important;
     }
 }
 @media (min-width: 768px) and (max-width: 991px){
@@ -90,6 +106,10 @@ div.second-line:nth-child(3) a{
         margin: 0 auto;
         height: 100%;
         width: 100%;
+        background-color: #ffffff;
+    }
+    .company-name{
+        font-size: 54px;
     }
 }
 @media (min-width: 480px ) and (max-width: 767px){
@@ -97,6 +117,10 @@ div.second-line:nth-child(3) a{
         margin: 0 auto;
         height: 100%;
         width: 100%;
+        background-color: #ffffff;
+    }
+    .company-name{
+        font-size: 54px;
     }
 }
 @media (max-width: 479px) {
@@ -104,5 +128,9 @@ div.second-line:nth-child(3) a{
         margin: 0 auto;
         width: 100%;
         height: 100%;
+        background-color: #ffffff;
+    }
+    .company-name{
+        font-size: 54px;
     }
 }

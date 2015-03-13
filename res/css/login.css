@@ -2,10 +2,14 @@ html,body{
     height: 100%;
     overflow: hidden;
 }
+hr{
+    margin: 0px;
+    padding: 0px;
+}
 .ad-wrapper{
     height: 32%;
-    background: url("../images/bg.jpg") no-repeat;
-    background-size: cover;
+    /*background: url("../images/bg.jpg") no-repeat;*/
+    /*background-size: cover;*/
 }
 .config_display{
     display: none!important;
@@ -115,6 +119,16 @@ div.company_bg{
     padding:10px 0px;
     border-bottom: 1px solid #E7E6E6;
 }
+.company-name{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: blue;
+}
+#sms_form{
+    margin-top: 10px;
+}
 @media(min-width: 1200px){
     .row_min_width{
         min-width: 270px;
@@ -139,14 +153,20 @@ div.company_bg{
     }
     .password_pc_show{
         margin-top:10px;
+        padding-right: 10px!important;
     }
     .all_title_div{
         line-height: 25px;
         color: #fff
     }
-    .ad-wrapper{
-        max-width: 800px;
+    .ad-wrapper,.company-name{
+        max-width: 500px;
+        min-width: 500px!important;
         margin: 0 auto;
+    }
+    #wrapper{
+        background: url("../images/white.png") no-repeat;
+        background-position: center;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -167,9 +187,14 @@ div.company_bg{
         line-height: 25px;
         color: #fff
     }
-    .ad-wrapper{
-        max-width: 800px;
+    .ad-wrapper,.company-name{
+        max-width: 500px;
+        min-width: 500px!important;
         margin: 0 auto;
+    }
+    #wrapper{
+        background: url("../images/white.png") no-repeat;
+        background-position: center;
     }
 }
 @media (min-width: 768px) and (max-width: 991px){

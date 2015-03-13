@@ -22,7 +22,7 @@ html,body{
     background-color: gray;
 }
 .add-container{
-    height: 60%;
+    height: 70%;
     background: url("../images/bg.jpg") no-repeat;
     background-size: cover;
 }
@@ -34,13 +34,13 @@ html,body{
 }
 @media(min-width: 1200px){
     .layout-main{
-        max-width: 800px;
+        max-width: 500px;
         margin: 0 auto;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     .layout-main{
-        max-width: 600px;
+        max-width: 500px;
         margin: 0 auto;
     }
 }

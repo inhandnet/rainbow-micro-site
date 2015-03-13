@@ -11,37 +11,68 @@ html,body{
 }
 .tip-connect{
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
     font-size: 24px;
+    height: 200px;
+    vertical-align: middle;
+    line-height: 200px;
 }
 .bottom-surpport{
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: gray;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-right: 0px;
 }
 .add-container{
-    height: 60%;
-    background: url("../images/bg.jpg") no-repeat;
-    background-size: cover;
+    height: 60%!important;
+    margin-left: -15px;
+    /*background: url("../images/bg.jpg") no-repeat;*/
+    /*background-size: cover;*/
 }
 .container-fluid{
     height: 100%;
 }
 .layout-main{
     height: 100%;
+    background-color: #ffffff;
+}
+.company-name{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: blue;
+}
+.btn{
+    width: 90%;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 @media(min-width: 1200px){
     .layout-main{
-        max-width: 800px;
+        max-width: 500px;
         margin: 0 auto;
+    }
+    .bottom-surpport{
+        width: 500px;
+    }
+    .add-container{
+        min-width: 500px!important;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     .layout-main{
-        max-width: 600px;
+        max-width: 500px;
         margin: 0 auto;
+    }
+    .bottom-surpport{
+        width: 500px;
+    }
+    .add-container{
+        min-width: 500px!important;
     }
 }
 @media (min-width: 768px) and (max-width: 991px){
@@ -51,6 +82,7 @@ html,body{
     .tip-connect{
         font-size: 44px;
     }
+
     .bottom-surpport{
         font-size: 34px;
     }
@@ -59,7 +91,7 @@ html,body{
     .company-name{
         font-size: 54px;
     }
-    .tip-connect{
+    .tip-connect,.btn{
         font-size: 44px;
     }
     .bottom-surpport{
@@ -70,7 +102,7 @@ html,body{
     .company-name{
         font-size: 54px;
     }
-    .tip-connect{
+    .tip-connect,.btn{
         font-size: 44px;
     }
     .bottom-surpport{
