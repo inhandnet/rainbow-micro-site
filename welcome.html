@@ -35,6 +35,14 @@
             $('.flicker-example').flicker({
                 dot_alignment: 'left'
             });
+            //发送pvuv请求
+            function sendPvuv(){
+                var rid,rtype;
+                var url="/cgi-bin/counting?"+"rid="+rid+"&"+"rtype="+rtype;
+                var xhr=new XMLHttpRequest();
+                xhr.open("get",url,true);
+                xhr.send(null);
+            }
         });
     </script>
 </div>
