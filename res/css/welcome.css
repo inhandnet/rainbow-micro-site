@@ -32,6 +32,9 @@ html,body{
     height: 100%!important;
     min-width: 500px!important;
 }
+div.dot{
+    display: none;
+}
 @media(min-width: 1200px){
     .container-welcome{
         max-width: 500px;

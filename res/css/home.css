@@ -59,6 +59,9 @@ div.second-line:nth-child(3) a{
     background-color: blue;
     margin: 0px;
 }
+div.dot{
+    display: none;
+}
 @media(min-width: 1200px){
     .menu-item{
         height: 100px;

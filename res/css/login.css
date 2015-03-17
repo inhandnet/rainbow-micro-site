@@ -129,6 +129,9 @@ div.company_bg{
 #sms_form{
     margin-top: 10px;
 }
+div.dot{
+    display: none;
+}
 @media(min-width: 1200px){
     .row_min_width{
         min-width: 270px;
