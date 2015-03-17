@@ -12,7 +12,7 @@
     <div class="layout-main">
         <div class="row company-name">名称</div>
         <div class="ad-wrapper flicker-example" data-block-text="false" style="min-width:1100px;">
-            <ul>
+            <ul id="micro_site_01">
 
             </ul>
         </div>
@@ -33,26 +33,6 @@
     <script type="text/javascript" src="res/js-frame/modernizr-custom-v2.7.1.min.js"></script>
     <script src="res/js-frame/flickerplate.min.js" type="text/javascript"></script>
     <script src="res/js-frame/jquery-finger-v0.1.0.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(function() {
-            //获取数据，动态创建banner
-            var bannerWrapper = $(".flicker-example ul");
-            var data = [{"url": "res/images/bg.jpg"}, {"url": "res/images/bg.jpg"}];
-            $.each(data, function (order, value) {
-                $("<li></li>").attr("data-background", value.url).appendTo(bannerWrapper);
-            });
-            $('.flicker-example').flicker({
-                dot_alignment: 'left'
-            });
-            //发送pvuv请求
-            function sendPvuv(){
-                var rid,rtype;
-                var url="/cgi-bin/counting?"+"rid="+rid+"&"+"rtype="+rtype;
-                var xhr=new XMLHttpRequest();
-                xhr.open("get",url,true);
-                xhr.send(null);
-            }
-        });
-    </script>
+    <script src="res/js/microsite.js" type="text/javascript"></script>
 </body>
 </html>

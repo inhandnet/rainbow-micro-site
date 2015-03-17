@@ -34,7 +34,7 @@ var htmlStr="<div class='container-fluid'>"+
     "<div class='col-lg-15 text-center pc_specific'>"+
     "<a href='https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101149405&redirect_uri=http://qq.u2wifi.cn/login_page/QQ/servercallbackpage.html&scope=get_user_info' class='pc_specific third_party qq_login btn-fab btn btn-raised' lang='{title:qq}' id='pc_rainbow_qqLoginBtn'></a>"+
     "<a href='https://api.weibo.com/oauth2/authorize?client_id=427142461&response_type=code&redirect_uri=http://qq.360yutu.cn/login_page/sina/servercallbackpage.html' class='pc_specific third_party sina_login btn-fab btn btn-raised' lang='{title:sina}' id='pc_rainbow_sinaLoginBtn'></a>"+
-    "<a href='./sub/wechat.html' class='third_party wechat_login btn-fab btn btn-raised' lang='{title:wechat}' id='pc_rainbow_wechatLoginBtn'></a>"+
+    "<a href='./sub/wechat.html?wechat=true' class='third_party wechat_login btn-fab btn btn-raised' lang='{title:wechat}' id='pc_rainbow_wechatLoginBtn'></a>"+
     "<span class='pc_specific diff_buttons'></span>"+
     "<a data-toggle='tooltip' data-placement='right' title='' data-original-title='Tooltip on left' href='javascript:void(0)' class='pc_specific third_party one_click btn-fab btn btn-raised' lang='{title:one_click}' id='pc_one_click'></a>"+
     "</div>"+
@@ -335,13 +335,12 @@ window.getQrCode=function(data) {
             "alt":"请求错误"
         });
     }
-    //cloud.statusQuery=setInterval(checkDeviceStatus,cloud.statusInterval);
+    cloud.statusQuery=setInterval(checkDeviceStatus,cloud.statusInterval);
 };
 //获取设备登录状态回调函数
 window.client_info_cb=function(data){
     if(data.login=="1"){
-
-        location.href=Rainbow.cloud.afterLoginSucessPage+"?callbackurl="+paramurl;
+        location.href="../login-wait.html";
         clearInterval(cloud.statusQuery);
     }else if(data.login=="0"){
         //TODO
@@ -356,10 +355,11 @@ window.checkDeviceStatus=function(){
     var timeout=5000;
     var showTimeout=true;
     var params={};
-    cloud.sendJsonp(uri,callback,callbackFuc,timeout,showTimeout,params);
+    var isInterval=true;
+    cloud.sendJsonp(uri,callback,callbackFuc,timeout,showTimeout,params,isInterval);
 };
 //发送jsonp请求
-cloud.sendJsonp= function (uri,callback, callbackFuc,timeout,showTimeout, params) {
+cloud.sendJsonp= function (uri,callback, callbackFuc,timeout,showTimeout, params,isInterval) {
     $.ajax({
         url:uri,
         dataType:"jsonp",
@@ -379,6 +379,9 @@ cloud.sendJsonp= function (uri,callback, callbackFuc,timeout,showTimeout, params
                 cloud.currentClickedOneClick.removeAttr("disabled");
             }
             cloud.loginBtn.removeAttr("disabled");
+            if(isInterval){
+                clearInterval(cloud.statusQuery);
+            }
         }
     });
 };
@@ -559,10 +562,6 @@ cloud.modifyMemberLoginMethod=function(compareTrans){
             cloud.qqBtnPc.addClass("config_display");
             cloud.qqBtnMobile.addClass("config_display");
         }
-        if(!compareTrans.authThird.weixin||compareTrans.authThird.wechat){
-            cloud.wechatBtnPc.addClass("config_display");
-            cloud.wechatBtnMobile.addClass("config_display");
-        }
         if(compareTrans.authThird.wechat){
             cloud.form.hide();
             cloud.qrCode.show();
@@ -573,6 +572,9 @@ cloud.modifyMemberLoginMethod=function(compareTrans){
             var showTimeout=true;
             var params={};
             cloud.sendJsonp(uri,callback,callbackFuc,timeout,showTimeout,params);
+        }else{
+            cloud.wechatBtnMobile.addClass("config_display");
+            cloud.wechatBtnPc.addClass("config_display");
         }
     }
     if(!compareTrans.one_click){

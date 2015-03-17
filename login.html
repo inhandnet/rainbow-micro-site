@@ -17,7 +17,7 @@ width = device-width,target-densitydpi = medium-dpi "/>
 <body>
 <div class="row company-name">名称</div>
 <div class="ad-wrapper flicker-example" data-block-text="false" style="min-width:1100px;">
-    <ul>
+    <ul id="micro_site_02">
 
     </ul>
 </div>
@@ -28,18 +28,11 @@ width = device-width,target-densitydpi = medium-dpi "/>
 <script src="res/js-frame/flickerplate.min.js" type="text/javascript"></script>
 <script src="res/js-frame/jquery-finger-v0.1.0.min.js" type="text/javascript"></script>
 <script src="res/js/Rainbow.js" type="text/javascript"></script>
-<script src="res/js/cloud.js"></script>
+<script src="res/js/cloud.js" type="text/javascript"></script>
+<script src="res/js/microsite.js" type="text/javascript"></script>
 <script type="text/javascript">
     $(function(){
-        //获取数据，动态创建banner
-        var bannerWrapper=$(".flicker-example ul");
-        var data=[{"url":"res/images/bg.jpg"},{"url":"res/images/bg.jpg"}];
-        $.each(data, function (order,value) {
-            $("<li></li>").attr("data-background",value.url).appendTo(bannerWrapper);
-        });
-        $('.flicker-example').flicker({
-            dot_alignment: 'left'
-        });
+        //初始化本地语言
         var option={};
         var lang=navigator.language?navigator.language:navigator.userLanguage;
         switch (lang.toLowerCase()){
@@ -55,14 +48,6 @@ width = device-width,target-densitydpi = medium-dpi "/>
         cloud.insertLoginBox({
             selector:"#wrapper"
         });
-        //发送pvuv请求
-        function sendPvuv(){
-            var rid,rtype;
-            var url="/cgi-bin/counting?"+"rid="+rid+"&"+"rtype="+rtype;
-            var xhr=new XMLHttpRequest();
-            xhr.open("get",url,true);
-            xhr.send(null);
-        }
     });
 </script>
 </body>
