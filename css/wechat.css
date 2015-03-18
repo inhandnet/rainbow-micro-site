@@ -3,7 +3,7 @@ html,body{
 }
 body{
     font-family: Microsoft YaHei,Tahoma,arial,\5b8b\4f53;
-    background: url("bg.png") no-repeat;
+    background: url("../images/bg.png") no-repeat;
     background-size: cover;
 }
 .div_pc_show{

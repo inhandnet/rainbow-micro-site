@@ -1,6 +1,6 @@
 body{
     font-family: Microsoft YaHei,Tahoma,arial,\5b8b\4f53;
-    background: url("bg.png") no-repeat;
+    background: url("../images/bg.png") no-repeat;
     /*background: #FFFFFF;*/
     background-size: cover;
 }

@@ -3,10 +3,10 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" href="../res/ui-frame/bootstrap.min.css" type="text/css"/>
-    <link rel="stylesheet" href="../res/ui-frame/material-wfont.min.css" type="text/css"/>
-    <link rel="stylesheet" href="../res/css/login-wait.css"/>
-    <link href="../res/css/flickerplate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/ui-frame/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/ui-frame/material-wfont.min.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/login-wait.css"/>
+    <link href="../css/flickerplate.css" rel="stylesheet" />
 </head>
 <body>
 <div class="layout-main">
@@ -21,11 +21,11 @@
         <div class="row bottom-surpport">技术支持 | 北京映翰通 | 010-64391099</div>
     </div>
 </div>
-<script src="../res/js-frame/jquery-1.11.1.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="../res/js-frame/modernizr-custom-v2.7.1.min.js"></script>
-<script src="../res/js-frame/flickerplate.min.js" type="text/javascript"></script>
-<script src="../res/js-frame/jquery-finger-v0.1.0.min.js" type="text/javascript"></script>
-<script src="res/js/microsite.js" type="text/javascript"></script>
+<script src="../js/js-frame/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/js-frame/modernizr-custom-v2.7.1.min.js"></script>
+<script src="../js/js-frame/flickerplate.min.js" type="text/javascript"></script>
+<script src="../js/js-frame/jquery-finger-v0.1.0.min.js" type="text/javascript"></script>
+<script src="../js/microsite.js" type="text/javascript"></script>
 <script type="text/javascript">
     function sendJsonp(uri,callback, callbackFuc,timeout, params) {
         $.ajax({
@@ -42,8 +42,8 @@
                 clearInterval(textInterval);
                 divDom.innerHTML="请重新登录!";
                 setTimeout(function(){
-                    location.href="../login.html";
-                },1000);
+                    location.href="login.html";
+                },4000);
             }
         });
     };
@@ -56,21 +56,22 @@
         sendJsonp(uri,callback,callbackFuc,timeout,params);
     };
     function client_info_cb(data){
+        clearInterval(textInterval);
         var divDom=document.getElementById("loop");
         var innerString,jumpUrl;
         if(data.login=="1"){
 //            location.href=Rainbow.cloud.afterLoginSucessPage+"?callbackurl="+paramurl;
 //            clearInterval(cloud.statusQuery);
             innerString="连接成功!";
-            jumpUrl="../home.html";
+            jumpUrl="home.html";
         }else if(data.login=="0"){
             innerString="请重新登录!";
-            jumpUrl="../login.html";
+            jumpUrl="login.html";
         }
         divDom.innerHTML=innerString;
         setTimeout(function(){
             location.href=jumpUrl;
-        },1000)
+        },4000);
     }
     function go(){
         var url;
@@ -102,10 +103,10 @@
         function textLoop(){
             count--;
             divDom.innerHTML="正在连接，请稍后("+count+"秒)";
+            //检查登录状态
+            checkDeviceStatus();
         }
         textInterval=setInterval(textLoop,1000);
-        //检查登录状态
-        checkDeviceStatus();
     });
 </script>
 </body>

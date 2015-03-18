@@ -18,7 +18,9 @@ html,body{
 }
 .btn-wrapper{
     text-align: center;
-    margin-top: -51px;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
 }
 .company-name{
     text-align: center;
@@ -41,6 +43,9 @@ div.dot{
         height: 100%;
         margin: 0 auto;
     }
+    .btn-wrapper{
+        width: 500px;
+    }
     .btn-wrapper a{
         font-size: 14px;
         width: 30%;
@@ -61,13 +66,16 @@ div.dot{
         font-size: 14px;
         width: 30%;
     }
+    .btn-wrapper{
+        width: 500px;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px){
     .company-name{
         font-size: 54px;
     }
     .btn-wrapper{
-        margin-top: -153px;
+        width: 100%;
     }
 }
 @media (min-width: 480px ) and (max-width: 767px){
@@ -75,7 +83,8 @@ div.dot{
         font-size: 54px;
     }
     .btn-wrapper{
-        margin-top: -153px;
+        width: 100%;
+
     }
 }
 @media (max-width: 479px) {
@@ -83,6 +92,7 @@ div.dot{
         font-size: 54px;
     }
     .btn-wrapper{
-        margin-top: -153px;
+        width: 100%;
+
     }
 }
