@@ -34,7 +34,7 @@ var htmlStr="<div class='container-fluid'>"+
     "<div class='col-lg-15 text-center pc_specific'>"+
     "<a href='https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101149405&redirect_uri=http://qq.u2wifi.cn/login_page/QQ/servercallbackpage.html&scope=get_user_info' class='pc_specific third_party qq_login btn-fab btn btn-raised' lang='{title:qq}' id='pc_rainbow_qqLoginBtn'></a>"+
     "<a href='https://api.weibo.com/oauth2/authorize?client_id=427142461&response_type=code&redirect_uri=http://qq.360yutu.cn/login_page/sina/servercallbackpage.html' class='pc_specific third_party sina_login btn-fab btn btn-raised' lang='{title:sina}' id='pc_rainbow_sinaLoginBtn'></a>"+
-    "<a href='./wechat.html?wechat=true' class='third_party wechat_login btn-fab btn btn-raised' lang='{title:wechat}' id='pc_rainbow_wechatLoginBtn'></a>"+
+    "<a href='../wechat.html?wechat=true' class='third_party wechat_login btn-fab btn btn-raised' lang='{title:wechat}' id='pc_rainbow_wechatLoginBtn'></a>"+
     "<span class='pc_specific diff_buttons'></span>"+
     "<a data-toggle='tooltip' data-placement='right' title='' data-original-title='Tooltip on left' href='javascript:void(0)' class='pc_specific third_party one_click btn-fab btn btn-raised' lang='{title:one_click}' id='pc_one_click'></a>"+
     "</div>"+
@@ -47,7 +47,7 @@ var htmlStr="<div class='container-fluid'>"+
     "<!--<span class='ripple'></span>-->"+
     "<span class='check color_white'></span>"+
     "</label>"+
-    "<a href='./wifi.html' id='conditions_terms' style='color:#114A7B;font-weight: 700' href=''>同意<span style='text-decoration: underline'>Wi-Fi使用协议</span></a>"+
+    "<a href='../wifi.html' id='conditions_terms' style='color:#114A7B;font-weight: 700' href=''>同意<span style='text-decoration: underline'>Wi-Fi使用协议</span></a>"+
     "</div>"+
     "</div>"+
     "</div>"+
