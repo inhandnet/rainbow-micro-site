@@ -23,6 +23,7 @@ div a{
     -webkit-box-shadow: none!important;
     -moz-box-shadow: none!important;
     box-shadow: none!important;
+    font-weight: bold!important;
 }
 div.first-line:nth-child(1) a{
     background-color: #7FDBFF!important;
@@ -56,7 +57,7 @@ div.second-line:nth-child(3) a{
     font-size: 24px;
     font-weight: bold;
     color: #ffffff;
-    background-color: blue;
+    background-color: #7FDBFF;
     margin: 0px;
 }
 div.dot{

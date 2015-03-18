@@ -7,7 +7,7 @@ html,body{
     font-size: 24px;
     font-weight: bold;
     color: #ffffff;
-    background-color: blue;
+    background-color: #7FDBFF;
 }
 .tip-connect{
     text-align: center;
@@ -20,11 +20,12 @@ html,body{
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: gray;
+    background-color: #7FDBFF;
     position: fixed;
     bottom: 0;
     width: 100%;
     margin-right: 0px;
+    color: #ffffff;
 }
 .add-container{
     height: 60%!important;
@@ -44,7 +45,7 @@ html,body{
     font-size: 24px;
     font-weight: bold;
     color: #ffffff;
-    background-color: blue;
+    background-color: #7FDBFF;
 }
 .btn{
     width: 90%;

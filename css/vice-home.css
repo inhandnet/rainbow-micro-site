@@ -57,7 +57,7 @@ div.second-line:nth-child(3) a{
     font-size: 24px;
     font-weight: bold;
     color: #ffffff;
-    background-color: blue;
+    background-color: #7FDBFF;
     margin: 0px;
 }
 @media(min-width: 1200px){
