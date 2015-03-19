@@ -3,11 +3,11 @@ html,body{
     height: 100%;
 }
 div{
-    -webkit-transition: margin-top 1s linear 1s;
-    -moz-transition: margin-top 1s linear 1s;
-    -ms-transition: margin-top 1s linear 1s;
-    -o-transition: margin-top 1s linear 1s;
-    transition: margin-top 1s linear 1s;
+    -webkit-transition: margin-top 0.5s linear 1s;
+    -moz-transition: margin-top 0.5s linear 1s;
+    -ms-transition: margin-top 0.5s linear 1s;
+    -o-transition: margin-top 0.5s linear 1s;
+    transition: margin-top 0.5s linear 1s;
 }
 .company-name{
     text-align: center;
