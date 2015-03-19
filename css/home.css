@@ -9,6 +9,7 @@ html,body{
     background-size: cover;
     /*background-color: red;*/
     margin-bottom: 15px;
+    margin-top: 34px;
 }
 .menu-item{
     text-align: center;
@@ -59,6 +60,9 @@ div.second-line:nth-child(3) a{
     color: #ffffff;
     background-color: #7FDBFF;
     margin: 0px;
+    position: fixed;
+    z-index: 999;
+    top: 0px;
 }
 div.dot{
     display: none;
@@ -80,7 +84,7 @@ div.dot{
         height: 100%;
         background-color: #ffffff;
     }
-    .ad-wrapper{
+    .ad-wrapper,.company-name{
         min-width: 500px!important;
     }
 }
@@ -101,7 +105,7 @@ div.dot{
         height: 100%;
         background-color: #ffffff;
     }
-    .ad-wrapper{
+    .ad-wrapper,.company-name{
         min-width: 500px!important;
     }
 }
@@ -114,6 +118,7 @@ div.dot{
     }
     .company-name{
         font-size: 54px;
+        width: 100%;
     }
 }
 @media (min-width: 480px ) and (max-width: 767px){
@@ -125,6 +130,7 @@ div.dot{
     }
     .company-name{
         font-size: 54px;
+        width: 100%;
     }
 }
 @media (max-width: 479px) {
@@ -136,5 +142,6 @@ div.dot{
     }
     .company-name{
         font-size: 54px;
+        width: 100%;
     }
 }

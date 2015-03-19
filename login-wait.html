@@ -11,7 +11,7 @@
 <body>
 <div class="layout-main">
     <div class="container-fluid">
-        <div class="row company-name">名称</div>
+        <div class="row company-name">北京映翰通</div>
         <div id="loop" class="row tip-connect">正在连接，请稍后..</div>
         <div class="row add-container flicker-example" data-block-text="false" style="min-width:1100px;">
             <ul id="micro_site_03">
@@ -27,6 +27,8 @@
 <script src="js/js-frame/jquery-finger-v0.1.0.min.js" type="text/javascript"></script>
 <script src="js/microsite.js" type="text/javascript"></script>
 <script type="text/javascript">
+    var jumpUrl;
+    var divDom=document.getElementById("loop");
     function sendJsonp(uri,callback, callbackFuc,timeout, params) {
         $.ajax({
             url:uri,
@@ -41,9 +43,10 @@
                 var divDom=document.getElementById("loop");
                 clearInterval(textInterval);
                 divDom.innerHTML="请重新登录!";
-                setTimeout(function(){
-                    location.href="login.html";
+                setTimeout(function () {
+                    $(divDom).css("margin-top","0px");
                 },4000);
+                jumpUrl="login.html";
             }
         });
     };
@@ -60,17 +63,17 @@
         var divDom=document.getElementById("loop");
         var innerString,jumpUrl;
         if(data.login=="1"){
-//            location.href=Rainbow.cloud.afterLoginSucessPage+"?callbackurl="+paramurl;
-//            clearInterval(cloud.statusQuery);
             innerString="连接成功!";
+            $(divDom).css("background-color","#C2CE89");
             jumpUrl="index_page.html";
         }else if(data.login=="0"){
             innerString="请重新登录!";
+            $(divDom).css("background-color","#F9CC9D");
             jumpUrl="login.html";
         }
         divDom.innerHTML=innerString;
-        setTimeout(function(){
-            location.href=jumpUrl;
+        setTimeout(function () {
+            $(divDom).css("margin-top","0px");
         },4000);
     }
     function go(){
@@ -99,6 +102,7 @@
     $(function() {
         //计时开始
         var divDom=document.getElementById("loop");
+        $(divDom).css("background-color","#2B2A2F");
         var count=10;
         function textLoop(){
             count--;
@@ -106,6 +110,7 @@
             //检查登录状态
             checkDeviceStatus();
         }
+        $(divDom).addClass("tip-connect-dynamic");
         textInterval=setInterval(textLoop,1000);
     });
 </script>

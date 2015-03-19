@@ -2,25 +2,38 @@ html,body{
     width: 100%;
     height: 100%;
 }
+div{
+    -webkit-transition: margin-top 1s linear 1s;
+    -moz-transition: margin-top 1s linear 1s;
+    -ms-transition: margin-top 1s linear 1s;
+    -o-transition: margin-top 1s linear 1s;
+    transition: margin-top 1s linear 1s;
+}
 .company-name{
     text-align: center;
     font-size: 24px;
     font-weight: bold;
     color: #ffffff;
     background-color: #7FDBFF;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 .tip-connect{
     text-align: center;
     font-size: 24px;
-    height: 200px;
-    vertical-align: middle;
-    line-height: 200px;
+    position: fixed;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+    z-index: 999;
 }
 .bottom-surpport{
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: #7FDBFF;
+    font-size: 24px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -28,7 +41,7 @@ html,body{
     color: #ffffff;
 }
 .add-container{
-    height: 60%!important;
+    height: 100%!important;
     width: auto!important;
     /*background: url("../images/bg.jpg") no-repeat;*/
     /*background-size: cover;*/
@@ -39,13 +52,6 @@ html,body{
 .layout-main{
     height: 100%;
     background-color: #ffffff;
-}
-.company-name{
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #7FDBFF;
 }
 .btn{
     width: 90%;
@@ -66,6 +72,12 @@ div.dot{
     .add-container{
         min-width: 500px!important;
     }
+    .company-name,.tip-connect{
+        width: 500px;
+    }
+    .tip-connect-dynamic{
+        margin-top: 34px;
+    }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     .layout-main{
@@ -78,6 +90,12 @@ div.dot{
     .add-container{
         min-width: 500px!important;
     }
+    .company-name,.tip-connect{
+        width: 500px;
+    }
+    .tip-connect-dynamic{
+        margin-top: 34px;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px){
     .company-name{
@@ -89,9 +107,13 @@ div.dot{
 
     .bottom-surpport{
         font-size: 34px;
+        height: 68px;
     }
     .add-container{
         min-width: 500px!important;
+    }
+    .tip-connect-dynamic{
+        margin-top: 68px;
     }
 }
 @media (min-width: 480px ) and (max-width: 767px){
@@ -103,10 +125,14 @@ div.dot{
     }
     .bottom-surpport{
         font-size: 34px;
+        height: 68px;
     }
     .add-container{
         min-width: 500px!important;
         margin-left: 0px;
+    }
+    .tip-connect-dynamic{
+        margin-top: 68px;
     }
 
 }
@@ -119,9 +145,13 @@ div.dot{
     }
     .bottom-surpport{
         font-size: 34px;
+        height: 68px;
     }
     .add-container{
         min-width: 500px!important;
         margin-left: 0px;
+    }
+    .tip-connect-dynamic{
+        margin-top: 68px;
     }
 }
