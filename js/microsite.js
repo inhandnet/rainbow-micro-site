@@ -38,28 +38,39 @@ var bannerWrapper=$(".flicker-example ul");
 function initBanners(data){
     var adColumn=bannerWrapper.attr("id");
     data=typeof data=="string"?JSON.parse(data):data;
-    var addArray=data.res;
-    adId=data.adId;
+    var addArray=data?data.res:[];
+    adId=data?data.adId:"";
     var tempArr=$.grep(addArray, function (value,index) {
         return value.rtype==adColumn;
     });
+    var voidAd="./images/void.jpg";
     if(tempArr.length!=0){
-        $.each(tempArr[0].banners,function(index,value){
-            var pic=value.metaId+"."+value.ext;
-            var picUrl="../../ads/pic/"+pic;
+        if(tempArr[0].banners.length!=0){
+            $.each(tempArr[0].banners,function(index,value){
+                var pic=value.metaId+"."+value.ext;
+                var picUrl="../../ads/pic/"+pic;
+                $("<li></li>").attr({
+                    "data-background":picUrl,
+                    "data-rtype":adColumn,
+                    "data-rid":value.metaId,
+                    "data-link":value.url
+                }).click(function(evt){
+                    var rid,rtype;
+                    rid=$(this).attr("data-rid");
+                    rtype=$(this).attr("data-rtype");
+                    sendPvuv(rid,rtype);
+                    location.href=$(this).attr("data-link");
+                }).appendTo(bannerWrapper);
+            });
+        }else{
             $("<li></li>").attr({
-                "data-background":picUrl,
-                "data-rtype":adColumn,
-                "data-rid":value.metaId,
-                "data-link":value.url
-            }).click(function(evt){
-                var rid,rtype;
-                rid=$(this).attr("data-rid");
-                rtype=$(this).attr("data-rtype");
-                sendPvuv(rid,rtype);
-                location.href=$(this).attr("data-link");
+                "data-background":voidAd
             }).appendTo(bannerWrapper);
-        });
+        }
+    }else{
+        $("<li></li>").attr({
+            "data-background":voidAd
+        }).appendTo(bannerWrapper);
     }
     $('.flicker-example').flicker({
         dot_alignment: 'left'
@@ -76,6 +87,7 @@ function adsDesc(callback){
             callback.call(self,data);
         },
         error:function(a,b,c){
+            callback.call(self);
             alert("请求失败");
         }
     })

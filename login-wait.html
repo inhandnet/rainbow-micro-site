@@ -43,10 +43,13 @@
                 var divDom=document.getElementById("loop");
                 clearInterval(textInterval);
                 divDom.innerHTML="请重新登录!";
+                jumpUrl="login.html";
                 setTimeout(function () {
                     $(divDom).css("margin-top","0px");
-                },4000);
-                jumpUrl="login.html";
+                    setTimeout(function () {
+                        location.href=jumpUrl;
+                    },2000)
+                },2000);
             }
         });
     };
@@ -54,7 +57,7 @@
         var uri="http://api.m.inhand.com.cn:5280"+"/api/gateway/client_info";
         var callback="call_back";
         var callbackFuc="client_info_cb";
-        var timeout=5000;
+        var timeout=10000;
         var params={};
         sendJsonp(uri,callback,callbackFuc,timeout,params);
     };
@@ -74,7 +77,10 @@
         divDom.innerHTML=innerString;
         setTimeout(function () {
             $(divDom).css("margin-top","0px");
-        },4000);
+            setTimeout(function () {
+                location.href=jumpUrl;
+            },2000)
+        },5000);
     }
     function go(){
         var url;
