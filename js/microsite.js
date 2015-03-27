@@ -93,7 +93,7 @@ function adsDesc(callback){
     })
 }
 //获取机构oid
-function callback_foroid(){
+function callback_foroid(data){
     if(data.error){
         console.log("返回错误信息");
     }else{
