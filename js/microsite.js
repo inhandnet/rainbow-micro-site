@@ -28,7 +28,6 @@ function request(uri,callback, callbackFuc,timeout, params) {
         success:function(data){
         },
         error:function(err,ms,ex){
-            alert("请求失败!");
         }
     });
 };

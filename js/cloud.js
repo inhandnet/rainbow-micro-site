@@ -534,8 +534,10 @@ window.callback_get_static_param=function(data){
             }else if(methodArr[i]=="sms"){
                 compareTrans.sms=true;
             }else if(methodArr[i]=="one-click"){
+                compareTrans.authThird.flag=true;
                 compareTrans.one_click=true;
             }else if(methodArr[i]=="wechat"){
+                compareTrans.authThird.flag=true;
                 compareTrans.authThird.wechat=true;
                 //如果wechat开放，则取消weixin
                 compareTrans.authThird.weixin=false;
