@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+        <title>航美在线</title>
+		<meta name="viewport" content="width=320.1, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="./resource/css/style.css">
+		<link rel="stylesheet" href="./resource/css/vedio.css" />
+	</head>
+
+	<body>
+    <!-- Header -->
+    <style>
+        .this_header{
+            background: #0998d4;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            line-height: 51px;
+            height: 51px;
+            padding: 0 50px;
+        }
+        .this_header span{
+            font-size: 20px;
+            font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+            padding:0px;
+        }
+        .this_header a{
+            display: block;
+            width: 60px;
+            height: 50px;
+            color: #Ffffff;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            left: inherit;
+        }
+    </style>
+    <div id="header" class="this_header">
+				<span id="Logo" class="svg">
+					电影
+				</span>
+        <a href="../../index.html"><img src="../../resource/img/home/goback.png"></a>
+    </div>
+		<div class="play mgt50">
+            <!-- player box -->
+            <div id="ios_video_box" class="video dn">
+                <img sid="poster">
+                <video id="ios_player" width="1" height="1" style="position: absolute;"></video>
+                <div class="text">
+                    <span sid="title"></span>
+                    <em sid="playLength"></em>
+                </div>
+                <div id="player_bigBtn" class="playbtn start"></div>
+                <div id="player_trigger" class="trigger"></div>
+            </div>
+            <div id="android_video_box" class="video dn">
+
+              <video id="android_player" width="100%" preload="none" style=" top: 0; right: 0;  bottom: 0;  left: 0;  width: 100%;  height: 100% ;z-index: 900; display: none; " webkit-playsinline></video>  
+				<div sid="posterBox" style="z-index: 9000;">
+                    <img sid="poster" style="z-index: 9000;">
+                    <div class="text" style="z-index: 9000;">
+                        <span sid="title"></span>
+                        <em sid="playLength"></em>
+                    </div>
+                </div>
+                <div id="player_trigger" class="trigger"></div>
+                <div id="player_bigBtn" class="playbtn start" style="display: block;"></div>
+                <div id="adTimeCount" class="countdown" style="display: none;">
+                </div>
+
+            </div>
+			<div class="navigator_subnav">
+				<span id="recommendBtn" class="on">推荐</span>
+				<span id="overviewBtn">影片简介</span>
+			</div>
+			<!-- recommend -->
+			<div id="recommendBox" class="recommend">
+
+			</div>
+			<!-- overview -->
+			<div id="overviewBox" class="overview dn">
+				<p><b>导演:</b> <span sid="director"></span>
+				</p>
+				<p><b>作者:</b><span sid="writer"></span>
+				</p>
+				<p><b>演员:</b><span sid="starring"></span>
+				</p>
+				<div sid="intro" class="text">
+				</div>
+			</div>
+		</div>
+        <div class="float">
+            <img src="./img/ad_bottom.png">
+        </div>
+        <script type="text/javascript" src="../../resource/js/pvuv.handler.js"></script>
+        <script type="text/javascript" src="./vlist.js"></script>
+		<script type="text/javascript" src="./resource/js/util/mui.js"></script>
+		<script type="text/javascript" src="./resource/js/util/jquery.js"></script>
+		<script type="text/javascript" src="./resource/js/util/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="./resource/js/util/jquery.json.js" ></script>
+		<script type="text/javascript" src="./resource/js/util/my-ajax.js"></script>
+		<script type="text/javascript" src="./resource/js/obj/common-selector.js"></script>
+		<script type="text/javascript" src="./resource/js/obj/video-player.js"></script>
+		<script type="text/javascript" src="./resource/js/play.js"></script>
+		<script type="text/javascript">
+			function touchEndFunc() {}
+			document.addEventListener('touchend', touchEndFunc);
+
+			var realWidth = $(window).width();
+			$("#android_video_box").css("width", realWidth + "px");
+			$("#android_video_box").css("height", realWidth * 9 / 16 + "px");
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <meta id="pvuvparameters" data-rid="0" data-rtype="variety_home" />
+        <title>航美在线</title>
+		<link rel="stylesheet" href="./resource/css/style.css">
+        <link rel="stylesheet" href="./resource/css/vedio.css" />
+        <link type="text/css" rel="stylesheet" href="../../resource/css/flexslider.css" />
+        <link type="text/css" rel="stylesheet" href="../../resource/css/jquery.mmenu.all.css" />
+        <link type="text/css" rel="stylesheet" href="../../resource/css/style.css" />
+		<style>
+			#adWrap {
+				overflow: hidden;
+			}
+			.banner {
+				position: relative;
+				/*margin-top: 50px;*/
+			}
+			.banner ul {
+				overflow: hidden;
+				width: 400%;
+			}
+			.banner li {
+				float: left;
+				width: 25%;
+				position: relative;
+			}
+			.banner img {
+				display: block;
+				width: 100%;
+			}
+			.ad_btn_wrap {
+				position: absolute;
+				top: 90%;
+				width: 100%;
+			}
+			.ad_btn_wrap a {
+				display: block;
+				float: left;
+				width: 6px;
+				height: 6px;
+				border-radius: 3px;
+				background: rgba(255, 255, 255, 0.8);
+			}
+			.ad_btn_wrap a:nth-child(1) {
+				background: #ff7b23;
+				margin-left: 45%;
+			}
+			#out {
+				overflow: hidden;
+				width: 100%;
+			}
+			#in {
+				overflow: hidden;
+			}
+			#in img {
+				display: block;
+				width: 100%;
+				float: left;
+			}
+			.article {
+				margin-top: 50px;
+				width: 100%;
+				height: auto;
+			}
+			#out {
+				overflow: hidden;
+				width: 100%;
+				/* height: 124px;  */
+				/* margin: 0px auto; */
+			}
+			#in {
+				overflow: hidden;
+				/* width: 640px; */
+				/*  height: 124px;  */
+			}
+			#in img {
+				display: block;
+				width: 100%;
+				float: left;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="indextop">
+            <!-- Header -->
+            <div id="header">
+                <a href="#menu"></a>
+				<span id="Logo" class="svg">
+					时尚MV
+				</span>
+                <a class="HomeBtn" href="../../index.html"></a>
+            </div>
+
+			<div class="navigator_movie" id="main_selector">
+				<span sid="homeBtn" class="on">新上线</span>
+				<span sid="hotBtn">排行榜</span>
+				<span sid="categoryBtn">片库</span>
+			</div>
+		</div>
+		<!-- home -->
+		<div id="home_box" class="home">
+			<div class="banner">
+				<div id="out">
+					<div id="in">
+						<ul></ul>
+					</div>
+					<div class="ad_btn_wrap"></div>
+				</div>
+			</div>
+			<div id="recommend" class="recommend">
+				<div class="title">
+					<div><i class="praise"></i>
+					</div>
+					<div>推荐</div>
+					<div>
+                        <!--<i class="more"></i>-->
+					</div>
+				</div>
+				<div sid="recommandList" class="content">
+				</div>
+			</div>
+			<div sid="classList" style="display: none">
+			</div>
+			<!--<div sid="seemoreBtn" class="seemore">-->
+				<!--<i class="more2"></i> See more channels-->
+			<!--</div>-->
+
+		</div>
+		<!-- hot -->
+		<div id="hot_box" class="hot dn">
+			<div class="top">
+
+			</div>
+			<div class="content">
+
+			</div>
+		</div>
+		<!-- category -->
+        <div class="play mgt50 dn" id="category_box" style="margin-top: 90px">
+                <div style="padding-top: 10px;padding-bottom: 5px;">
+                    分类：&nbsp;
+                    <span class="tag_selector" id="3">大陆</span> &nbsp;
+                    <span class="tag_selector" id="9">台湾</span> &nbsp;
+                    <span class="tag_selector" id="5">欧美</span> &nbsp;
+                    <span class="tag_selector" id="4">日韩</span> &nbsp;
+                </div>
+
+                <div id="recommendBox" class="recommend">
+
+                </div>
+                <!-- overview -->
+                <div id="overviewBox" class="overview dn">
+                    <p><b>导演:</b> <span sid="director"></span>
+                    </p>
+                    <p><b>作者:</b><span sid="writer"></span>
+                    </p>
+                    <p><b>演员:</b><span sid="starring"></span>
+                    </p>
+                    <div sid="intro" class="text">
+                    </div>
+                </div>
+            </div>
+
+		<div class="float">
+            <img src="./img/ad_bottom.png">
+		</div>
+
+		<!-- 定义模板 -->
+		<!-- 定义推荐视频项目模板 -->
+		<div id="recommend_video_item_template" style="display: none;">
+			<div class="box">
+				<div class="boxshadow">
+					<div class="img">
+						<img sid="poster">
+						<div class="blackbg">
+							<span sid="playLength"></span>
+						</div>
+					</div>
+					<div sid="title" class="text">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 频道盒子模板 -->
+		<div id="class_box_template" style="display: none;">
+			<div class="recommend">
+				<div class="title">
+					<div><i class="rocket"></i>
+					</div>
+					<div sid="className"></div>
+					<div><i sid="moreBtn" class="more"></i>
+					</div>
+				</div>
+				<div sid="vedioList" class="content">
+				</div>
+			</div>
+		</div>
+
+		<!-- 定义推荐视频项目模板 -->
+		<div id="class_video_item_template" style="display: none;">
+			<div class="box three">
+				<div class="boxshadow">
+					<div class="img">
+						<img sid="poster">
+						<div class="blackbg">
+							<span sid="playLength"></span>
+						</div>
+					</div>
+					<div sid="title" class="text">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!--<script type="text/javascript" src="./resource/js/util/mui.min.js"></script>-->
+    <script type="text/javascript" src="../../resource/js/pvuv.handler.js"></script>
+	<script type="text/javascript" src="./resource/js/util/tween.js" ></script>
+	<script type="text/javascript" src="./resource/js/util/jquery.js"></script>
+	<script type="text/javascript" src="./resource/js/util/my-ajax.js"></script>
+    <script type="text/javascript" src="./vlist.js"></script>
+	<script type="text/javascript" src="./resource/js/obj/main-selector.js"></script>
+	<script type="text/javascript" src="./resource/js/obj/home_box.js"></script>
+	<script type="text/javascript" src="./resource/js/obj/banner.js" ></script>
+	<script type="text/javascript" src="./resource/js/main.js" charset="utf-8"></script>
+	<script type="text/javascript">
+		function touchEndFunc() {}
+		document.addEventListener('touchend', touchEndFunc);
+
+	</script>
+
+</html>

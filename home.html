@@ -1,38 +1,88 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>首页</title>
-    <link rel="stylesheet" href="css/ui-frame/bootstrap.min.css" type="text/css"/>
-    <link rel="stylesheet" href="css/ui-frame/material-wfont.min.css" type="text/css"/>
-    <link rel="stylesheet" href="css/home.css"/>
-    <link href="css/flickerplate.css" rel="stylesheet" />
-</head>
-<body>
-    <div class="layout-main">
-        <div class="row company-name">名称</div>
-        <div class="ad-wrapper flicker-example" data-block-text="false" style="min-width:1100px;">
-            <ul id="micro_site_01">
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
 
-            </ul>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-5 col-sm-5 col-md-5 col-xs-5 menu-item first-line"><a class="btn btn-info btn-raised btn-lg" href="index.html">热点新闻</a></div>
-                <div class="col-lg-5 col-sm-5 col-md-5 col-xs-5 menu-item first-line"><a class="btn btn-info btn-raised btn-lg" href="index.html">热门影片</a></div>
-                <div class="col-lg-5 col-sm-5 col-md-5 col-xs-5 menu-item first-line"><a class="btn btn-info btn-raised btn-lg" href="index.html">电影频道</a></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5 col-sm-5 col-md-5 col-xs-5 menu-item second-line"><a class="btn btn-info btn-raised btn-lg" href="index.html">音乐欣赏</a></div>
-                <div class="col-lg-5 col-sm-5 col-md-5 col-xs-5 menu-item second-line"><a class="btn btn-info btn-raised btn-lg" href="index.html">应用下载</a></div>
-                <div class="col-lg-5 col-sm-5 col-md-5 col-xs-5 menu-item second-line"><a class="btn btn-info btn-raised btn-lg" href="login.html">免费上网</a></div>
-            </div>
-        </div>
-    </div>
-    <script src="js/js-frame/jquery-1.11.1.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/js-frame/modernizr-custom-v2.7.1.min.js"></script>
-    <script src="js/js-frame/flickerplate.min.js" type="text/javascript"></script>
-    <script src="js/js-frame/jquery-finger-v0.1.0.min.js" type="text/javascript"></script>
-    <script src="js/microsite.js" type="text/javascript"></script>
-</body>
+		<title>航美在线</title>
+		<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+		<link type="text/css" rel="stylesheet" href="resource/css/flexslider.css" />
+		<link type="text/css" rel="stylesheet" href="resource/css/jquery.mmenu.all.css" />
+		<link type="text/css" rel="stylesheet" href="resource/css/style.css" />
+		<link type="text/css" rel="stylesheet" href="resource/css/loopPlayer.css" />
+
+        <script type="text/javascript" src="../../resource/js/pvuv.handler.js"></script>
+		<script type="text/javascript" src="resource/js/jquery.min.js"></script>
+		<script type="text/javascript" src="resource/js/jquery.mmenu.min.all.js"></script>
+		<script type="text/javascript" src="resource/js/jquery.flexslider.js"></script>
+		<script type="text/javascript" src="resource/js/o-script.js"></script>
+		<script type="text/javascript" src="resource/js/TouchSlide.1.1.js"></script>
+
+	</head>
+	<body class="o-page">
+		<div id="page">
+			<!-- Header -->
+			<div id="header">
+				<a href="#menu"></a>
+				<span id="Logo" class="svg">
+					<span id="org_name">航美在线</span>
+				</span>
+			</div>
+			<!-- Banner -->
+			<!--<div class="bannerPane">-->
+			  <!--<section>-->
+				<!--<div class="flexslider">-->
+				  <!--<ul class="slides">-->
+					    <!--<li>-->
+						<!--<img src="resource/img/index/index01.jpg" />-->
+						<!--</li>-->
+                      <!--<li>-->
+                          <!--<img src="resource/img/index/index02.jpg" />-->
+                      <!--</li>-->
+                      <!--<li>-->
+                          <!--<a href="index.html"><img src="resource/img/index/index03.jpg" /></a>-->
+                      <!--</li>-->
+				  <!--</ul>-->
+				<!--</div>-->
+			  <!--</section>-->
+			<!--</div>-->
+			<div id="picScroll" class="picScroll">
+				<div class="hd">
+					<span class="next"></span>
+					<ul></ul>
+					<span class="prev"></span>
+					<h3>多图滑动</h3>
+				</div>
+				<div class="bd">
+					<ul>
+						<li><img src="resource/img/index/index01.jpg" /></li>
+					</ul>
+
+					<ul>
+						<li><img src="resource/img/index/index02.jpg" /></li>
+					</ul>
+
+					<ul>
+						<li><a href="index.html"><img src="resource/img/index/index03.jpg" /></a></li>
+					</ul>
+				</div>
+
+			</div>
+			<!-- End Banner -->
+
+		<script type="text/javascript">
+			TouchSlide({
+				slideCell:"#picScroll",
+				titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+				autoPage:true, //自动分页
+				pnLoop:"false", // 前后按钮不循环
+				switchLoad:"_src" //切换加载，真实图片路径为"_src"
+			});
+		</script>
+
+            <script type="text/javascript" src="config/oem_initial.js"></script>
+	</body>
 </html>
