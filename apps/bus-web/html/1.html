@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 	<head>
@@ -21,15 +21,11 @@
         <script type="text/javascript" src="../../resource/js/pvuv.handler.js"></script>
 
 		<script>
-		window.onload=function()
-		{
-		var oT=document.getElementsByTagName('tr');
+		var oD=document.getElementByID('table1');
+		var oT=oD.getElementsByTagname('tr');
 		for(var i=0;i<oT.length;i++)
 		{
-		 oT[i].onclick=function(){
-          location.href="1.html";		 
-		 }
-		}
+		 oT[i].onclick="location.href='i.html'"
 		}
  		
 		</script>
@@ -59,7 +55,10 @@
 		height:200px;
 		word-wrap:break-word;
 		}
-	
+		.p1
+		{
+		margin:0px 0px 0px 10px;
+		}
 		</style>
 	</head>
 
@@ -67,48 +66,59 @@
 		<!--<div class="indextop">-->
             <!-- Header -->
             <div id="header">
-                <a href="#menu"></a>
+                <a href="main.html"></a>
 				<span id="Logo" class="svg">
 					客运公司
 				</span>
                 <a class="HomeBtn" href="../../../index.html"></a>
             </div>
-
-			<nav id="main_selector">
-				<span sid="homeBtn" class="on">公司简介</span>
-				<span sid="hotBtn" class>新闻公告</span>
-			</nav>
-			<div id="home_box" >
-				<div align=center><img src ="jj.png"></div>
-				<div class ="zt" align=left>河南省郑州汽车客运总公司位于河南郑州交通路133号（邮政编码 450052），主要经营长途汽车客运、汽车货运，注册资本3097万人民币，公司联系电话为037-6973744，期待您的来电咨询。</div>
+            <div>
+			<p style="margin:20px 20px 10px 20px;text-align:center"><font size="4px">“河南省联网购票”公众号购票！</font></p>
+			<p style="margin:0px 20px 0px 0px;text-align:right"><font size="2px" color="808080" >来源：河南郑州汽车客运总公司</font></p>
 			</div>
-			<div class ="float">
-				<img src="gg.png">
+			<hr/>
+			<div style="margin:0px 0px 80px 0px">
+			<p class="p1">
+			买车票，还在站台排长队？
+			</p>
+			<p class="p1">
+			买车票，还是全价没折扣？“不唬嗒微信购，立马减”即日起每逢周五、周六、周日“微信购车票”满5元以上，立减5元
+			</p><br/>
+			<p class="p1">
+			活动时间2015年5月1日~2015年6月14日每逢周五、周六、周日
+			</p>
+			<p class="p1">
+			活动规则：
+			</p>
+			<p class="p1">
+			①.活动时间通过“河南省公路客运联网售票网”微信公众号订购车票，并使用信用卡支付5元以上（不含5元）即可立减5元！
+			</p>
+			<p class="p1">
+			②.每人每天仅享以此优惠资格。
+			</p>
+			<p class="p1">
+			③活动期间，每日限量4500个名额。
+			</p><br/>
+			<p class="p1">
+			操作方式：
+			</p>
+			<p class="p1">
+			①.点击车票预订。
+			</p>
+			<p class="p1">
+			②.选车次，填信息。
+			</p>
+			<p class="p1">
+			③.用微信完成支付发现优惠惊喜！请保持关注，及时发现更多优惠信息。
+			</p><br/>
+			<p class="p1">
+			扫描二维码或直接添加hn_96520关注“河南省公路客运联网售票”公众号。
+			</p>
+			<div style="text-align:center">
+			<img src="2.png">
+			<img src="yh1.png">
 			</div>
-		    <div id="hot_box" class="dn">
-				<table id="table1">
-					<tr >
-						<td><div class="bl"><img src ="bus.png"></div ></td>
-						<td><div class="blz"; style="font-size:16px"  >河南省客运联网售票网新浪微博开通</div>
-						</td>
-					</tr>
-
-					<tr>
-						<td><div class="bl"><img src ="yh.png"></div ></td>
-						<td><div class="blz"; style="font-size:16px">“河南省联网售票”公众购票！满5元以上立减5元！！！</div>
-						</td>
-					</tr>
-
-					<tr>
-						<td><div class="bl"><img src ="bus1.png"></div ></td>
-						<td><div class="blz"; style="font-size:16px">河南联网售票平台郑重公告</div></td>
-					</tr>
-					<tr>
-						<td><div class="bl"><img src ="bus2.png"></div ></td>
-						<td><div class="blz"; style="font-size:16px">郑州、洛阳、开封等进70个车站开通微信购票</div></td>
-					</tr>
-			</table>
-		</div>
+         </div>
 		<div class ="float">
 			<img src="gg.png">
 		</div>
