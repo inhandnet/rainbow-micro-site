@@ -1,0 +1,21 @@
+#content{
+    /*border:1px solid red;*/
+    text-align: center;
+    margin-top: 40%;
+}
+#content img{
+    width:46%;
+}
+p{
+    font-size:20px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+button{
+    background:#58A228;
+    border:none;
+    color: #f4f4f4;
+    border-radius: 5px;
+    padding: 7px 13px;
+    font-family: "微软雅黑" ;
+}
