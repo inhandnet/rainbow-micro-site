@@ -60,7 +60,7 @@ p
 a, a:link, a:active, a:visited, a:hover
 {
 	color: #233241;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 pre
 {
@@ -216,17 +216,17 @@ h2.title{ font-weight: bold; margin-bottom:20px; }
 .row h3.title, .row h2.title , .row h4.title { margin-top:0px; }
 
 /*********** ICONS */
-.i-pane  {
-    width:64px; height:64px;
-    position:relative;
-    float: left;
-    border-radius: 50%;
-    text-align: center;
-    padding-top: 28%;
-    font-size: 16px;
-    font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
-    color: #Ffffff ;
-    margin-right:8px; }
+/*.i-pane  {*/
+    /*width:64px; height:64px;*/
+    /*position:relative;*/
+    /*float: left;*/
+    /*border-radius: 50%;*/
+    /*text-align: center;*/
+    /*padding-top: 28%;*/
+    /*font-size: 16px;*/
+    /*font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;*/
+    /*color: #Ffffff ;*/
+    /*margin-right:8px; }*/
 .i-pane.i-blue { background-color:#587eac; }
 .i-pane.i-green { background-color:#587eac; }
 .i-pane.i-orange { background-color:#e0af50; }
@@ -425,3 +425,5 @@ div.gallery-item img { display: block; width: 100%; height: auto; }
 #loader { background: rgba(88, 126, 172, 0.85); bottom: 0; height: 100%; left: 0; position: absolute; right: 0; top: 0; width: 100%; z-index: 9999; }
 #loaderInner { left: 50%; margin: -50px 0 0 -62px; position: absolute; top: 50%; color: #fff; font-size: 25px; }
 #loaderInner p { margin-left: 22px; font-size: 17px; }
+
+
