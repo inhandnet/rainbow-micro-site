@@ -1,5 +1,5 @@
 
-var MainSelector = function(view, homeBox, hotBox, categoryBox) {
+var MainSelector = function(view, homeBox, hotBox,yuleBox, categoryBox) {
 
 	// 初始化属性
 
