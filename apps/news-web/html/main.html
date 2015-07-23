@@ -1,122 +1,156 @@
+
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-        <meta id="pvuvparameters" data-rid="0" data-rtype="bus_home" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta id="pvuvparameters" data-rid="0" data-rtype="bus_home" />
 
-		<link rel="stylesheet" href="../css/style.css">
-        <link type="text/css" rel="stylesheet" href="../../../resource/css/flexslider.css" />
-        <link type="text/css" rel="stylesheet" href="../../../resource/css/jquery.mmenu.all.css" />
-        <link type="text/css" rel="stylesheet" href="../../../resource/css/style.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/flexslider.css" />
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/jquery.mmenu.all.css" />
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/style.css" />
 
-		<script type="text/javascript" src="../js/util/tween.js" ></script>
-		<script type="text/javascript" src="../js/util/jquery.js"></script>
-		<script type="text/javascript" src="../js/util/my-ajax.js"></script>
-		<script type="text/javascript" src="../js/obj/main-selector.js"></script>
-		<script type="text/javascript" src="../js/obj/home_box.js"></script>
-		<script type="text/javascript" src="../js/obj/banner.js" ></script>
-		<script type="text/javascript" src="../js/main.js"></script>
-        <script type="text/javascript" src="../../resource/js/pvuv.handler.js"></script>
+    <script type="text/javascript" src="../js/util/tween.js" ></script>
+    <script type="text/javascript" src="../js/util/jquery.js"></script>
+    <script type="text/javascript" src="../js/util/my-ajax.js"></script>
+    <script type="text/javascript" src="../js/obj/main-selector.js"></script>
+    <script type="text/javascript" src="../js/obj/home_box.js"></script>
+    <script type="text/javascript" src="../js/obj/banner.js" ></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../../resource/js/pvuv.handler.js"></script>
 
-		<script>
-		window.onload=function()
-		{
-		var oT=document.getElementsByTagName('tr');
-		for(var i=0;i<oT.length;i++)
-		{
-		 oT[i].onclick=function(){
-          location.href="1.html";	<!-- 这里的1可以直接改成i，之后的页面跳转即以后添加的所对应的页面--!>	 
-		 }
-		}
-		}
- 		
-		</script>
-		<style type="text/css">
-		table{
-		 width:100% ;
-		margin-bottom:100px;  
-		  }
-		.zt
-		{
-		 text-indent:30px;
-		 padding:20px 20px 100px;
-		 font-size: 120%;
-		 
-		}
-		.bl
-		{
-		display:inline;
-		weight:159px;
-		height:119px;
-		word-wrap:break-word;
-		}
-		.blz
-		{
-		display:inline;
-		weight:159px;
-		height:200px;
-		word-wrap:break-word;
-		}
-	
-		</style>
-	</head>
+    <script>
+        window.onload=function()
+        {
+            var oD=document.getElementById('home_box');
+            var oT=oD.getElementsByTagName('tr');
+            var oD1=document.getElementById('hot_box');
+            var oT1=oD1.getElementsByTagName('tr');
+            for(var i=0;i<oT.length;i++)
+            {
+                oT[i].onclick=function(){
+                    location.href="1.html";
+                }
+            }
+            for(var j=0;j<oT1.length;j++)
+            {
+                oT[j].onclick=function(){
+                    location.href="2.html";
+                }
+            }
+        }
 
-	<body>
-		<!--<div class="indextop">-->
-            <!-- Header -->
-            <div id="header">
-                <a href="#menu"></a>
+    </script>
+    <style type="text/css">
+        table{
+            width:100% ;
+            margin-bottom:100px;
+        }
+        .zt
+        {
+            text-indent:30px;
+            padding:20px 20px 100px;
+            font-size: 120%;
+
+        }
+        .bl
+        {
+            display:inline;
+            weight:159px;
+            height:119px;
+            word-wrap:break-word;
+        }
+        .blz
+        {
+            display:inline;
+            weight:159px;
+            height:200px;
+            word-wrap:break-word;
+        }
+
+    </style>
+</head>
+
+<body>
+<!--<div class="indextop">-->
+<!-- Header -->
+<div id="header">
+    <a href="#menu"></a>
 				<span id="Logo" class="svg">
 					资讯
 				</span>
-                <a class="HomeBtn" href="../../../home.html"></a>
-            </div>
-			<div class="bannerPane">
-			  <section>
-				<div class="flexslider">
-				  <ul class="slides">
-                      <a href="1.html"><img src="top.png" /></a>
-				  </ul>
-				</div>
-			  </section>
-			</div>
-            <div  >
-				<table id="table1">
-					<tr >
-						<td><div class="bl"><img src ="first.png"></div ></td>
-						<td><div class="blz"; style="font-size:16px"  >德国示威者升起G7国家领导人头像气球</div>
-						</td>
-					</tr>
+    <a class="HomeBtn" href="../../../home.html"></a>
+</div>
 
-					<tr>
-						<td><div class="bl"><img src ="nw.png"></div ></td>
-						<td><div class="blz"; style="font-size:16px">英国女王在议会发表讲话</div>
-						</td>
-					</tr>
+<nav id="main_selector">
+    <span sid="homeBtn" class="on">热点</span>
+    <span sid="hotBtn" class>体育</span>
+</nav>
+<div id="home_box" >
+    <div  >
+        <table id="table1">
+            <tr >
+                <td><div class="bl"><img src ="first.png"></div ></td>
+                <td><div class="blz"; style="font-size:16px"  >德国示威者升起G7国家领导人头像气球</div>
+    </td>
+    </tr>
 
-					<tr>
-						<td><div class="bl"><img src ="GUCCI.png"></div ></td>
-						<td><div class="blz"; style="font-size:16px">GUCCI专柜5折促销引发市民抢购潮</div></td>
-					</tr>
-					<tr>
-						<td><div class="bl"><img src ="hp.png"></div ></td>
-						<td><div class="blz"; style="font-size:16px">别样风情：航拍记录地球之美</div></td>
-					</tr>
-			     </table>
-		     </div>
-			
-			
-		<div class ="float">
-			<img src="gg.png">
-		</div>
-		</div>
-	</body>
-	<script type="text/javascript">
-		function touchEndFunc() {}
-		document.addEventListener('touchend', touchEndFunc);
+    <tr>
+        <td><div class="bl"><img src ="nw.png"></div ></td>
+        <td><div class="blz"; style="font-size:16px">英国女王在议会发表讲话</div>
+</td>
+</tr>
 
-	</script>
+<tr>
+    <td><div class="bl"><img src ="GUCCI.png"></div ></td>
+    <td><div class="blz"; style="font-size:16px">GUCCI专柜5折促销引发市民抢购潮</div></td>
+</tr>
+<tr>
+    <td><div class="bl"><img src ="hp.png"></div ></td>
+    <td><div class="blz"; style="font-size:16px">别样风情：航拍记录地球之美</div></td>
+</tr>
+</table>
+</div></div>
+<div class ="float">
+    <img src="gg.png">
+</div>
+<div id="hot_box" class="dn">
+    <div  >
+        <table id="table1">
+            <tr >
+                <td><div class="bl"><img src ="first.png"></div ></td>
+                <td><div class="blz"; style="font-size:16px"  >德国示威者升起G7国家领导人头像气球</div>
+    </td>
+    </tr>
+
+    <tr>
+        <td><div class="bl"><img src ="nw.png"></div ></td>
+        <td><div class="blz"; style="font-size:16px">英国女王在议会发表讲话</div>
+</td>
+</tr>
+
+<tr>
+    <td><div class="bl"><img src ="GUCCI.png"></div ></td>
+    <td><div class="blz"; style="font-size:16px">GUCCI专柜5折促销引发市民抢购潮</div></td>
+</tr>
+<tr>
+    <td><div class="bl"><img src ="hp.png"></div ></td>
+    <td><div class="blz"; style="font-size:16px">别样风情：航拍记录地球之美</div></td>
+</tr>
+</table>
+</div>
+</div>
+<div class ="float">
+    <img src="gg.png">
+</div>
+</div>
+</body>
+<script type="text/javascript">
+    function touchEndFunc() {}
+    document.addEventListener('touchend', touchEndFunc);
+
+</script>
 
 </html>

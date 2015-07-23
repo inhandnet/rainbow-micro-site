@@ -20,18 +20,38 @@
 		<script type="text/javascript" src="../js/main.js"></script>
         <script type="text/javascript" src="../../resource/js/pvuv.handler.js"></script>
 
+        <script type="text/javascript" src="../../../resource/js/jquery.min.js"></script>
 		<script>
-		window.onload=function()
-		{
-		var oT=document.getElementsByTagName('tr');
-		for(var i=0;i<oT.length;i++)
-		{
-		 oT[i].onclick=function(){
-          location.href="1.html";		 
-		 }
-		}
-		}
- 		
+//            $(function() {
+//                $(".table_tr").on("click", this, function(event) {
+//                    console.log(event.target);
+//                    var id=event.target.id;
+//                    console.log("click me!"+id);
+//                });
+//            });
+
+
+
+//		window.onload=function()
+//		{
+//		var oT=document.getElementsByTagName("tr");
+//		console.log(oT);
+//         for(var i=0;i<oT.length;i++)
+//        {
+//		 oT[i].addEventListener('click', function(e){
+//             alert(e.target.id);
+//             trClick(e.target.id);
+//         }, false);
+//
+//		}
+//        }
+//
+        function trClick(index){
+            console.log(index);
+            location.href=index+".html"
+//            location.href=index+".html";
+        }
+
 		</script>
 		<style type="text/css">
 		table{
@@ -84,25 +104,25 @@
 			</div>
             <div  >
 				<table id="table1">
-					<tr >
-						<td><div class="bl"><img src ="EI.png"></div ></td>
-						<td><div class="blz"; style="font-size:16px"  >《Euromonitor International》公布世界最多国际旅客城市名单前20你去过几个？</div>
+					<tr onclick="trClick('1');">
+						<td><div class="bl"><img src ="news1.png"></div ></td>
+						<td><div class="blz">“辞职看世界”女教师为爱定居成都</div>
 						</td>
 					</tr>
 
-					<tr>
+					<tr   onclick="trClick('2');">
 						<td><div class="bl"><img src ="xg.png"></div ></td>
-						<td><div class="blz"; style="font-size:16px">24小时全天游香港你能做的24件事</div>
+						<td><div class="blz">24小时全天游香港你能做的24件事</div>
 						</td>
 					</tr>
 
-					<tr>
+					<tr  onclick="trClick('3');">
 						<td><div class="bl"><img src ="first.png"></div ></td>
-						<td><div class="blz"; style="font-size:16px">第一次坐火车旅行要知道那些事儿</div></td>
+						<td><div class="blz">第一次坐火车旅行要知道那些事儿</div></td>
 					</tr>
-					<tr>
+					<tr  onclick="trClick('4')">
 						<td><div class="bl"><img src ="zz.png"></div ></td>
-						<td><div class="blz"; style="font-size:16px">古老火车站变身现代住宅，这是 你所不知道的丹麦风</div></td>
+						<td><div class="blz">古老火车站变身现代住宅，这是 你所不知道的丹麦风</div></td>
 					</tr>
 			     </table>
 		     </div>

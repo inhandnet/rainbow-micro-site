@@ -29,7 +29,7 @@
         {
             id: "1",
             classId: [5, 3],
-            title: "恐高的鸟",
+            title: "军营相别",
             playLength: "约4分钟",
             banner: {
                 isBanner: true,
@@ -40,20 +40,20 @@
                 isTop: true,
                 isContent: false
             },
-            videoUrl: "./video/movie01.mp4",
+            videoUrl: "./video/junyingxiangbie.mp4",
             hPosterUrl: "./img/i_h_1.jpg",
             vPosterUrl: "./img/i_v_1.jpg",
             fileSize: "40000",
-            director: "大鹏",
-            writer: "王铮亮",
-            starring: "大鹏",
+            director: "",
+            writer: "",
+            starring: "",
             intro: ""
         },
 
         {
             id: "2",
             classId: [5, 3],
-            title: "漂洋过海来看你",
+            title: "常来常往",
             playLength: "约4分钟",
             banner: {
                 isBanner: false,
@@ -64,20 +64,20 @@
                 isTop: true,
                 isContent: false
             },
-            videoUrl: "./video/movie01.mp4",
+            videoUrl: "./video/changlaichangwang.mp4",
             hPosterUrl: "./img/i_h_2.jpg",
             vPosterUrl: "./img/i_v_2.jpg",
             fileSize: "15M",
-            director: "彭文淳",
-            writer: "李宗盛",
-            starring: "金智娟",
+            director: "",
+            writer: "",
+            starring: "",
             intro: ""
         },
 
         {
             id: "3",
             classId: [8, 5, 3],
-            title: "漂洋过海来看你",
+            title: "大漠戈壁",
             playLength: "约4分钟",
             banner: {
                 isBanner: true,
@@ -88,21 +88,21 @@
                 isTop: false,
                 isContent: false
             },
-           videoUrl: "./video/movie01.mp4",
-            hPosterUrl: "./img/i_h_2.jpg",
+           videoUrl: "./video/damogebi.mp4",
+            hPosterUrl: "./img/i_h_3.jpg",
             vPosterUrl: "./img/i_v_3.jpg",
             fileSize: "15M",
-            director: "彭文淳",
-            writer: "李宗盛",
-            starring: "金智娟",
+            director: "",
+            writer: "",
+            starring: "",
             intro: ""
         },
 
         {
             id: "4",
             classId: [3, 4, 5, 9],
-            title: "漂洋过海来看你",
-            playLength: "约",
+            title: "共圆中国梦",
+            playLength: "约3分钟",
             banner: {
                 isBanner: false,
                 bannerImg: ""
@@ -112,20 +112,20 @@
                 isTop: true,
                 isContent: false
             },
-           videoUrl: "./video/movie01.mp4",
-            hPosterUrl: "./img/i_h_2.jpg",
-            vPosterUrl: "./img/i_v_2.jpg",
-            fileSize: "40000",
-           director: "彭文淳",
-            writer: "李宗盛",
-            starring: "金智娟",
+           videoUrl: "./video/gongyuanzhongguomeng.mp4",
+            hPosterUrl: "./img/i_h_4.jpg",
+            vPosterUrl: "./img/i_v_4.jpg",
+            fileSize: "",
+           director: "",
+            writer: "",
+            starring: "",
             intro: ""
         },
 
         {
             id: "5",
             classId: [3, 9],
-            title: "恐高的鸟",
+            title: "五环之歌",
             playLength: "约4分钟",
             banner: {
                 isBanner: false,
@@ -136,20 +136,20 @@
                 isTop: false,
                 isContent: false
             },
-            videoUrl: "./video/movie01.mp4",
-            hPosterUrl: "./img/i_h_1.jpg",
-            vPosterUrl: "./img/i_v_1.jpg",
-            fileSize: "14M",
-            director: "大鹏",
-            writer: "王铮亮",
-            starring: "大鹏",
+            videoUrl: "./video/wuhuanzhige.mp4",
+            hPosterUrl: "./img/i_h_5.jpg",
+            vPosterUrl: "./img/i_v_5.jpg",
+            fileSize: "",
+            director: "",
+            writer: "",
+            starring: "",
             intro: ""
         },
 
         {
             id: "6",
             classId: [5, 9],
-            title: "漂洋过海来看你",
+            title: "雅美蝶",
             playLength: "约4分钟",
             banner: {
                 isBanner: false,
@@ -160,13 +160,107 @@
                 isTop: false,
                 isContent: true
             },
-             videoUrl: "./video/movie01.mp4",
-            hPosterUrl: "./img/i_h_2.jpg",
-            vPosterUrl: "./img/i_v_2.jpg",
-            fileSize: "15M",
-            director: "彭文淳",
-            writer: "李宗盛",
-            starring: "金智娟",
+             videoUrl: "./video/yameidie.mp4",
+            hPosterUrl: "./img/i_h_6.jpg",
+            vPosterUrl: "./img/i_v_6.jpg",
+            fileSize: "",
+            director: "",
+            writer: "",
+            starring: "",
+            intro: ""
+        },
+
+        {
+            id: "7",
+            classId: [5, 9],
+            title: "遗憾",
+            playLength: "约4分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: ""
+            },
+            isRecommand: true,
+            hot: {
+                isTop: false,
+                isContent: true
+            },
+            videoUrl: "./video/yihan.mp4",
+            hPosterUrl: "./img/i_h_7.jpg",
+            vPosterUrl: "./img/i_v_7.jpg",
+            fileSize: "",
+            director: "",
+            writer: "",
+            starring: "",
+            intro: ""
+        },
+
+        {
+            id: "8",
+            classId: [5, 9],
+            title: "在水一方",
+            playLength: "约4分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: ""
+            },
+            isRecommand: true,
+            hot: {
+                isTop: false,
+                isContent: true
+            },
+            videoUrl: "./video/zaishiuyifang.mp4",
+            hPosterUrl: "./img/i_h_8.jpg",
+            vPosterUrl: "./img/i_v_8.jpg",
+            fileSize: "",
+            director: "",
+            writer: "",
+            starring: "",
+            intro: ""
+        },
+        {
+            id: "9",
+            classId: [5, 9],
+            title: "战友啊战友",
+            playLength: "约4分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: ""
+            },
+            isRecommand: true,
+            hot: {
+                isTop: false,
+                isContent: true
+            },
+            videoUrl: "./video/zhanyouazhanyou.mp4",
+            hPosterUrl: "./img/i_h_9.jpg",
+            vPosterUrl: "./img/i_v_9.jpg",
+            fileSize: "",
+            director: "",
+            writer: "",
+            starring: "",
+            intro: ""
+        },
+        {
+            id: "10",
+            classId: [5, 9],
+            title: "至少还有你",
+            playLength: "约4分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: ""
+            },
+            isRecommand: true,
+            hot: {
+                isTop: false,
+                isContent: true
+            },
+            videoUrl: "./video/zhishaohaiyouni.mp4",
+            hPosterUrl: "./img/i_h_10.jpg",
+            vPosterUrl: "./img/i_v_10.jpg",
+            fileSize: "",
+            director: "",
+            writer: "",
+            starring: "",
             intro: ""
         }
     ];
