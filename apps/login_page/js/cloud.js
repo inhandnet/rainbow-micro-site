@@ -99,7 +99,7 @@ var formStr=""+
                 "    <input type='checkbox' id='rainbow_agree_conditions_terms' />"+
                 "    <span class='check color_white'></span>"+
                 "    </label>"+
-                "    <a href='../../FreeStatement.html' id='conditions_terms' style='color:#114A7B;font-weight: 700' href=''>Wi-Fi使用协议</a>"+
+                "    <a href='./FreeStatement.html' id='conditions_terms' style='color:#114A7B;font-weight: 700' href=''>Wi-Fi使用协议</a>"+
                 "    </div>"+
                 "</div>"+
                 "<div>"+

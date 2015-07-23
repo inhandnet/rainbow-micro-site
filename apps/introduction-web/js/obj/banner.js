@@ -1,9 +1,8 @@
 $(document).ready(function() {
 	var lst = [
-		'../pic/banner1.jpg',
-		'../pic/banner2.jpg',
-		'../pic/banner3.jpg',
-		'../pic/banner4.jpg'
+		'../pic/ad_banner1.jpg',
+		'../pic/ad_banner2.gif'
+
 	];
 	var htm = '';
 	$(lst).each(function(k, v) {

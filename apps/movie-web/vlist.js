@@ -75,7 +75,7 @@
         {
             id: "3",
             classId: [1, 4],
-            title: "一场风花雪月的事",
+            title: "一场风花雪月...",
             playLength: "93 min",
             banner: {
                 isBanner: false,
@@ -144,7 +144,7 @@
         {
             id: "6",
             classId: [2],
-            title: "阳光的快乐生活",
+            title: "阳光的快乐生...",
             playLength: "93 min",
             banner: {
                 isBanner: false,
@@ -259,7 +259,7 @@
         {
             id: "11",
             classId: [1, 2, 4],
-            title: "关于爱情和那些魔鬼",
+            title: "关于爱情和那...",
             playLength: "93 min",
             banner: {
                 isBanner: false,
