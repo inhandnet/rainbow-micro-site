@@ -21,16 +21,10 @@
         <script type="text/javascript" src="../../resource/js/pvuv.handler.js"></script>
 
 		<script>
-		window.onload=function()
-		{
-		var oT=document.getElementsByTagName('tr');
-		for(var i=0;i<oT.length;i++)
-		{
-		 oT[i].onclick=function(){
-          location.href="1.html";		 
-		 }
-		}
-		}
+            function trClick(index) {
+                console.log(index);
+                location.href = index + ".html"
+            }
  		
 		</script>
 		<style type="text/css">
@@ -83,34 +77,39 @@
 				<div class ="zt" align=left>河南省郑州汽车客运总公司位于河南郑州交通路133号（邮政编码 450052），主要经营长途汽车客运、汽车货运，注册资本3097万人民币，公司联系电话为037-6973744，期待您的来电咨询。</div>
 			</div>
 			<div class ="float">
-				<img src="gg.png">
+				<img src="ad_bottom.gif">
 			</div>
 		    <div id="hot_box" class="dn">
 				<table id="table1">
-					<tr >
+					<tr onclick="trClick('1');" >
 						<td><div class="bl"><img src ="bus.png"></div ></td>
 						<td><div class="blz"; style="font-size:16px"  >河南省客运联网售票网新浪微博开通</div>
 						</td>
 					</tr>
-
-					<tr>
-						<td><div class="bl"><img src ="yh.png"></div ></td>
-						<td><div class="blz"; style="font-size:16px">“河南省联网售票”公众购票！满5元以上立减5元！！！</div>
-						</td>
-					</tr>
-
-					<tr>
-						<td><div class="bl"><img src ="bus1.png"></div ></td>
-						<td><div class="blz"; style="font-size:16px">河南联网售票平台郑重公告</div></td>
-					</tr>
-					<tr>
-						<td><div class="bl"><img src ="bus2.png"></div ></td>
-						<td><div class="blz"; style="font-size:16px">郑州、洛阳、开封等进70个车站开通微信购票</div></td>
-					</tr>
+                    <tr onclick="trClick('ky1');">
+                        <td><div class="bl"><img src ="ky1m1.jpg"></div ></td>
+                    <td><div class="blz"; style="font-size:16px">客运公司客运站例检车间投入使用</div></td>
+                    </tr>
+        <tr onclick="trClick('ky2');">
+            <td><div class="bl"><img src ="ky2m1.jpg"></div ></td>
+            <td><div class="blz"; style="font-size:16px">长运公司确保夏季客运安全</div></td>
+        </tr>
+        <tr onclick="trClick('ky3');">
+            <td><div class="bl"><img src ="ky3m1.jpg"></div ></td>
+            <td><div class="blz"; style="font-size:16px">交警走访旅游客运企业共商安全大计</div></td>
+        </tr>
+        <tr onclick="trClick('ky4');">
+            <td><div class="bl"><img src ="ky4m1.JPG"></div ></td>
+            <td><div class="blz"; style="font-size:16px">细严实交警直送“抄告函”到企业</div></td>
+        </tr>
+        <tr onclick="trClick('ky5');">
+            <td><div class="bl"><img src ="ky5m1.JPG"></div ></td>
+            <td><div class="blz"; style="font-size:16px">客运总公司 评选星级车辆</div></td>
+        </tr>
 			</table>
 		</div>
 		<div class ="float">
-			<img src="gg.png">
+			<img src="ad_bottom.gif">
 		</div>
 		</div>
 	</body>

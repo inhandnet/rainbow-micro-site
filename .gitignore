@@ -29,5 +29,4 @@ node_modules
 .idea
 .buildpath
 .project
-*.mp4
 */.settings
