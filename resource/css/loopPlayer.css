@@ -1,5 +1,4 @@
-
-.picScroll .bd li img{ width:100%!important; }
+.picScroll .bd img{height:100%;}
 .hd{display: none;}
 ul{
     list-style: none;

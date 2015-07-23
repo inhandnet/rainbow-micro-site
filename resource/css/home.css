@@ -1,3 +1,4 @@
+/*主页的样式修改*/
 ul{
     list-style: none;
 }
@@ -12,9 +13,13 @@ a{
     background-size:cover;
     /*overflow: hidden;*/
 }
-.bannerPane{ text-align:center;}
-.bannerPane img {}
-.slider{margin: 0!important;padding:0;}
+.slider{padding:0;}
+.slider{
+    height:208px;
+}
+.slider img{
+    height:100%;
+}
 .flexslider{margin:0;  }
 .i-pane.i-blue {  background-color: #Ffffff;  }
 /*********** ICONS */
@@ -36,10 +41,7 @@ a{
     vertical-align: top;
 }
 
-.i-pane.i-blue {  background-color: #Ffffff;  }
 .i-pane.i-green { background-color:#587eac; display: none;}
-.i-pane.i-orange { background-color:#e0af50; }
-.i-pane.i-red { background-color:#ff7a73; }
 .iconImg{
     height:27px;
 }

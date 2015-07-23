@@ -26,7 +26,6 @@
 		<div id="page">
 			<!-- Header -->
 			<div id="header">
-				<a href="#menu"></a>
 				<span id="Logo" class="svg">
 					<span id="org_name">航美在线</span>
 				</span>
@@ -55,7 +54,7 @@
 
 			</div>
 			<!-- End Banner -->
-
+		</div>
 		<script type="text/javascript">
 			TouchSlide({
 				slideCell:"#picScroll",
@@ -64,8 +63,13 @@
 				pnLoop:"false", // 前后按钮不循环
 				switchLoad:"_src" //切换加载，真实图片路径为"_src"
 			});
-		</script>
+			var adImg=document.getElementsByTagName("li");
+			for(var i=0;i<adImg.length;i++){
+				adImg[i].style.height=window.screen.availHeight-51+"px";
 
-            <script type="text/javascript" src="config/oem_initial.js"></script>
+			}
+			alert(adImg[0].style.height);
+		</script>
+		<script type="text/javascript" src="config/oem_initial.js"></script>
 	</body>
 </html>
