@@ -52,15 +52,6 @@
                 "    <img src='./resoureces/images/one_click.png' />"+
                 "    </a>"+
                 "    </div>"+
-                "    <div class='row row_min_width' style='font-size: 12px'>"+
-                "    <div class='col-lg-15 col-xs-15' style='text-align: center'>"+
-                "    <label id='agree' for='rainbow_agree_conditions_terms'>"+
-                "    <input type='checkbox' id='rainbow_agree_conditions_terms' />"+
-                "    <span class='check color_white'></span>"+
-                "    </label>"+
-                "    <a href='./sub/wifi.html' id='conditions_terms' style='color:#114A7B;font-weight: 700' href=''>Wi-Fi使用协议</a>"+
-                "    </div>"+
-                "    </div>"+
                 "    <div class='row row_min_width' style='font-size:12px;line-height: 70px;'>"+
                 "    <div class='col-lg-15 text-center'>技术支持&nbsp;|&nbsp;&nbsp;|&nbsp;010-64391099</div>"+
                 "</div>"+
@@ -69,7 +60,7 @@
                 "</div>";
 
 var formStr=""+
-                "<form id='sms_form' role='form' style='width: 270px;height: 220px;background-color: #Ffffff;margin-left: auto;margin-right: auto;text-align: center;vertical-align: middle'>"+
+                "<form id='sms_form' role='form' style='width: 270px;height: 250px;background-color: #Ffffff;margin-left: auto;margin-right: auto;text-align: center;vertical-align: middle'>"+
                 "    <div>"+
                 "    <p style='top:7px;font-weight: 700;height: 20px;color: red;' id='error_line'></p>"+
                 "    </div>"+
@@ -101,8 +92,17 @@ var formStr=""+
                 "</div>"+
                 "<div>"+
                 "<span id='rainbow_password_error' class='rainbow_error_tips'></span>"+
+                "</div>"+
+                "<div class='row row_min_width' style='font-size: 12px'>"+
+                "    <div class='col-lg-15 col-xs-15' style='text-align: center'>"+
+                "    <label id='agree' for='rainbow_agree_conditions_terms'>"+
+                "    <input type='checkbox' id='rainbow_agree_conditions_terms' />"+
+                "    <span class='check color_white'></span>"+
+                "    </label>"+
+                "    <a href='../../FreeStatement.html' id='conditions_terms' style='color:#114A7B;font-weight: 700' href=''>Wi-Fi使用协议</a>"+
                 "    </div>"+
-                "    <div>"+
+                "</div>"+
+                "<div>"+
                 "    <div style='padding-bottom: 19px'>"+
                 "    <a href='javascript:void(0)' style='width: 200px' class='btn btn-info btn-raised log_btn_pc_show no_border_radius ' id='rainbow_loginBtn'></a>"+
                 "    <a href='javascript:void(0)' style='width: 200px;display:none' class='btn btn-info btn-raised log_btn_pc_show no_border_radius ' id='rainbow_loginBtn_bak' disabled='disabled'></a>"+
