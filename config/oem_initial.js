@@ -7,10 +7,10 @@ function initRender(){
     /**
      * @setting title
      */
-    document.title=oemInfo.titile;
+    document.title=oemInfo.title;
     var titleTag=document.getElementsByTagName("title");
     if(titleTag!=null&&titleTag.length>0){
-        titleTag[0].innerHTML=oemInfo.titile;
+        titleTag[0].innerHTML=oemInfo.title;
     }
 
     /**
