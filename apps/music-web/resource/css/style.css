@@ -1126,11 +1126,9 @@ header div:last-child i {
 }
 .home .recommend .content .box .img {
   position: relative;
-  height:84px;
 }
 .home .recommend .content .box .img img {
   width: 100%;
-  height:100%;
 }
 .home .recommend .content .box .img .blackbg {
   position: absolute;
@@ -1196,7 +1194,6 @@ header div:last-child i {
 .hot .top .box {
   margin-bottom: 5px;
   position: relative;
-  height:173px;
 }
 .hot .top .box:last-child {
   margin-bottom: 0;
@@ -1292,11 +1289,9 @@ header div:last-child i {
 }
 .hot .content .box .img {
   position: relative;
-  height:137px;
 }
 .hot .content .box .img img {
   width: 100%;
-  height:100%;
 }
 .hot .content .box .img .blackbg {
   position: absolute;
@@ -1731,11 +1726,9 @@ header div:last-child i {
 }
 .play .recommend .box .img {
   position: relative;
-  height:141px;
 }
 .play .recommend .box .img img {
   width: 100%;
-  height:100%;
 }
 .play .recommend .box .img .blackbg {
   position: absolute;
