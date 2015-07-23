@@ -1,75 +1,78 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <meta id="pvuvparameters" data-rid="0" data-rtype="bus_home" />
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta id="pvuvparameters" data-rid="0" data-rtype="bus_home"/>
 
     <link rel="stylesheet" href="../css/style.css">
-    <link type="text/css" rel="stylesheet" href="../../../resource/css/flexslider.css" />
-    <link type="text/css" rel="stylesheet" href="../../../resource/css/jquery.mmenu.all.css" />
-    <link type="text/css" rel="stylesheet" href="../../../resource/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/flexslider.css"/>
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/jquery.mmenu.all.css"/>
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/style.css"/>
 
-    <script type="text/javascript" src="../js/util/tween.js" ></script>
+    <script type="text/javascript" src="../js/util/tween.js"></script>
     <script type="text/javascript" src="../js/util/jquery.js"></script>
     <script type="text/javascript" src="../js/util/my-ajax.js"></script>
     <script type="text/javascript" src="../js/obj/main-selector.js"></script>
     <script type="text/javascript" src="../js/obj/home_box.js"></script>
-    <script type="text/javascript" src="../js/obj/banner.js" ></script>
+    <script type="text/javascript" src="../js/obj/banner.js"></script>
     <script type="text/javascript" src="../js/main.js"></script>
     <script type="text/javascript" src="../../resource/js/pvuv.handler.js"></script>
 
     <script>
-        function trClick(index){
+        function trClick(index) {
             console.log(index);
-            location.href=index+".html"
+            location.href = index + ".html"
 
         }
 
-        function trEtClick(index){
+        function trEtClick(index) {
             console.log(index);
-            location.href="./entertainment/"+index+".html"
+            location.href = "./entertainment/" + index + ".html"
 
         }
 
     </script>
     <style type="text/css">
-        table{
-            width:100% ;
-            margin-bottom:100px;
+        table {
+            width: 100%;
+            margin-bottom: 100px;
         }
-        .zt
-        {
-            text-indent:30px;
-            padding:20px 20px 100px;
+
+        .zt {
+            text-indent: 30px;
+            padding: 20px 20px 100px;
             font-size: 120%;
 
         }
-        .bl
-        {
-            width:123px;
-            height:92px;
-            word-wrap:break-word;
+
+        .bl {
+            width: 123px;
+            height: 92px;
+            word-wrap: break-word;
         }
-        .bl img{
-            width:100%;
-            height:100%;
+
+        .bl img {
+            width: 100%;
+            height: 100%;
         }
-        .blz
-        {
-            display:inline;
-            height:200px;
-            word-wrap:break-word;
+
+        .blz {
+            display: inline;
+            height: 200px;
+            word-wrap: break-word;
         }
-        .float{
-            width:100%;
-            height:71px;
+
+        .float {
+            width: 100%;
+            height: 71px;
         }
-        .float img{
-            width:100%;
-            height:100%;
+
+        .float img {
+            width: 100%;
+            height: 100%;
         }
 
     </style>
@@ -89,214 +92,444 @@
 <nav id="main_selector">
     <span sid="homeBtn" class="on">热点</span>
     <span sid="hotBtn" class>体育</span>
+    <span sid="categoryBtn" class>文娱</span>
 </nav>
-<div id="home_box" >
-    <div  >
+<div id="home_box">
+    <div>
         <table id="table1">
             <tr onclick="trClick('rd1');">
-                <td><div class="bl"><img src ="r1-2.jpg"></div ></td>
-                <td><div class="blz"; style="font-size:16px"  >百名被通缉外逃人员多下落不明 最年轻者为80后</div>
-    </td>
-    </tr>
+                <td>
+                    <div class="bl"><img src="r1-2.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">百名被通缉外逃人员多下落不明 最年轻者为80后</div>
+                </td>
+            </tr>
 
-    <tr onclick="trClick('rd2');">
-        <td><div class="bl"><img src ="r2-1.jpg"></div ></td>
-        <td><div class="blz"; style="font-size:16px">抱子上课女教师携子来京治疗</div>
-    </td>
-    </tr>
+            <tr onclick="trClick('rd2');">
+                <td>
+                    <div class="bl"><img src="r2-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">抱子上课女教师携子来京治疗</div>
+                </td>
+            </tr>
 
-    <tr onclick="trClick('rd3');">
-        <td><div class="bl"><img src ="r3-1.jpg"></div ></td>
-        <td><div class="blz"; style="font-size:16px">福建首虎行事谨慎不留痕迹 被指地产影子操盘手</div></td>
-    </tr>
-    <tr onclick="trClick('rd4');">
-        <td><div class="bl"><img src ="r4-1.jpg"></div ></td>
-        <td><div class="blz"; style="font-size:16px">美国冲浪冠军为体育画报拍写真</div></td>
-    </tr>
-    <tr onclick="trClick('rd5');">
-        <td><div class="bl"><img src ="r5-1.png"></div ></td>
-        <td><div class="blz"; style="font-size:16px">缅甸2枚炮弹落入云南境内 缅媒称至少8人受伤</div></td>
-    </tr>
-    <tr onclick="trClick('rd6');">
-        <td><div class="bl"><img src ="r6-1.jpg"></div ></td>
-        <td><div class="blz"; style="font-size:16px">庆安枪击事件真相</div></td>
-    </tr>
-    <tr onclick="trClick('rd7');">
-        <td><div class="bl"><img src ="r7-1.jpg"></div ></td>
-        <td><div class="blz"; style="font-size:16px">三大运营商提速降费方案今日公布</div></td>
-    </tr>
-    <tr onclick="trClick('rd8');">
-        <td><div class="bl"><img src ="r8-16.jpg"></div ></td>
-        <td><div class="blz"; style="font-size:16px">央行降息后房价走势预测 楼市16大惊天骗局曝光</div></td>
-    </tr>
-<tr onclick="trClick('rd9');">
-    <td><div class="bl"><img src ="r9-1.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">印度总理莫迪访华</div></td>
-</tr>
-<tr onclick="trClick('rd10');">
-    <td><div class="bl"><img src ="r10-1.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">中国城市竞争力报告出炉</div></td>
-</tr>
+            <tr onclick="trClick('rd3');">
+                <td>
+                    <div class="bl"><img src="r3-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">福建首虎行事谨慎不留痕迹 被指地产影子操盘手</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('rd4');">
+                <td>
+                    <div class="bl"><img src="r4-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">美国冲浪冠军为体育画报拍写真</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('rd5');">
+                <td>
+                    <div class="bl"><img src="r5-1.png"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">缅甸2枚炮弹落入云南境内 缅媒称至少8人受伤</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('rd6');">
+                <td>
+                    <div class="bl"><img src="r6-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">庆安枪击事件真相</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('rd7');">
+                <td>
+                    <div class="bl"><img src="r7-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">三大运营商提速降费方案今日公布</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('rd8');">
+                <td>
+                    <div class="bl"><img src="r8-16.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">央行降息后房价走势预测 楼市16大惊天骗局曝光</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('rd9');">
+                <td>
+                    <div class="bl"><img src="r9-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">印度总理莫迪访华</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('rd10');">
+                <td>
+                    <div class="bl"><img src="r10-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">中国城市竞争力报告出炉</div>
+                </td>
+            </tr>
 
-</table>
-</div></div>
-<div class ="float">
+        </table>
+    </div>
+</div>
+<div class="float">
     <img src="gg.png">
 </div>
 <div id="hot_box" class="dn">
-    <div  >
+    <div>
         <table id="table1">
             <tr onclick="trClick('ty1')">
-                <td><div class="bl"><img src ="ty1m1.jpg"></div ></td>
-                <td><div class="blz"; style="font-size:16px"  >《东方球王》开机沙溢演球王 中国足坛元老助阵</div>
-    </td>
-    </tr>
+                <td>
+                    <div class="bl"><img src="ty1m1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">《东方球王》开机沙溢演球王 中国足坛元老助阵</div>
+                </td>
+            </tr>
 
-    <tr onclick="trClick('ty2')">
-        <td><div class="bl"><img src ="ty2m1.jpg"></div ></td>
-        <td><div class="blz"; style="font-size:16px">2015年苏迪曼杯 康有为曾孙女过生日</div>
-</td>
-</tr>
+            <tr onclick="trClick('ty2')">
+                <td>
+                    <div class="bl"><img src="ty2m1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">2015年苏迪曼杯 康有为曾孙女过生日</div>
+                </td>
+            </tr>
 
-<tr  onclick="trClick('ty3')">
-    <td><div class="bl"><img src ="ty3m1.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">2015中国足协杯第三轮赛事</div></td>
-</tr>
-<tr onclick="trClick('ty4')">
-    <td><div class="bl"><img src ="ty4m1.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">F1俄罗斯站举行 赛车女郎成靓丽风景线</div></td>
-</tr>
-<tr  onclick="trClick('ty5')">
-    <td><div class="bl"><img src ="ty5m1.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">NBA季后赛第六场，骑士vs公牛</div></td>
-</tr>
-<tr onclick="trClick('ty6')">
-    <td><div class="bl"><img src ="ty6m1.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">陈盆滨100个马拉松起跑仪式 姚明、郑洁陪跑</div></td>
-</tr>
-<tr onclick="trClick('ty7')">
-    <td><div class="bl"><img src ="ty7m1.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">第5届环鄱阳湖国际自行车赛开赛 总奖金逾百万</div></td>
-</tr>
-<tr onclick="trClick('ty8')">
-    <td><div class="bl"><img src ="ty8m1.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">福建220名业余选手角逐福州场地超级马拉松接力赛</div></td>
-</tr>
-<tr onclick="trClick('ty9')">
-    <td><div class="bl"><img src ="ty9m1.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">国羽横扫德国进四强</div></td>
-</tr>
-<tr onclick="trClick('ty10')">
-    <td><div class="bl"><img src ="ty10m1.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">哈登拿下新高威少再砍三双 NBA头条该给谁</div></td>
-</tr>
-<tr onclick="trClick('ty11')">
-    <td><div class="bl"><img src ="ty11m1.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">韩国啦啦队女神比基尼湿身</div></td>
-</tr>
-<tr onclick="trClick('ty12')">
-    <td><div class="bl"><img src ="ty12m1.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">罗马赛莎拉波娃进8强</div></td>
-</tr>
-<tr onclick="trClick('ty13')">
-    <td><div class="bl"><img src ="ty13m1.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">蒙特卡洛赛小德称王 大师赛23冠追平费德勒</div></td>
-</tr>
-            <tr  onclick="trClick('ty14')">
-                <td><div class="bl"><img src ="ty14m1.jpg"></div ></td>
-                <td><div class="blz"; style="font-size:16px"  >首钢男篮夺冠之夜庆祝 球员奇装异服与球迷互动</div>
-    </td>
-    </tr>
-            <tr onclick="trClick('ty15')" >
-                <td><div class="bl"><img src ="ty15m1.jpg"></div ></td>
-                <td><div class="blz"; style="font-size:16px"  >苏杯-中国5-0横扫泰国 排名小组第一晋级8强</div>
-    </td>
-    </tr>
-            <tr  onclick="trClick('ty16')">
-                <td><div class="bl"><img src ="ty16m1.jpg"></div ></td>
-                <td><div class="blz"; style="font-size:16px"  >苏迪曼杯小组赛 李宗伟领衔马来西亚出战</div>
-    </td>
-    </tr>
-            <tr  onclick="trClick('ty17')">
-                <td><div class="bl"><img src ="ty17m1.jpg"></div ></td>
-                <td><div class="blz"; style="font-size:16px"  >郑洁微博晒补拍婚纱照 “感谢大家的关心”</div>
-    </td>
-    </tr>
+            <tr onclick="trClick('ty3')">
+                <td>
+                    <div class="bl"><img src="ty3m1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">2015中国足协杯第三轮赛事</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('ty4')">
+                <td>
+                    <div class="bl"><img src="ty4m1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">F1俄罗斯站举行 赛车女郎成靓丽风景线</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('ty5')">
+                <td>
+                    <div class="bl"><img src="ty5m1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">NBA季后赛第六场，骑士vs公牛</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('ty6')">
+                <td>
+                    <div class="bl"><img src="ty6m1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">陈盆滨100个马拉松起跑仪式 姚明、郑洁陪跑</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('ty7')">
+                <td>
+                    <div class="bl"><img src="ty7m1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">第5届环鄱阳湖国际自行车赛开赛 总奖金逾百万</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('ty8')">
+                <td>
+                    <div class="bl"><img src="ty8m1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">福建220名业余选手角逐福州场地超级马拉松接力赛</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('ty9')">
+                <td>
+                    <div class="bl"><img src="ty9m1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">国羽横扫德国进四强</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('ty10')">
+                <td>
+                    <div class="bl"><img src="ty10m1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">哈登拿下新高威少再砍三双 NBA头条该给谁</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('ty11')">
+                <td>
+                    <div class="bl"><img src="ty11m1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">韩国啦啦队女神比基尼湿身</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('ty12')">
+                <td>
+                    <div class="bl"><img src="ty12m1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">罗马赛莎拉波娃进8强</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('ty13')">
+                <td>
+                    <div class="bl"><img src="ty13m1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">蒙特卡洛赛小德称王 大师赛23冠追平费德勒</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('ty14')">
+                <td>
+                    <div class="bl"><img src="ty14m1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">首钢男篮夺冠之夜庆祝 球员奇装异服与球迷互动</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('ty15')">
+                <td>
+                    <div class="bl"><img src="ty15m1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">苏杯-中国5-0横扫泰国 排名小组第一晋级8强</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('ty16')">
+                <td>
+                    <div class="bl"><img src="ty16m1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">苏迪曼杯小组赛 李宗伟领衔马来西亚出战</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('ty17')">
+                <td>
+                    <div class="bl"><img src="ty17m1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">郑洁微博晒补拍婚纱照 “感谢大家的关心”</div>
+                </td>
+            </tr>
 
-    <tr onclick="trClick('tu18')">
-        <td><div class="bl"><img src ="ty18m1.jpg"></div ></td>
-        <td><div class="blz"; style="font-size:16px">中超-高拉特帽子戏法 恒大主场6-1血洗申鑫</div>
-</td>
-</tr>
+            <tr onclick="trClick('tu18')">
+                <td>
+                    <div class="bl"><img src="ty18m1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">中超-高拉特帽子戏法 恒大主场6-1血洗申鑫</div>
+                </td>
+            </tr>
 
-<tr onclick="trClick('ty19')">
-    <td><div class="bl"><img src ="ty19m1.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">中国赛-丁俊晖5-2胜马克·威廉姆斯 八强战希金斯</div></td>
-</tr>
-<tr onclick="trClick('ty20')">
-    <td><div class="bl"><img src ="ty20m1.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">珠海WTA赛启动倒计时200天 携手李娜奉献顶级赛事</div></td>
-</tr>
-</table>
+            <tr onclick="trClick('ty19')">
+                <td>
+                    <div class="bl"><img src="ty19m1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">中国赛-丁俊晖5-2胜马克·威廉姆斯 八强战希金斯</div>
+                </td>
+            </tr>
+            <tr onclick="trClick('ty20')">
+                <td>
+                    <div class="bl"><img src="ty20m1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">珠海WTA赛启动倒计时200天 携手李娜奉献顶级赛事</div>
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
-</div>
-<div id="category_box" >
-    <div  >
-        <table >
+<div id="category_box">
+    <div>
+        <table>
             <tr onclick="trEtClick('e1');">
-                <td><div class="bl"><img src ="./entertainment/img/e1-1.jpg"></div ></td>
-                <td><div class="blz"; style="font-size:16px"  >40岁妈妈与18岁女儿似双胞胎 身材火辣</div>
-    </td>
-    </tr>
-
-    <tr onclick="trClick('rd2');">
-        <td><div class="bl"><img src ="r2-1.jpg"></div ></td>
-        <td><div class="blz"; style="font-size:16px">抱子上课女教师携子来京治疗</div>
-</td>
-</tr>
-
-<tr onclick="trClick('rd3');">
-    <td><div class="bl"><img src ="r3-1.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">福建首虎行事谨慎不留痕迹 被指地产影子操盘手</div></td>
-</tr>
-<tr onclick="trClick('rd4');">
-    <td><div class="bl"><img src ="r4-1.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">美国冲浪冠军为体育画报拍写真</div></td>
-</tr>
-<tr onclick="trClick('rd5');">
-    <td><div class="bl"><img src ="r5-1.png"></div ></td>
-    <td><div class="blz"; style="font-size:16px">缅甸2枚炮弹落入云南境内 缅媒称至少8人受伤</div></td>
-</tr>
-<tr onclick="trClick('rd6');">
-    <td><div class="bl"><img src ="r6-1.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">庆安枪击事件真相</div></td>
-</tr>
-<tr onclick="trClick('rd7');">
-    <td><div class="bl"><img src ="r7-1.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">三大运营商提速降费方案今日公布</div></td>
-</tr>
-<tr onclick="trClick('rd8');">
-    <td><div class="bl"><img src ="r8-16.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">央行降息后房价走势预测 楼市16大惊天骗局曝光</div></td>
-</tr>
-<tr onclick="trClick('rd9');">
-    <td><div class="bl"><img src ="r9-1.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">印度总理莫迪访华</div></td>
-</tr>
-<tr onclick="trClick('rd10');">
-    <td><div class="bl"><img src ="r10-1.jpg"></div ></td>
-    <td><div class="blz"; style="font-size:16px">中国城市竞争力报告出炉</div></td>
-</tr>
-
-</table>
-</div></div>
-<div class ="float">
+                <td>
+                    <div class="bl"><img src="./entertainment/img/e1-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">40岁妈妈与18岁女儿似双胞胎 身材火辣</div>
+                </td>
+            </tr>
+            <tr onclick="trEtClick('e2');">
+                <td>
+                    <div class="bl"><img src="./entertainment/img/e2-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">2014年娱乐圈一夜暴富的明星</div>
+                </td>
+            </tr>
+            <tr onclick="trEtClick('e3');">
+                <td>
+                    <div class="bl"><img src="./entertainment/img/e3-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">不宁静的宁静</div>
+                </td>
+            </tr>
+            <tr onclick="trEtClick('e4');">
+                <td>
+                    <div class="bl"><img src="./entertainment/img/e4-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">为什么周星驰电影的经典配角离开他却成了路人甲</div>
+                </td>
+            </tr>
+            <tr onclick="trEtClick('e5');">
+                <td>
+                    <div class="bl"><img src="./entertainment/img/e5-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">举报人揭何炅吃空饷不能保证全职 为什么不辞职</div>
+                </td>
+            </tr>
+            <tr onclick="trEtClick('e6');">
+                <td>
+                    <div class="bl"><img src="./entertainment/img/e6-1.png"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">周杰伦教干儿子打篮球 昆凌坐场边贴心相伴</div>
+                </td>
+            </tr>
+            <tr onclick="trEtClick('e7');">
+                <td>
+                    <div class="bl"><img src="./entertainment/img/e7-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">失误导致的经典镜头</div>
+                </td>
+            </tr>
+            <tr onclick="trEtClick('e8');">
+                <td>
+                    <div class="bl"><img src="./entertainment/img/e8-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">妻子嫌弃自己胳膊太粗 杜德伟致歉求救：怎么PS</div>
+                </td>
+            </tr>
+            <tr onclick="trEtClick('e9');">
+                <td>
+                    <div class="bl"><img src="./entertainment/img/e9-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">宋佳穿轻薄睡衣坐窗前 阳光晒过秀玲珑身材</div>
+                </td>
+            </tr>
+            <tr onclick="trEtClick('e10');">
+                <td>
+                    <div class="bl"><img src="./entertainment/img/e10-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">悬崖上的邓紫棋</div>
+                </td>
+            </tr>
+            <tr onclick="trEtClick('e11');">
+                <td>
+                    <div class="bl"><img src="./entertainment/img/e11-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">有一种出门不带腿的幸福叫做小七</div>
+                </td>
+            </tr>
+            <tr onclick="trEtClick('e12');">
+                <td>
+                    <div class="bl"><img src="./entertainment/img/e12-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">林青霞继女穿低胸装与男友合影 亲密搂肩秀恩爱</div>
+                </td>
+            </tr>
+            <tr onclick="trEtClick('e13');">
+                <td>
+                    <div class="bl"><img src="./entertainment/img/e13-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">王祖蓝娇妻深V低胸秀好身材 甜笑露酒窝</div>
+                </td>
+            </tr>
+            <tr onclick="trEtClick('e14');">
+                <td>
+                    <div class="bl"><img src="./entertainment/img/e14-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">苏有朋低调中尽显文艺范</div>
+                </td>
+            </tr>
+            <tr onclick="trEtClick('e15');">
+                <td>
+                    <div class="bl"><img src="./entertainment/img/e15-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">蔡少芬与大女儿小汤圆嘴对嘴玩亲亲</div>
+                </td>
+            </tr>
+            <tr onclick="trEtClick('e16');">
+                <td>
+                    <div class="bl"><img src="./entertainment/img/e16-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">谢霆锋否认为事业延婚期</div>
+                </td>
+            </tr>
+            <tr onclick="trEtClick('e17');">
+                <td>
+                    <div class="bl"><img src="./entertainment/img/e17-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">赵薇最新大尺度写真</div>
+                </td>
+            </tr>
+            <tr onclick="trEtClick('e18');">
+                <td>
+                    <div class="bl"><img src="./entertainment/img/e18-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">香港娱乐圈里的黑社会</div>
+                </td>
+            </tr>
+            <tr onclick="trEtClick('e19');">
+                <td>
+                    <div class="bl"><img src="./entertainment/img/e19-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">马苏拍摄性感写真大片 内衣出镜显纤腰美腿</div>
+                </td>
+            </tr>
+            <tr onclick="trEtClick('e20');">
+                <td>
+                    <div class="bl"><img src="./entertainment/img/e20-1.jpg"></div>
+                </td>
+                <td>
+                    <div class="blz" ; style="font-size:16px">黄渤：黄晓明遇到baby是捡着了</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="float">
     <img src="gg.png">
 </div>
 </div>
 </body>
 <script type="text/javascript">
-    function touchEndFunc() {}
+    function touchEndFunc() {
+    }
     document.addEventListener('touchend', touchEndFunc);
 
 </script>
