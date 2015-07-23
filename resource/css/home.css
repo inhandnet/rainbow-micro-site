@@ -7,10 +7,10 @@ a{
 
 #content
 {
-    padding:25px 15px;
-    background:url(../img/home/bg_home.png);
+    padding:35px 15px 100px 15px;
+    background:url(../img/home/bg.jpg);
     background-size:cover;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .bannerPane{ text-align:center;}
 .bannerPane img {}
