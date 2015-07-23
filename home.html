@@ -2,7 +2,7 @@
 <html>
 	<head>
         <meta charset="utf-8">
-        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 		<meta name="author" content="www.frebsite.nl" />
 		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
 
@@ -12,60 +12,211 @@
 		<link type="text/css" rel="stylesheet" href="resource/css/flexslider.css" />
 		<link type="text/css" rel="stylesheet" href="resource/css/jquery.mmenu.all.css" />
 		<link type="text/css" rel="stylesheet" href="resource/css/style.css" />
-		<link type="text/css" rel="stylesheet" href="resource/css/loopPlayer.css" />
+		<link type="text/css" rel="stylesheet" href="resource/css/home.css" />
 
-        <script type="text/javascript" src="../../resource/js/pvuv.handler.js"></script>
 		<script type="text/javascript" src="resource/js/jquery.min.js"></script>
 		<script type="text/javascript" src="resource/js/jquery.mmenu.min.all.js"></script>
 		<script type="text/javascript" src="resource/js/jquery.flexslider.js"></script>
 		<script type="text/javascript" src="resource/js/o-script.js"></script>
-		<script type="text/javascript" src="resource/js/TouchSlide.1.1.js"></script>
-
+        <script type="text/javascript" src="../../resource/js/pvuv.handler.js"></script>
 	</head>
 	<body class="o-page">
 		<div id="page">
 			<!-- Header -->
-			<div id="header">
-				<a href="#menu"></a>
+			<div id="header-index">
+                <a id="head-left" href="#menu"></a>
 				<span id="Logo" class="svg">
 					<span id="org_name">航美在线</span>
 				</span>
+                <a id="head-right" class="LoginPage" href="apps/login_page/index.html">我要上网</a>
 			</div>
+			<div style="display: none" class="subHeader"><i class="i-home i-small"></i>Welcome friend!</div>
+			
 			<!-- Banner -->
-			<div id="picScroll" class="picScroll">
-				<div class="hd">
-					<span class="next"></span>
-					<ul></ul>
-					<span class="prev"></span>
-					<h3>多图滑动</h3>
+			<div class="bannerPane">
+			  <section class="slider">
+				<div class="flexslider">
+				  <ul class="slides">
+					<li>
+						<img src="resource/img/home/ad_home_01.png" />
+					</li>
+				  </ul>
 				</div>
-				<div class="bd">
-					<ul>
-						<li><img src="resource/img/index/index01.jpg" /></li>
-					</ul>
-
-					<ul>
-						<li><img src="resource/img/index/index02.jpg" /></li>
-					</ul>
-
-					<ul>
-						<li><a href="index.html"><img src="resource/img/index/index03.jpg" /></a></li>
-					</ul>
-				</div>
-
+			  </section>
 			</div>
 			<!-- End Banner -->
-
-		<script type="text/javascript">
-			TouchSlide({
-				slideCell:"#picScroll",
-				titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
-				autoPage:true, //自动分页
-				pnLoop:"false", // 前后按钮不循环
-				switchLoad:"_src" //切换加载，真实图片路径为"_src"
-			});
-		</script>
-
-            <script type="text/javascript" src="config/oem_initial.js"></script>
+			<!-- Content -->
+			<div id="content">
+				<div class="mainIconPane">
+					<a  href="apps/movie-web/main.html">
+						<span class="i-pane i-blue">
+							<img src="resource/img/home/movie.png" class="iconImg"/>
+							<span style="color: #2f2f2f">电影</span>
+						</span>
+					</a>
+				</div>
+				<div class="mainIconPane">
+					<a href="apps/variety-web/main.html">
+						<span class="i-pane i-blue">
+							<img src="resource/img/home/variety.png" class="iconImg"/>
+							<span style="color: #2f2f2f">综艺</span>
+						</span>
+					</a>
+				</div>
+				<div class="mainIconPane">
+					<a href="apps/mv-web/main.html">
+						<span class="i-pane i-blue">
+						<img src="resource/img/home/music.png" class="iconImg"/>
+						<span style="color: #2f2f2f">音乐</span>
+					</span>
+					</a>
+				</div>
+				<div class="mainIconPane">
+					<a href="apps/travel-web/html/main.html">
+						<span class="i-pane i-blue">
+							<img src="resource/img/home/travel.png" class="iconImg"/>
+							<span style="color: #2f2f2f">旅游</span>
+						</span>
+					</a>
+				</div>
+				<ul class="rowNav">
+					<li>
+						<a href="apps/news-web/html/main.html">
+							<div class="">
+								<img src="resource/img/home/news.png" class="iconImg"/>
+								<span style="color: #2f2f2f">资讯</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="apps/bus-web/html/main.html" >
+							<div class="">
+								<img src="resource/img/home/bus.png" class="iconImg"/>
+								<span style="color: #2f2f2f">大巴</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="apps/introduction-web/html/main.html">
+							<div class="">
+								<img src="resource/img/home/hangmei.png" class="iconImg"/>
+								<span style="color: #2f2f2f">航美</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<div class="rowNav application">
+					<a href="apps/application-web/main.html">
+						<div>
+							<img src="resource/img/home/application.png" class="iconImg"/>
+							<span style="color: #2f2f2f">应用</span>
+						</div>
+					</a>
+				</div>
+				<div class="mainIconPane">
+						<span class="i-pane i-green">
+							<a href="apps/read-web/main.html" style="color: #Ffffff">阅读</a>
+						</span>
+				</div>
+				<div class="mainIconPane">
+						<span class="i-pane i-green">
+							<a href="apps/finance-web/main.html" style="color: #Ffffff">财经</a>
+						</span>
+				</div>
+				<div class="mainIconPane">
+						<span class="i-pane i-green">
+							<a href="apps/health-web/main.html" style="color: #Ffffff">健康</a>
+						</span>
+				</div>
+				<div class="mainIconPane">
+						<span class="i-pane i-green">
+							<a href="apps/rentCar-web/main.html" style="color: #Ffffff">租车</a>
+						</span>
+				</div>
+				<div class="mainIconPane">
+						<span class="i-pane i-green">
+							<a href="apps/hotel-web/main.html" style="color: #Ffffff">酒店</a>
+						</span>
+				</div>
+				<div class="mainIconPane">
+						<span class="i-pane i-green">
+							<a href="apps/buyTickets-web/main.html" style="color: #Ffffff">买票</a>
+						</span>
+				</div>
+				<div class="mainIconPane">
+						<span class="i-pane i-green">
+							<a href="apps/audioBook-web/main.html" style="color: #Ffffff">有声读物</a>
+						</span>
+				</div>
+				<div class="mainIconPane">
+						<span class="i-pane i-green">
+							<a href="apps/ChinaPlay-web/main.html" style="color: #Ffffff">曲艺</a>
+						</span>
+				</div>
+				<div class="mainIconPane">
+						<span class="i-pane i-green">
+							<a href="apps/storyTelling-web/main.html" style="color: #Ffffff">评书</a>
+						</span>
+				</div>
+				<div class="mainIconPane">
+						<span class="i-pane i-green">
+							<a href="apps/crossTalk-web/main.html" style="color: #Ffffff">相声</a>
+						</span>
+				</div>
+				<div class="mainIconPane">
+						<span class="i-pane i-green">
+							<a href="apps/game-web/main.html" style="color: #Ffffff">游戏</a>
+						</span>
+				</div>
+				<div class="mainIconPane">
+						<span class="i-pane i-green">
+							<a href="apps/store-web/main.html" style="color: #Ffffff">商城</a>
+						</span>
+				</div>
+				<div class="mainIconPane">
+						<span class="i-pane i-green">
+							<a href="apps/car-web/main.html" style="color: #Ffffff">汽车</a>
+						</span>
+				</div>
+			</div>
+			<!-- Menu navigation -->
+			<nav id="menu">
+				<ul>
+					<li class="Selected">
+						<a href="#">
+							<i class="i-home i-small"></i>我的账户
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="i-about i-small"></i>我的收藏
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="i-blog i-small"></i>我的足迹
+						</a>
+						<ul>
+							<li><a href="#">First Post</a></li>
+							<li>
+								<a href="#">Second Post</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">
+							<i class="i-gallery i-small"></i>我的订单
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="i-shortcodes i-small"></i>我的积分
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 	</body>
+
+    <script type="text/javascript" src="config/oem_initial.js"></script>
 </html>
