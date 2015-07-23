@@ -69,7 +69,6 @@ $(function() {
 
 		window.location.href = 'history.html';
 	});
-
 	selector = new MainSelector($("#main_selector"), $("#home_box"), $("#hot_box"), $("#category_box"));
 
 	homeBox = new HomeBox($("#home_box"), recommandList, classList);
