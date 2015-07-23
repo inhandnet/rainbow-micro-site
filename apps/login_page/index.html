@@ -18,18 +18,62 @@ width = device-width,target-densitydpi = medium-dpi "/>
     <link href="resoureces/css/Rainbow.css" type="text/css" rel="stylesheet" />
     <link href="resoureces/css/button_style.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="../../resource/css/flexslider.css" />
-    <link type="text/css" rel="stylesheet" href="../../resource/css/jquery.mmenu.all.css" />
-    <link type="text/css" rel="stylesheet" href="../../resource/css/style.css" />
 
 </head>
-<body style="background: url('resoureces/images/bg.jpg');background-size: 100%;">
+<body style="">
 <!-- Header -->
-<div id="header">
-    <a href="#menu"></a>
+<style>
+    .this_header{
+        background: #0998d4;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        line-height: 51px;
+        height: 51px;
+        padding: 0 50px;
+    }
+    .this_header span{
+        font-size: 20px;
+        font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+        padding:0px;
+    }
+    .this_header a{
+        display: block;
+        width: 60px;
+        height: 50px;
+        color: #Ffffff;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: inherit;
+    }
+    #head-left
+    {
+        background: url('../../resource/css/fonts/icons.svg') no-repeat -97px -303px;
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 5px;
+        left: 10px;
+    }
+</style>
+<div id="header" class="this_header">
+    <a id="head-left" href="../../home.html"></a>
 				<span id="Logo" class="svg">
-					<span id="org_name">航美在线</span>
+					电影
 				</span>
-    <a class="HomeBtn" href="../../home.html"></a>
+    <a href="../../home.html"><img src="../../resource/img/home/goback.png"></a>
+</div>
+<div class="bannerPane">
+    <section>
+        <div class="flexslider">
+            <ul class="slides">
+                <img src="./resoureces/images/login_banner01.png" />
+            </ul>
+        </div>
+    </section>
 </div>
 <div id="wrapper">
 </div>

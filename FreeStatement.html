@@ -15,6 +15,15 @@
 		<link type="text/css" rel="stylesheet" href="resource/css/style.css" />
 
         <script type="text/javascript" src="../../resource/js/pvuv.handler.js"></script>
+        <script>
+            var sp=document.getElementByID("sp1")
+            {
+                this.onclick=function()
+                {
+                    location.href="xxxxx";
+                }
+            }
+        </script>
 		<style>
 		#p1
 		{
@@ -27,11 +36,20 @@
 		#div1
 		{
 		    background:#0998D4;
-			width:300px;
-			height:40px;
-			margin:0 auto;
+            text-align:center;
+
+
 		}
-		
+		#div2
+        {
+           weith:90%;
+        }
+        #sp1
+        {
+            color :white;
+            font-size: 20px;
+            margin: 10px;
+        }
 		</style>
 
 	</head>
@@ -45,6 +63,7 @@
 				</span>
                 <a class="HomeBtn" href="../../index.html"></a>
             </div>
+            <div id="div2">
             <p id="p1">尊敬的用户，您好！</p>
 			<p id="p2">欢迎您使用由北京航美在线网络技术有限公司免费提供的无线WIFI。但在使用无线WIFI前，请您务必阅读并注意如下事项，用户使用该WIFI系统都将被视作是对本声明全部内容的无异议的认可。</p>
 		    <p id="p2">一、用户在使用该无线WIFI网络时，必须遵守以下规则：</p>
@@ -61,8 +80,9 @@
 我司有权根据实际情况决定及调整提供网络服务的内容，并对其所提供之服务拥有最终解释权。</p>
 		</div>
 		<div id="div1">
-		<span style="margin:0 auto">关闭</span>
+		<span  id="sp1">关闭</span>
 		</div>
+            </div>
 		
 	</body>
 </html>
