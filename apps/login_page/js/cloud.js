@@ -69,12 +69,12 @@
                 "</div>";
 
 var formStr=""+
-                "<form id='sms_form' role='form' style='width: 270px;height: 280px;background-color: #Ffffff;margin-left: auto;margin-right: auto;text-align: center;vertical-align: middle'>"+
+                "<form id='sms_form' role='form' style='width: 270px;height: 220px;background-color: #Ffffff;margin-left: auto;margin-right: auto;text-align: center;vertical-align: middle'>"+
                 "    <div>"+
                 "    <p style='top:7px;font-weight: 700;height: 20px;color: red;' id='error_line'></p>"+
                 "    </div>"+
                 "    <div style='padding-left: 5px;text-align: left;'>"+
-                "    <label for='rainbow_user_phone_number'>手机号</label>"+
+                //"    <label for='rainbow_user_phone_number'>手机号</label>"+
                 "    </div>"+
                 "    <div style='padding-bottom: 10px'>"+
                 "    <div style='text-align: left;padding-left: 5px;'>"+
@@ -87,7 +87,7 @@ var formStr=""+
                 "    </div>"+
                 "    </div>"+
                 "    <div style='padding-left: 5px;text-align: left;padding-top: 10px;'>"+
-                "    <label for='rainbow_user_phone_number'>验证码</label>"+
+                //"    <label for='rainbow_user_phone_number'>验证码</label>"+
                 "    </div>"+
                 "    <div style='padding-bottom: 10px'>"+
                 "    <div>"+
