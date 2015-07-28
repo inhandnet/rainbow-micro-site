@@ -1,8 +1,8 @@
-var VideoPlayer = function(view, player, data, adData) {
+var VideoPlayer = function(view, player, data) {
 
 	// 初始化属性
 	this.data = data;
-	this.adData = adData;
+	//this.adData = adData;
 	this.videoUrl = data.videoUrl;
 	this.isAdEnd = false;
 	this.currentTime = 0;
@@ -16,9 +16,9 @@ var VideoPlayer = function(view, player, data, adData) {
 };
 VideoPlayer.prototype.init = function() {
 	
-	if(!this.adData) {
+	//if(!this.adData) {
 		this.isAdEnd = true;
-	}
+	//}
 	this.view.find("[sid=title]").html(this.data.title);
 	this.view.find("[sid=playLength]").html(this.data.playLength + " min");
 	this.view.find("[sid=poster]").attr("src", this.data.hPosterUrl);
@@ -45,7 +45,7 @@ VideoPlayer.prototype.onPlayBtnClick = function(event) {
 			self.player.currentTime = self.currentTime;
 		}
 	} else {
-		self.player.src = self.adData.adUrl;
+		//self.player.src = self.adData.adUrl;
 	}
 
 	self.player.controls = true;
@@ -90,11 +90,11 @@ VideoPlayer.prototype.setHistory = function() {
 	$.cookie("wefun-history", $.toJSON(history));
 };
 
-var AndroidPlayer = function(view, player, data, adData) {
+var AndroidPlayer = function(view, player, data) {
 
 	// 初始化属性
 	this.data = data;
-	this.adData = adData;
+	//this.adData = adData;
 	this.videoUrl = data.videoUrl;
 	this.isAdEnd = false;
 	this.currentTime = 0;
@@ -113,12 +113,12 @@ var AndroidPlayer = function(view, player, data, adData) {
 };
 AndroidPlayer.prototype.init = function() {
 
-	if(!this.adData) {
+	//if(!this.adData) {
 		this.isAdEnd = true;
 		this.initVideo();
-	} else {
-		this.initAd();
-	}
+	//} else {
+	//	this.initAd();
+	//}
 
 	this.view.find("[sid=title]").html(this.data.title);
 	this.view.find("[sid=playLength]").html(this.data.playLength + " min");
@@ -181,7 +181,7 @@ AndroidPlayer.prototype.initVideo = function() {
 
 AndroidPlayer.prototype.initAd = function() {
 	
-	this.player.src = this.adData.adUrl;
+	//this.player.src = this.adData.adUrl;
 };
 
 AndroidPlayer.prototype.onTriggerClick = function(event) {
@@ -206,7 +206,7 @@ AndroidPlayer.prototype.timeupdate = function(event) {
 
 	var time = this.player.currentTime;
 	if (!this.isAdEnd) {
-		this.adTimeCountBox.html(Math.round(this.adData.adLength - time));
+		//this.adTimeCountBox.html(Math.round(this.adData.adLength - time));
 	}
 	this.currentTime = time;
 };

@@ -37,57 +37,57 @@ $(function() {
 
     var videoId = getUrlParam("wefun-videoId");
     var currentMedia=media._getListById(videoId,function(id,result){
-        loadAdData();
         if(result){
             if(result.length>0){
                 videoData=result[0];
                 initVideoInfo(result[0]);
+                initPlayer(videoData);
                 sendPvuv(videoData.title,"movie.play");
             }
         }
     });
 });
 
-function loadAdData() {
+//function loadAdData() {
+//
+//	myAjax({
+//		type: "get",
+//		url: "../../adList.xml",
+//		dataType: 'xml',
+//		success: function(data) {
+//
+//			if (!data || $(data).find("ad").length == 0) {
+//				initPlayer(videoData, adData);
+//				return;
+//			}
+//			var size = $(data).find("ad").length;
+//			var index = Math.floor(Math.random() * size)
+//			var adXml = $(data).find("ad").eq(index)
+//			adData = {};
+//			adData.adUrl = adXml.find("adUrl").text();
+//			adData.adLength = adXml.find("adLength").text();
+//
+//			initPlayer(videoData, adData);
+//		},
+//		error: function(e) {
+//
+//		}
+//	});
+//};
 
-	myAjax({
-		type: "get",
-		url: "../../adList.xml",
-		dataType: 'xml',
-		success: function(data) {
-
-			if (!data || $(data).find("ad").length == 0) {
-				initPlayer(videoData, adData);
-				return;
-			}
-			var size = $(data).find("ad").length;
-			var index = Math.floor(Math.random() * size)
-			var adXml = $(data).find("ad").eq(index)
-			adData = {};
-			adData.adUrl = adXml.find("adUrl").text();
-			adData.adLength = adXml.find("adLength").text();
-
-			initPlayer(videoData, adData);
-		},
-		error: function(e) {
-			initPlayer(videoData, adData);
-		}
-	});
-};
-
-function initPlayer(videoData, adData) {
+function initPlayer(videoData) {
 
 	if (mui.os.ios) {
 		if (fullscreen(ios_player)) {
 			$("#ios_video_box").removeClass("dn");
-			player = new VideoPlayer($("#ios_video_box"), ios_player, videoData, adData);
+			player = new VideoPlayer($("#ios_video_box"), ios_player, videoData);
 		} else {
 			$("#android_video_box ").removeClass("dn");
-			player = new AndroidPlayer($("#android_video_box"), android_player, videoData, adData);
+			player = new AndroidPlayer($("#android_video_box"), android_player, videoData);
 		}
 	} else {
 		$("#android_video_box ").removeClass("dn");
-		player = new AndroidPlayer($("#android_video_box"), android_player, videoData, adData);
+		player = new AndroidPlayer($("#android_video_box"), android_player, videoData);
 	}
 
 }
