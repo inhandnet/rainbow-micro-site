@@ -21,6 +21,8 @@
 		<script type="text/javascript" src="resource/js/o-script.js"></script>
 		<script type="text/javascript" src="resource/js/TouchSlide.1.1.js"></script>
 
+
+
 	</head>
 	<body class="o-page">
 		<div id="page">
@@ -31,12 +33,12 @@
 				</span>
 			</div>
 			<!-- Banner -->
-			<div id="picScroll" class="picScroll">
-				<div class="hd">
-					<span class="next"></span>
-					<ul></ul>
-					<span class="prev"></span>
-					<h3>多图滑动</h3>
+			<div id="picScroll" class="picScroll" onmouseout="displayN()" onmouseover="displayB()">
+				<div class="hd" >
+					<span class="next" ><img class="img1"src="./resource/img/index/right.png" style="width:60px ;display: none;filter: alpha(opacity=50); opacity:0.5;"  /></span>
+					<ul style="display: none"></ul>
+					<span class="prev" ><img class="img1"src="./resource/img/index/left.png"style="width: 60px;display: none;filter: alpha(opacity=50); opacity:0.5;"/></span>
+
 				</div>
 				<div class="bd">
 					<ul>
@@ -66,4 +68,18 @@
 		</script>
 		<script type="text/javascript" src="config/oem_initial.js"></script>
 	</body>
+    <script>
+        var imgDiv=document.getElementsByClassName("hd")[0];
+        var imgBlock=document.getElementsByClassName("img1");
+       function displayN(){
+
+            imgBlock[0].style.display = "none";
+           imgBlock[1].style.display = "none";
+        }
+        function displayB(){
+            imgBlock[0].style.display = "block";
+            imgBlock[1].style.display = "block";
+        }
+
+    </script>
 </html>

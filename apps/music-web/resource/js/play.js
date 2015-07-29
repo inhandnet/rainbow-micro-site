@@ -46,6 +46,7 @@ $(function() {
             }
         }
     });
+
 });
 
 function loadAdData() {
