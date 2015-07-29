@@ -114,10 +114,10 @@ $(function() {
         });
 
     });
-    var alli_h=$(".img");
-    for(var i=0;i<alli_h.length;i++)
-    {
-        alli_h[i].style.height=window.screen.availWidth*0.26+"px";
-    }  var allRa=$(".jpg");
+//    var alli_h=$(".img");
+//    for(var i=0;i<alli_h.length;i++)
+//    {
+//        alli_h[i].style.height=window.screen.availWidth*0.26+"px";
+//    }  var allRa=$(".jpg");
 
 });

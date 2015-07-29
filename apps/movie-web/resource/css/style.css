@@ -1126,7 +1126,7 @@ header div:last-child i {
 }
 .home .recommend .content .box .img {
   position: relative;
-  /*height:84px;*/
+  height:84px;
 }
 .home .recommend .content .box .img img {
   width: 100%;
