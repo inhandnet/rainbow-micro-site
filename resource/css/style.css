@@ -178,21 +178,6 @@ pre
 /*********************/
 
 @media all and (min-width: 900px) {
-	html, body {
-		height: 100%;
-	}
-	#menu {
-		/*background: #eee;*/
-	}
-	#page {
-		
-		min-height: 100%;
-	}
-	/* hide open-button */
-	a[href="#menu"]
-	{
-		/*display: none !important;*/
-	}
 }
 
 #Logo { height: 41px; display: inline-block; padding-top: 10px; line-height: 40px; }
