@@ -49,6 +49,7 @@ VideoPlayer.prototype.onPlayBtnClick = function(event) {
 	}
 
 	self.player.controls = true;
+
 	self.player.play();
 };
 
@@ -193,6 +194,9 @@ AndroidPlayer.prototype.onTriggerClick = function(event) {
 AndroidPlayer.prototype.onPlayBtnClick = function(event) {
 
 	var self = event.data;
+
+    console.log("movie play 198");
+
 	self.player.play();
 };
 
