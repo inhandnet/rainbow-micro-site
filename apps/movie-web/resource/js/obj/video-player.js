@@ -1,4 +1,4 @@
-var VideoPlayer = function(view, player, data) {
+var VideoPlayer = function(view, data) {
 
 	// 初始化属性
 	this.data = data;
@@ -9,7 +9,11 @@ var VideoPlayer = function(view, player, data) {
 
 	// 定义视图和父容器
 	this.view = view;
-	this.player = player;
+    var currentPlayer=document.getElementById("_player");
+
+    this.player = currentPlayer;
+    console.log("_player : ");
+    console.log(this.player);
 
 	// 执行初始化操作
 	this.init();
@@ -91,7 +95,7 @@ VideoPlayer.prototype.setHistory = function() {
 	$.cookie("wefun-history", $.toJSON(history));
 };
 
-var AndroidPlayer = function(view, player, data) {
+var AndroidPlayer = function(view, data) {
 
 	// 初始化属性
 	this.data = data;
@@ -104,7 +108,13 @@ var AndroidPlayer = function(view, player, data) {
 	
 	// 定义视图和父容器
 	this.view = view;
-	this.player = player;
+
+    var currentPlayer=document.getElementById("_player");
+
+    this.player = currentPlayer;
+    console.log("_player : ");
+    console.log(this.player);
+
 	this.playerTrigger = this.view.find("#player_trigger");
 	this.playerBigBtn = this.view.find("#player_bigBtn");
 	this.adTimeCountBox = this.view.find("#adTimeCount");

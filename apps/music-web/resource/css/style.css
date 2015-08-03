@@ -1126,11 +1126,10 @@ header div:last-child i {
 }
 .home .recommend .content .box .img {
   position: relative;
-  height:84px;
 }
 .home .recommend .content .box .img img {
-  width: 100%;
-  height:100%;
+     width: 100%;
+     height:auto;
 }
 .home .recommend .content .box .img .blackbg {
   position: absolute;
@@ -1196,14 +1195,13 @@ header div:last-child i {
 .hot .top .box {
   margin-bottom: 5px;
   position: relative;
-  height:173px;
 }
 .hot .top .box:last-child {
   margin-bottom: 0;
 }
 .hot .top .box img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .hot .top .box:before {
   content: '';
@@ -1292,22 +1290,21 @@ header div:last-child i {
 }
 .hot .content .box .img {
   position: relative;
-  height:137px;
 }
 .hot .content .box .img img {
-  width: 100%;
-  height:100%;
+    width: 100%;
+    height: auto;
 }
 .hot .content .box .img .blackbg {
-  position: absolute;
+  /*position: absolute;*/
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+    width: auto;
+    height: auto;
   background: url(../pic/0.png) bottom right no-repeat;
 }
 .hot .content .box .img .blackbg span {
-  position: absolute;
+    /*position: absolute;*/
   bottom: 0;
   right: 5px;
   color: white;
@@ -1577,7 +1574,7 @@ header div:last-child i {
 }
 .play .video img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .play .video .text {
   position: absolute;
@@ -1731,11 +1728,10 @@ header div:last-child i {
 }
 .play .recommend .box .img {
   position: relative;
-  height:141px;
 }
 .play .recommend .box .img img {
   width: 100%;
-  height:100%;
+  height:auto;
 }
 .play .recommend .box .img .blackbg {
   position: absolute;

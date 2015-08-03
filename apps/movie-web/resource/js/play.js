@@ -76,25 +76,8 @@ $(function() {
 //};
 
 function initPlayer(videoData) {
-
-    var iosPlayer=document.getElementById("ios_player");
-    var androidPlayer=document.getElementById("android_player");
-    console.log(iosPlayer);
-    console.log(androidPlayer);
-	if (mui.os.ios) {
-		if (fullscreen(ios_player)) {
-			$("#ios_video_box").removeClass("dn");
-            console.log(ios_player);
-			player = new VideoPlayer($("#ios_video_box"), iosPlayer, videoData);
-		} else {
-			$("#android_video_box ").removeClass("dn");
-			player = new AndroidPlayer($("#android_video_box"), androidPlayer, videoData);
-		}
-	} else {
-		$("#android_video_box ").removeClass("dn");
-		player = new AndroidPlayer($("#android_video_box"), androidPlayer, videoData);
-	}
-
+    $("#_video_box ").removeClass("dn");
+    player = new AndroidPlayer($("#_video_box"), videoData);
 }
 
 function initVideoInfo(videoData) {
