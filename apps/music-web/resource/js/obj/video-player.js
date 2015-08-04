@@ -24,7 +24,7 @@ VideoPlayer.prototype.init = function() {
 		this.isAdEnd = true;
 	//}
 	this.view.find("[sid=title]").html(this.data.title);
-	this.view.find("[sid=playLength]").html(this.data.playLength + " min");
+	this.view.find("[sid=playLength]").html(this.data.playLength);
 	this.view.find("[sid=poster]").attr("src", this.data.hPosterUrl);
 	this.view.find("#player_trigger").on("click", this, this.onPlayBtnClick);
 	var self = this;
@@ -132,7 +132,7 @@ AndroidPlayer.prototype.init = function() {
 	//}
 
 	this.view.find("[sid=title]").html(this.data.title);
-	this.view.find("[sid=playLength]").html(this.data.playLength + " min");
+	this.view.find("[sid=playLength]").html(this.data.playLength );
 	this.view.find("[sid=poster]").attr("src", this.data.hPosterUrl);
 	
 	this.playerTrigger.on("click", this, this.onPlayerTriggerClick);

@@ -68,18 +68,46 @@
 		</script>
 		<script type="text/javascript" src="config/oem_initial.js"></script>
 	</body>
-    <script>
+    <script type="text/javascript">
         var imgDiv=document.getElementsByClassName("hd")[0];
         var imgBlock=document.getElementsByClassName("img1");
+//        var imgDiv=document.getElementById("picScroll");
        function displayN(){
 
             imgBlock[0].style.display = "none";
-           imgBlock[1].style.display = "none";
+            imgBlock[1].style.display = "none";
         }
-        function displayB(){
-            imgBlock[0].style.display = "block";
-            imgBlock[1].style.display = "block";
+//        function displayB(){
+//
+//            imgBlock[0].style.display = "block";
+//            imgBlock[1].style.display = "block";
+//
+//
+//        }
+        function displayB() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM)){
+                imgBlock[0].style.display = "block";
+                imgBlock[1].style.display = "block";
+            }
         }
-
+        browserRedirect();
+        //     function mouseMove(){
+//         if(window.screen.width>900){
+//             onmouseover="displayB";
+//         }
+//         else
+//         {
+//             onmouseover="displayN";
+//         }
+//     }
     </script>
 </html>

@@ -24,7 +24,7 @@ VideoPlayer.prototype.init = function() {
 		this.isAdEnd = true;
 	//}
 	this.view.find("[sid=title]").html(this.data.title);
-	this.view.find("[sid=playLength]").html(this.data.playLength + " min");
+	this.view.find("[sid=playLength]").html(this.data.playLength);
 	this.view.find("[sid=poster]").attr("src", this.data.hPosterUrl);
 	this.view.find("#player_trigger").on("click", this, this.onPlayBtnClick);
 	var self = this;
@@ -116,7 +116,7 @@ var AndroidPlayer = function(view, data) {
     console.log(this.player);
 
 	this.playerTrigger = this.view.find("#player_trigger");
-	this.playerBigBtn = this.view.find("#player_bigBtn");
+	this.playerBigBtn = this.view.find("#a");
 	this.adTimeCountBox = this.view.find("#adTimeCount");
 
 	// 执行初始化操作
@@ -132,7 +132,7 @@ AndroidPlayer.prototype.init = function() {
 	//}
 
 	this.view.find("[sid=title]").html(this.data.title);
-	this.view.find("[sid=playLength]").html(this.data.playLength + " min");
+	this.view.find("[sid=playLength]").html(this.data.playLength);
 	this.view.find("[sid=poster]").attr("src", this.data.hPosterUrl);
 	
 	this.playerTrigger.on("click", this, this.onPlayerTriggerClick);
