@@ -66,7 +66,7 @@ VideoItem.prototype.init = function() {
 
 	this.view.find("[sid=poster]").attr("src", this.posterUrl);
 	this.view.find("[sid=poster]").attr("alt", this.title);
-	this.view.find("[sid=playLength]").html(this.playLength + " min");
+	this.view.find("[sid=playLength]").html(this.playLength );
 	this.view.find("[sid=title]").html(this.getTitle());
 	this.view.on("click", this, this.onVideoClick);
 };

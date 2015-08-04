@@ -1,4 +1,4 @@
-var VideoPlayer = function(view, player, data) {
+var VideoPlayer = function(view, data) {
 
 	// 初始化属性
 	this.data = data;
@@ -9,7 +9,11 @@ var VideoPlayer = function(view, player, data) {
 
 	// 定义视图和父容器
 	this.view = view;
-	this.player = player;
+    var currentPlayer=document.getElementById("_player");
+
+    this.player = currentPlayer;
+    console.log("_player : ");
+    console.log(this.player);
 
 	// 执行初始化操作
 	this.init();
@@ -20,7 +24,7 @@ VideoPlayer.prototype.init = function() {
 		this.isAdEnd = true;
 	//}
 	this.view.find("[sid=title]").html(this.data.title);
-	this.view.find("[sid=playLength]").html(this.data.playLength + " min");
+	this.view.find("[sid=playLength]").html(this.data.playLength);
 	this.view.find("[sid=poster]").attr("src", this.data.hPosterUrl);
 	this.view.find("#player_trigger").on("click", this, this.onPlayBtnClick);
 	var self = this;
@@ -91,7 +95,7 @@ VideoPlayer.prototype.setHistory = function() {
 	$.cookie("wefun-history", $.toJSON(history));
 };
 
-var AndroidPlayer = function(view, player, data) {
+var AndroidPlayer = function(view, data) {
 
 	// 初始化属性
 	this.data = data;
@@ -104,9 +108,15 @@ var AndroidPlayer = function(view, player, data) {
 	
 	// 定义视图和父容器
 	this.view = view;
-	this.player = player;
+
+    var currentPlayer=document.getElementById("_player");
+
+    this.player = currentPlayer;
+    console.log("_player : ");
+    console.log(this.player);
+
 	this.playerTrigger = this.view.find("#player_trigger");
-	this.playerBigBtn = this.view.find("#player_bigBtn");
+	this.playerBigBtn = this.view.find("#a");
 	this.adTimeCountBox = this.view.find("#adTimeCount");
 
 	// 执行初始化操作
@@ -122,7 +132,7 @@ AndroidPlayer.prototype.init = function() {
 	//}
 
 	this.view.find("[sid=title]").html(this.data.title);
-	this.view.find("[sid=playLength]").html(this.data.playLength + " min");
+	this.view.find("[sid=playLength]").html(this.data.playLength);
 	this.view.find("[sid=poster]").attr("src", this.data.hPosterUrl);
 	
 	this.playerTrigger.on("click", this, this.onPlayerTriggerClick);

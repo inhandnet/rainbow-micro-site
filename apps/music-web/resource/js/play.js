@@ -42,11 +42,10 @@ $(function() {
                 videoData=result[0];
                 initVideoInfo(result[0]);
                 initPlayer(videoData);
-                sendPvuv(videoData.title,"mv.play");
+                sendPvuv(videoData.title,"movie.play");
             }
         }
     });
-
 });
 
 //function loadAdData() {
@@ -71,31 +70,14 @@ $(function() {
 //			initPlayer(videoData, adData);
 //		},
 //		error: function(e) {
-//			initPlayer(videoData, adData);
+//
 //		}
 //	});
 //};
 
-function initPlayer(videoData, adData) {
-
-    var iosPlayer=document.getElementById("ios_player");
-    var androidPlayer=document.getElementById("android_player");
-    console.log(iosPlayer);
-    console.log(androidPlayer);
-    if (mui.os.ios) {
-        if (fullscreen(ios_player)) {
-            $("#ios_video_box").removeClass("dn");
-            console.log(ios_player);
-            player = new VideoPlayer($("#ios_video_box"), iosPlayer, videoData);
-        } else {
-            $("#android_video_box ").removeClass("dn");
-            player = new AndroidPlayer($("#android_video_box"), androidPlayer, videoData);
-        }
-    } else {
-        $("#android_video_box ").removeClass("dn");
-        player = new AndroidPlayer($("#android_video_box"), androidPlayer, videoData);
-    }
-
+function initPlayer(videoData) {
+    $("#_video_box ").removeClass("dn");
+    player = new AndroidPlayer($("#_video_box"), videoData);
 }
 
 function initVideoInfo(videoData) {

@@ -66,7 +66,7 @@
             videoUrl: "./video/huangfeihong.mp4",
             hPosterUrl: "./img/i_h_1.jpg",
             vPosterUrl: "./img/i_v_1.jpg",
-            fileSize: "40000",
+            fileSize: "",
             director: "Joe Johnston",
             writer: "Christopher Markus",
             starring: "Chris Evans/Hayley Atwell/Sebastian Stan",
