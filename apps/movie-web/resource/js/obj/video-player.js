@@ -252,7 +252,7 @@ AndroidPlayer.prototype.onPlayerTriggerClick = function(event) {
 		return false;
 	}
 	self.playerBigBtn.show();
-	self.timeoutId = setTimeout("$('#android_video_box').find('#player_bigBtn').hide();", 10)
+	self.timeoutId = setTimeout("$('#_video_box').find('#player_bigBtn').hide();", 10)
 };
 
 AndroidPlayer.prototype.launchFullScreen = function(element) {

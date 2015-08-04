@@ -1673,7 +1673,7 @@ header div:last-child i {
   color: white;
 }
 .play .navigator_subnav {
-  position: relative;
+  /*position: relative;*/
   z-index: 1;
   height: 36px;
   background-color: white;
