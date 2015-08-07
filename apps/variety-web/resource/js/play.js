@@ -16,24 +16,25 @@ $(function() {
     var recommandHtml="";
     $(recommandList).each(function(k, v) {
         recommandHtml += "<div class='box' videoId='"+ v.id+"'>";
-        recommandHtml += "<div class='boxshadow'>";
+        recommandHtml += "<div class='boxshadow' >";
         recommandHtml += "<div class='img'>";
-        recommandHtml += "<img src='"+v.vPosterUrl+"'>";
+        recommandHtml += "<img src='"+v.vPosterUrl+"' class='imgList'>";
         recommandHtml += "<div class='blackbg'>";
         recommandHtml += "<span>"+ v.playLength+"</span>";
         recommandHtml += "</div></div>";
-        recommandHtml += "<div class='text'>";
+        recommandHtml += "<div class='text'style='white-space: nowrap;text-overflow:ellipsis; overflow:hidden;'>";
         recommandHtml += v.title;
         recommandHtml += "</div>";
         recommandHtml += "</div></div>";
     });
+
     $('#recommendBox').empty().append(recommandHtml);
 
-	commonSelector = new CommonSelector([$("#recommendBtn"), $("#overviewBtn")], [$("#recommendBox"), $("#overviewBox")]);
-	$("#recommendBox").find(".box").on("click", function() {
+    commonSelector = new CommonSelector([$("#recommendBtn"), $("#overviewBtn")], [$("#recommendBox"), $("#overviewBox")]);
+    $("#recommendBox").find(".box").on("click", function() {
 
-		window.location.href = 'play.html?wefun-videoId=' + $(this).attr("videoId");
-	});
+        window.location.href = 'play.html?wefun-videoId=' + $(this).attr("videoId");
+    });
 
     var videoId = getUrlParam("wefun-videoId");
     var currentMedia=media._getListById(videoId,function(id,result){
@@ -42,7 +43,7 @@ $(function() {
                 videoData=result[0];
                 initVideoInfo(result[0]);
                 initPlayer(videoData);
-                sendPvuv(videoData.title,"variety.play");
+                sendPvuv(videoData.title,"movie.play");
             }
         }
     });
@@ -74,7 +75,15 @@ $(function() {
 //		}
 //	});
 //};
+//var imgPlay =document.getElementById("imgPlay");
+//   imgPlay.setAttribute("src","sid=vPosterUrl");
 
+
+function playVideo(){
+    document.getElementById("videoPlay").style.display="block";
+    document.getElementById("introduce").style.display="none";
+    document.getElementById("_player").autoplay="autoplay";
+}
 function initPlayer(videoData) {
     $("#_video_box ").removeClass("dn");
     player = new AndroidPlayer($("#_video_box"), videoData);
@@ -82,22 +91,37 @@ function initPlayer(videoData) {
 
 function initVideoInfo(videoData) {
 
-	$("#overviewBox").find("[sid=director]").html(videoData.director);
-	$("#overviewBox").find("[sid=writer]").html(videoData.writer);
-	$("#overviewBox").find("[sid=starring]").html(videoData.starring);
-	$("#overviewBox").find("[sid=intro]").html(videoData.intro);
+    $("#overviewBox").find("[sid=director]").html(videoData.director);
+    $("#overviewBox").find("[sid=writer]").html(videoData.writer);
+    $("#overviewBox").find("[sid=starring]").html(videoData.starring);
+    $("#overviewBox").find("[sid=intro]").html(videoData.intro);
+    $("#overviewBox").find("[sid=title]").html(videoData.title);
+    $("#overviewBox").find("[sid=vPosterUrl]").html(videoData.vPosterUrl);
+    $("#overviewBox").find("[sid=classId1]").html(videoData.classId1);
+    var image=$(".image")[0];
+    var imgUrl=$(".imgUrl")[0];
+    $(".image")[0].setAttribute("src",imgUrl.innerText);
+
+
+
+    //}
 }
 
+
 $(".appbar ").click(function() {
-	$(this).hide();
+    $(this).hide();
 });
 
 var fullscreen = function(elem) {
-	var prefix = 'webkit';
-	if (elem[prefix + 'EnterFullScreen']) {
-		return prefix + 'EnterFullScreen';
-	} else if (elem[prefix + 'RequestFullScreen']) {
-		return prefix + 'RequestFullScreen';
-	};
-	return false;
+    var prefix = 'webkit';
+    if (elem[prefix + 'EnterFullScreen']) {
+        return prefix + 'EnterFullScreen';
+    } else if (elem[prefix + 'RequestFullScreen']) {
+        return prefix + 'RequestFullScreen';
+    };
+    return false;
 };
+
+
+
+

@@ -54,49 +54,110 @@
             width:100%;
             height:auto;
         }
+        .jz
+        {
+
+            margin:0px 20px 20px 0px;
+            vertical-align:middle;
+            text-align:right;
+        }
+        #videoPlay{
+          background-color:white;
+          display:none;
+        }
+        #imgPlay{
+            margin:5px 20px 5px 20px;
+            height: 160px
+        }
+        #clearFloat{
+            clear:both;
+        }
     </style>
     <div id="header" class="this_header">
         <a id="head-left" href="main.html"></a>
             <span id="Logo" class="svg">
-                电影
+                详情
             </span>
         <a href="../../home.html"><img src="../../resource/img/home/goback.png"></a>
     </div>
-		<div class="play mgt50">
-            <!-- player box -->
-            <div id="_video_box" class="video dn">
-              <video id="_player" controls="controls" width="100%" style=" top: 0; right: 0;  bottom: 0;  left: 0;  width: 100%; z-index: 900; display: none; " webkit-playsinline></video>
-				<div sid="posterBox" style="z-index: 9000;">
-                    <img sid="poster" style="z-index: 9000;">
-                    <div class="text" style="z-index: 9000;">
-                        <span sid="title"></span>
-                        <em sid="playLength"></em>
-                    </div>
-                </div>
-                <div id="player_trigger" class="trigger"></div>
-                <div id="player_bigBtn" class="playbtn start" style="display: block;"></div>
-                <div id="adTimeCount" class="countdown" style="display: none;">
-                </div>
+    <div id="videoPlay" class="play mgt50"  >
+    <div id="_video_box" class="video dn">
+        <video id="_player" controls="controls" preload="auto" width="100%"   style=" top: 0; right: 0;  bottom: 0;  left: 0;  width: 100%; z-index: 900; display: none; " webkit-playsinline></video>
+        <div sid="posterBox" style="z-index: 9000;">
+            <img  sid="poster" style="z-index: 9000;">
+            <div class="text" style="z-index: 9000;">
+                <span sid="title"></span>
+                <em sid="playLength"></em>
             </div>
-			<div class="navigator_subnav">
-				<span id="recommendBtn" class="on">推荐</span>
-				<span id="overviewBtn">影片简介</span>
-			</div>
+        </div>
+        <div id="player_trigger" class="trigger"></div>
+        <div id="player_bigBtn" class="playbtn start" style="display: block;"></div>
+        <div id="adTimeCount" class="countdown" style="display: none;">
+        </div>
+    </div>
+        </div>
+		<div id="introduce" class="play mgt50"  style="background-color: white">
+
+            <!--<!-- player box -->
+            <!--<div id="_video_box" class="video dn">-->
+              <!--<video id="_player" controls="controls" width="100%" style=" top: 0; right: 0;  bottom: 0;  left: 0;  width: 100%; z-index: 900; display: none; " webkit-playsinline></video>-->
+				<!--<div sid="posterBox" style="z-index: 9000;">-->
+                    <!--<img sid="poster" style="z-index: 9000;">-->
+                    <!--<div class="text" style="z-index: 9000;">-->
+                        <!--<span sid="title"></span>-->
+                        <!--<em sid="playLength"></em>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div id="player_trigger" class="trigger"></div>-->
+                <!--<div id="player_bigBtn" class="playbtn start" style="display: block;"></div>-->
+                <!--<div id="adTimeCount" class="countdown" style="display: none;">-->
+                <!--</div>-->
+            <!--</div>-->
+			<!--<div class="navigator_subnav">-->
+				<!--<span id="recommendBtn" class="on">推荐</span>-->
+				<!--<span id="overviewBtn">影片简介</span>-->
+			<!--</div>-->
 			<!-- recommend -->
+            <div id="overviewBox"  align="left">
+                <!--<script>-->
+                    <!--var url=document.getElementById('swpu123').innerHTML;-->
+                    <!--doc=document.createElement("img");-->
+                    <!--doc.src=url;-->
+                    <!--document.getElementById('overviewBox').appendChild(doc);-->
+                    <!--doc.align="left";-->
+                    <!--doc.style="margin:5px 20px 5px 20px;height: 160px";-->
+
+                <!--</script>-->
+                <div>
+                <img src="" style="margin: 0px 5px 0px 5px ;width: 33.3%;float:left" class="image">
+
+                <div style="margin: 5px;">
+                  <p style="font-size: 16px"><strong  sid="title" > </strong></p>
+                  <p>演员:<span sid="starring"></span>
+                    </p>
+                   <p>类型:<span sid="classId1"></span>
+                    </p>
+                  <p>导演: <span sid="director"></span>
+                    <p style="display: none"> <span sid="vPosterUrl" class="imgUrl"></span>
+
+                </div>
+                    <div id="clearFloat"></div>
+                <div class="jz">
+                   <img src="./img/play.jpg" style="width: 100px;height: auto" onclick="playVideo()">
+                </div></div>
+
+            <hr/>
+            <div>影片简介：</div>
+            <div sid="intro" class="text" style="margin: 10px;text-indent:30px;">
+            </div>
+            </div>
+            <hr/>
+            <div>热门推荐：</div>
 			<div id="recommendBox" class="recommend">
 
 			</div>
 			<!-- overview -->
-			<div id="overviewBox" class="overview dn">
-				<p><b>导演:</b> <span sid="director"></span>
-				</p>
-				<p><b>作者:</b><span sid="writer"></span>
-				</p>
-				<p><b>演员:</b><span sid="starring"></span>
-				</p>
-				<div sid="intro" class="text">
-				</div>
-			</div>
+
 		</div>
         <div class="float">
             <img src="../../resource/img/ad/ad_bottom.png">
@@ -111,14 +172,14 @@
 		<script type="text/javascript" src="./resource/js/obj/common-selector.js"></script>
 		<script type="text/javascript" src="./resource/js/obj/video-player.js"></script>
 		<script type="text/javascript" src="./resource/js/play.js"></script>
-		<script type="text/javascript">
-//			function touchEndFunc() {}
-//			document.addEventListener('touchend', touchEndFunc);
-//
-//			var realWidth = $(window).width();
-//			$("#android_video_box").css("width", realWidth + "px");
-//			$("#android_video_box").css("height", realWidth * 9 / 16 + "px");
-		</script>
+		<!--<script type="text/javascript">-->
+<!--//			function touchEndFunc() {}-->
+<!--//			document.addEventListener('touchend', touchEndFunc);-->
+<!--//-->
+<!--//			var realWidth = $(window).width();-->
+<!--//			$("#android_video_box").css("width", realWidth + "px");-->
+<!--//			$("#android_video_box").css("height", realWidth * 9 / 16 + "px");-->
+		<!--</script>-->
 	</body>
 
 </html>

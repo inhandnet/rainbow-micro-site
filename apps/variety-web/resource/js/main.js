@@ -115,3 +115,12 @@ $(function() {
 
     });
 });
+function Compression(){
+    var text1=$(".text");
+    for(var i=0;i<text1.length;i++)
+    {
+        if(text1[i].innerHTML.length>6){
+            text1[i].innerHTML=text1[i].innerHTML.slice(0,6)+"..."
+        }
+    }
+}
