@@ -26,13 +26,15 @@ $(function() {
     var contentList=media._getHotContentList();
     var topHtml="";
     $(topList).each(function(k, v) {
-        topHtml += "<div class='box' videoId='"+ v.id+"'>";
-        topHtml += "<img src='"+ v.hPosterUrl+"'>";
-        topHtml += "<div class='text'>";
-        topHtml += "<span>"+ v.title+"</span>";
-        topHtml += "<em>"+ v.playLength+"</em>";
+        topHtml += "<div class='box '  videoId='"+ v.id+"'>";
+        topHtml += "<div class='boxshadow'>";
+        topHtml += "<div class='img'>";
+        topHtml += "<img src='"+ v.vPosterUrl+"'>";
+//        topHtml += "<div class='blackbg'>";
+//        topHtml += "<span>"+ v.playLength+"</span>";
         topHtml += "</div>";
-        topHtml += "</div>";
+        topHtml += "<div class='text'>"+ v.title+"</div>";
+        topHtml += "</div></div>";
     });
     $('#hot_box .top').empty().append(topHtml);
     var contentHtml="";
@@ -41,9 +43,9 @@ $(function() {
         contentHtml += "<div class='boxshadow'>";
         contentHtml += "<div class='img'>";
         contentHtml += "<img src='"+ v.vPosterUrl+"'>";
-        contentHtml += "<div class='blackbg'>";
-        contentHtml += "<span>"+ v.playLength+"</span>";
-        contentHtml += "</div></div>";
+//        contentHtml += "<div class='blackbg'>";
+//        contentHtml += "<span>"+ v.playLength+"</span>";
+        contentHtml += "</div>";
         contentHtml += "<div class='text'>"+ v.title+"</div>";
         contentHtml += "</div></div>";
     });

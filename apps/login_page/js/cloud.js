@@ -60,16 +60,16 @@
                 "</div>";
 
 var formStr=""+
-                "<form id='sms_form' role='form' style='width: 270px;height: 250px;background-color: #Ffffff;margin-left: auto;margin-right: auto;text-align: center;vertical-align: middle'>"+
+                "<form id='sms_form' role='form' style='width: 95%;height: 250px;background-color: #Ffffff;margin-left: auto;margin-right: auto;text-align: center;vertical-align: middle'>"+
                 "    <div>"+
-                "    <p style='top:7px;font-weight: 700;height: 20px;color: red;' id='error_line'></p>"+
                 "    </div>"+
                 "    <div style='padding-left: 5px;text-align: left;'>"+
                 //"    <label for='rainbow_user_phone_number'>手机号</label>"+
                 "    </div>"+
                 "    <div style='padding-bottom: 10px'>"+
                 "    <div style='text-align: left;padding-left: 5px;'>"+
-                "    <input type='text' id='rainbow_user_phone_number' style='width:90%;BORDER-RIGHT:0px solid; BORDER-TOP:0px solid; FONT-SIZE: 9pt; BORDER-LEFT:0px solid; BORDER-BOTTOM:1px solid;border-bottom-color: #737373' lang='{placeholder:enter_mobile_number}' />"+
+                "    <input type='text' id='rainbow_user_phone_number' style='width:60%;margin-top: 20px ;height:40px;BORDER-RIGHT:1px solid #C8C8C8; BORDER-TOP:1px solid #C8C8C8; FONT-SIZE: 9pt; BORDER-LEFT:1px solid #C8C8C8; BORDER-BOTTOM:1px solid #C8C8C8;border-bottom-color: #C8C8C8' lang='{placeholder:enter_mobile_number}' />"+
+                "    <a class='button blue small' style='padding-top:12px;vertical-align: middle;height:40px ;width: 35%;background: #8FC52D ;font-size: 14px;' href='javascript:void(0)' id='rainbow_get_user_password' lang='text:get_code'>GET CODE</a>"+
                 "    </div>"+
                 "    </div>"+
                 "    <div>"+
@@ -84,8 +84,8 @@ var formStr=""+
                 "    <div>"+
                 "    <div>"+
                 "    <div style='text-align: left;padding-left: 5px;'>"+
-                "    <input type='text' id='rainbow_user_password' style='width:60%;BORDER-RIGHT:0px solid; BORDER-TOP:0px solid; FONT-SIZE: 9pt; BORDER-LEFT:0px solid; BORDER-BOTTOM:1px solid;border-bottom-color: #737373' lang='{placeholder:enter_password}'>"+
-                "    <a class='button blue small' href='javascript:void(0)' id='rainbow_get_user_password' lang='text:get_code'>GET CODE</a>"+
+                "    <input type='text' id='rainbow_user_password' style='width:95%; height:40px;BORDER-RIGHT:1px solid #C8C8C8; BORDER-TOP:1px solid #C8C8C8; FONT-SIZE: 9pt; BORDER-LEFT:1px solid #C8C8C8; BORDER-BOTTOM:1px solid #C8C8C8;border-bottom-color: #C8C8C8' lang='{placeholder:enter_password}'>"+
+
                 "</div>"+
                 "</div>"+
                 "</div>"+
@@ -94,20 +94,21 @@ var formStr=""+
                 "<span id='rainbow_password_error' class='rainbow_error_tips'></span>"+
                 "</div>"+
                 "<div class='row row_min_width' style='font-size: 12px'>"+
-                "    <div class='col-lg-15 col-xs-15' style='text-align: center'>"+
+                "    <div class='col-lg-15 col-xs-15' style='text-align: left'>"+
                 "    <label id='agree' for='rainbow_agree_conditions_terms'>"+
                 "    <input type='checkbox' id='rainbow_agree_conditions_terms' />"+
                 "    <span class='check color_white'></span>"+
                 "    </label>"+
-                "    <a href='./FreeStatement.html' id='conditions_terms' style='color:#114A7B;font-weight: 700' href=''>Wi-Fi使用协议</a>"+
+                "    <a href='./FreeStatement.html' id='conditions_terms' style='color:#114A7B;font-weight: 700' href=''>航美在线免费声明</a>"+
                 "    </div>"+
                 "</div>"+
                 "<div>"+
-                "    <div style='padding-bottom: 19px'>"+
-                "    <a href='javascript:void(0)' style='width: 200px' class='btn btn-info btn-raised log_btn_pc_show no_border_radius ' id='rainbow_loginBtn'></a>"+
+                "    <div style=''>"+
+                "    <a href='javascript:void(0)' style='width: 98%' class='btn btn-info btn-raised log_btn_pc_show no_border_radius ' id='rainbow_loginBtn'></a>"+
                 "    <a href='javascript:void(0)' style='width: 200px;display:none' class='btn btn-info btn-raised log_btn_pc_show no_border_radius ' id='rainbow_loginBtn_bak' disabled='disabled'></a>"+
                 "    </div>"+
                 "    </div>"+
+                "    <p style='top:7px;font-weight: 700;height: 20px;color: red;' id='error_line'></p>"+
                 "    <div>"+
                 "    <span id='rainbow_login_error'></span>"+
                 "</div>"+

@@ -168,7 +168,9 @@ pre
 #content,
 .content
 {
-	padding: 10px;
+	padding-left:10px;
+    padding-top:0px;
+
 }
 .slides li:last-child img
 {
