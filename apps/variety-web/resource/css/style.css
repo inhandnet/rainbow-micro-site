@@ -962,6 +962,7 @@ header div:last-child i {
 }
 .home {
     margin-top: 86px;
+    margin-bottom: 30px;
     padding-bottom: 40px;
     background-color: #e1e1e1;
     overflow-y: auto;
@@ -1185,6 +1186,7 @@ header div:last-child i {
 }
 .hot {
     margin-top: 86px;
+    margin-bottom: 30px;
     padding-bottom: 40px;
     /*background-color: #e1e1e1;*/
     overflow-y: auto;
