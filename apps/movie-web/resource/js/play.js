@@ -83,6 +83,32 @@ function playVideo(){
     document.getElementById("videoPlay").style.display="block";
     document.getElementById("introduce").style.display="none";
     document.getElementById("_player").autoplay="autoplay";
+    document.getElementById("_player").style.display="block";
+    document.getElementById("posterBox").style.display="none";
+    document.getElementById("player_bigBtn").style.display="none";
+    document.getElementsByClassName("float")[0].style.display="none";
+    document.getElementById("videoPlay").style.backgroundColor="#000000";
+    if($(self.player).is(":hidden")){
+        $(self.player).show();
+        self.adTimeCountBox.show();
+        self.view.find("[sid=posterBox]").hide();
+        self.playerBigBtn.addClass("stop");
+        self.playerBigBtn.removeClass("start");
+        self.player.play();
+        self.playerBigBtn.hide();
+    } else if (self.player.paused) {
+
+        self.playerBigBtn.addClass("stop");
+        self.playerBigBtn.removeClass("start");
+        self.player.play();
+        self.playerBigBtn.hide();
+    } else {
+        self.player.pause();
+        self.playerBigBtn.removeClass("stop");
+        self.playerBigBtn.addClass("start");
+        clearTimeout(self.timeoutId);
+    }
+
 }
 function initPlayer(videoData) {
     $("#_video_box ").removeClass("dn");
