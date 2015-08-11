@@ -139,7 +139,7 @@ AndroidPlayer.prototype.init = function() {
 
 	var self = this;
 	this.playerBigBtn.on("click", this, function() {
-		
+
 		if($(self.player).is(":hidden")){
 			$(self.player).show();
 			self.adTimeCountBox.show();
