@@ -15,15 +15,15 @@
 		<link type="text/css" rel="stylesheet" href="../../resource/css/style.css" />
 
         <script type="text/javascript" src="../../resource/js/pvuv.handler.js"></script>
-        <script>
-            var sp=document.getElementById("sp1")
-            {
-                this.onclick=function()
-                {
-                    location.href="./index.html";
-                }
-            }
-        </script>
+        <!--<script>-->
+            <!--var sp=document.getElementById("sp1")-->
+            <!--{-->
+                <!--this.onclick=function()-->
+                <!--{-->
+                    <!--location.href="./index.html";-->
+                <!--}-->
+            <!--}-->
+        <!--</script>-->
 		<style>
 		#p1
 		{
@@ -40,18 +40,43 @@
 
 
 		}
-		#div2
-        {
-           weith:90%;
-        }
-        #sp1
-        {
-            color :white;
-            font-size: 20px;
-            margin: 10px;
-        }
+		/*#div2*/
+        /*{*/
+           /*weith:90%;*/
+        /*}*/
+        /*#sp1*/
+        /*{*/
+            /*color :white;*/
+            /*font-size: 20px;*/
+            /*margin: 10px;*/
+        /*}*/
+        /*.a1{*/
+                /*height: 30px;*/
+            /*width: 90px;*/
+                /*background-color: #0998D4;*/
+                /*text-align:center;*/
+            /*}*/
+            .button1
+            {
+                width: 90%;
+                height: 35px;
+                background-color: #0998D4;
+                border: none;
+                font-size: 18px;
+                font-family:"Microsoft YaHei,微软雅黑";
+                color: #FFFFFF;
+            }
+            .close1
+            {
+                text-align:center;
+                margin-bottom: 10px;
+            }
 		</style>
-
+<script>
+    function openpage(){
+        window.location.replace("./index.html");
+    }
+    </script>
 	</head>
 	<body class="o-page">
 		<div id="page">
@@ -79,10 +104,11 @@
 			5.因无线WIFI受限于用户数量及运营商网络信号，在使用过程中可能出现信号不流畅、信号突然中断等技术问题，您正在发送的信息将有可能中断，我们将尽快解决。但对于由此可能给您带来时间或金钱损失的，我们不做任何保证，不承担任何责任。<br/>
 我司有权根据实际情况决定及调整提供网络服务的内容，并对其所提供之服务拥有最终解释权。</p>
 		</div>
-		<div id="div1">
-		<span  id="sp1">关闭</span>
-		</div>
+            <div class="close1"style="">
+          <button class="button1"onclick="openpage()">关闭</button></div>
             </div>
-		
+        <!--<div id="div1">-->
+            <!--<b  id="sp1">关闭</b>-->
+        <!--</div>-->
 	</body>
 </html>

@@ -29,6 +29,8 @@
         {
             id: "1",
             classId: [1, 4, 2],
+            country:"中国",
+            time:"2014年",
             classId1:"爱情，剧情，喜剧",
             title: "心花怒放",
             playLength: "117 min",
@@ -54,6 +56,8 @@
             id: "2",
             classId: [4, 3, 1],
             classId1:"爱情，剧情，动作",
+            time:"2014年",
+            country:"中国",
             title: "黄飞鸿",
             playLength: "124 min",
             banner: {
@@ -78,6 +82,8 @@
             id: "3",
             classId: [1, 4],
             classId1:"爱情，剧情",
+            time:"2013年",
+            country:"中国",
             title: "一场风花雪月的事",
             playLength: "93 min",
             banner: {
@@ -102,6 +108,8 @@
             id: "4",
             classId: [2],
             classId1:"喜剧",
+            time:"2013年",
+            country:"中国",
             title: "女人公敌",
             playLength: "93 min",
             banner: {
@@ -126,6 +134,8 @@
             id: "5",
             classId: [1,2, 4],
             classId1:"爱情，剧情，喜剧",
+            time:"2013年",
+            country:"中国",
             title: "暴走吧女人",
             playLength: "93 min",
             banner: {
@@ -150,6 +160,8 @@
             id: "6",
             classId: [2],
             classId1:"喜剧",
+            time:"2013年",
+            country:"中国",
             title: "阳光的快乐生活",
             playLength: "93 min",
             banner: {
@@ -174,6 +186,8 @@
             id: "7",
             classId: [1, 2],
             classId1:"爱情，喜剧",
+            time:"2013年",
+            country:"中国",
             title: "大叔我爱你",
             playLength: "93 min",
             banner: {
@@ -198,6 +212,8 @@
             id: "8",
             classId: [3, 9],
             classId1:"犯罪，动作",
+            time:"2013年",
+            country:"韩国",
             title: "夺宝联盟",
             playLength: "93 min",
             banner: {
@@ -222,6 +238,8 @@
             id: "9",
             classId: [1, 4],
             classId1:"爱情，剧情",
+            time:"2012年",
+            country:"中国",
             title: "下一个奇迹",
             playLength: "93 min",
             banner: {
@@ -246,6 +264,8 @@
             id: "10",
             classId: [ 2, 3, 5],
             classId1:"喜剧，科幻，动作",
+            vtime:"2012年",
+            country:"中国",
             title: "超时空救兵",
             playLength: "95 min",
             banner: {
@@ -270,6 +290,8 @@
             id: "11",
             classId: [1, 2, 4],
             classId1:"爱情，剧情，喜剧",
+            time:"2012年",
+            country:"中国",
             title: "关于爱情和那些魔鬼",
             playLength: "93 min",
             banner: {
@@ -294,6 +316,8 @@
             id: "12",
             classId: [3, 4],
             classId1:"剧情，动作",
+            time:"2011年",
+            country:"中国",
             title: "武侠",
             playLength: "93 min",
             banner: {
@@ -318,6 +342,8 @@
             id: "13",
             classId: [7],
             classId1:"动画",
+            time:"2010年",
+            country:"中国",
             title: "世博总动员",
             playLength: "93 min",
             banner: {
@@ -342,6 +368,8 @@
             id: "14",
             classId: [1, 2],
             classId1:"爱情，喜剧",
+            time:"2012年",
+            country:"中国",
             title: "哭笑不得",
             playLength: "93 min",
             banner: {
@@ -366,6 +394,8 @@
             id: "15",
             classId: [2],
             classId1:"喜剧",
+            time:"2012年",
+            country:"美国",
             title: "大众教育",
             playLength: "93 min",
             banner: {
@@ -390,6 +420,8 @@
             id: "16",
             classId: [ 4],
             classId1:"剧情",
+            time:"1973年",
+            country:"法国",
             title: "赝品",
             playLength: "93 min",
             banner: {
@@ -414,6 +446,8 @@
             id: "17",
             classId: [4, 8, 6],
             classId1:"恐怖，剧情，惊悚",
+            time:"2013年",
+            country:"美国",
             title: "现实迷药",
             playLength: "93 min",
             banner: {
@@ -438,6 +472,8 @@
             id: "18",
             classId: [ 2,4],
             classId1:"喜剧，剧情",
+            time:"1927年",
+            country:"美国",
             title: "兄弟情真",
             playLength: "93 min",
             banner: {
@@ -462,6 +498,8 @@
             id: "19",
             classId: [2],
             classId1:"喜剧",
+            time:"1905年",
+            country:"加拿大",
             title: "车库乐队",
             playLength: "84 min",
             banner: {
@@ -486,6 +524,8 @@
             id: "20",
             classId: [9],
             classId1:"犯罪",
+            time:"2011年",
+            country:"加拿大",
             title: "冷血",
             playLength: "93 min",
             banner: {
@@ -510,6 +550,8 @@
             id: "21",
             classId: [8, 4, 9],
             classId1:"犯罪，剧情，惊悚",
+            time:"2011年",
+            country:"加拿大",
             title: "火力全开",
             playLength: "93 min",
             banner: {
@@ -534,6 +576,8 @@
             id: "22",
             classId: [8],
             classId1:"惊悚",
+            time:"1905年",
+            country:"法国",
             title: "委以重任",
             playLength: "93 min",
             banner: {
@@ -558,6 +602,8 @@
             id: "23",
             classId: [ 4],
             classId1:"剧情",
+            time:"1905年",
+            country:"美国",
             title: "黑帮少年",
             playLength: "93 min",
             banner: {
@@ -582,6 +628,8 @@
             id: "24",
             classId: [8],
             classId1:"惊悚",
+            time:"2014年",
+            country:"美国",
             title: "加州靡局",
             playLength: "93 min",
             banner: {
@@ -606,6 +654,8 @@
             id: "25",
             classId: [ 4],
             classId1:"剧情",
+            time:"1905年",
+            country:"美国",
             title: "蜜糖",
             playLength: "93 min",
             banner: {
@@ -630,6 +680,8 @@
             id: "26",
             classId: [ 4],
             classId1:"剧情",
+            time:"2013年",
+            country:"加拿大",
             title: "尘土帝国",
             playLength: "93 min",
             banner: {
@@ -654,6 +706,8 @@
             id: "27",
             classId: [1, 2, 8],
             classId1:"爱情，喜剧，惊悚",
+            time:"2011年",
+            country:"加拿大",
             title: "我雇凶杀你",
             playLength: "93 min",
             banner: {
@@ -678,6 +732,8 @@
             id: "28",
             classId: [1, 4],
             classId1:"爱情，剧情",
+            time:"2011年",
+            country:"美国",
             title: "胖妞寻爱记",
             playLength: "93 min",
             banner: {
