@@ -99,6 +99,7 @@ function initVideoInfo(videoData) {
     $("#overviewBox").find("[sid=vPosterUrl]").html(videoData.vPosterUrl);
     $("#overviewBox").find("[sid=classId1]").html(videoData.classId1);
     $("#overviewBox").find("[sid=country ]").html(videoData.country );
+    $("#overviewBox").find("[sid=time ]").html(videoData.time );
     var image=$(".image")[0];
     var imgUrl=$(".imgUrl")[0];
     $(".image")[0].setAttribute("src",imgUrl.innerText);
