@@ -1625,7 +1625,7 @@ header div:last-child i {
 }
 .play {
   /*background-color: #e1e1e1;*/
-  padding-bottom: 100%;
+  padding-bottom: 110%;
   overflow-y: auto;
 }
 .play .video {
