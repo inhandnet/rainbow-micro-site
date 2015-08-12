@@ -139,7 +139,7 @@ AndroidPlayer.prototype.init = function() {
 
 	var self = this;
 	this.playerBigBtn.on("click", this, function() {
-		
+
 		if($(self.player).is(":hidden")){
 			$(self.player).show();
 			self.adTimeCountBox.show();
@@ -161,6 +161,11 @@ AndroidPlayer.prototype.init = function() {
 			clearTimeout(self.timeoutId);
 		}
 	});
+
+    $("#playerSwitch").on("click", this, function() {
+        playVideo();
+        self.player.src = self.videoUrl;
+    });
 	
 	this.player.addEventListener('ended', function() {
 		self.onVideoEnd();
@@ -176,9 +181,18 @@ AndroidPlayer.prototype.init = function() {
 	
 };
 
+function playVideo(){
+    document.getElementById("videoPlay").style.display="block";
+    document.getElementById("introduce").style.display="none";
+    //document.getElementById("_player").autoplay="autoplay";
+    //document.getElementById("_player").style.display="block";
+    //document.getElementById("posterBox").style.display="none";
+    //document.getElementById("player_bigBtn").style.display="none";
+    document.getElementsByClassName("float")[0].style.display="none";
+    document.getElementById("videoPlay").style.backgroundColor="#000000";
+}
+
 AndroidPlayer.prototype.initVideo = function() {
-		
-		this.player.src = this.videoUrl;
 		$(this.player).attr("controls", "controls");
 		this.player.controls = true;
 		this.isAdEnd = true;
