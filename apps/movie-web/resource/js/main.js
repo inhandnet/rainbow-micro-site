@@ -108,7 +108,7 @@ $(function() {
             sHtml += "<div class='blackbg'>";
             sHtml += "<span>"+ v.playLength+"</span>";
             sHtml += "</div></div>";
-            sHtml += "<div class='text'>";
+            sHtml += "<div class='text'style='white-space: nowrap;text-overflow:ellipsis; overflow:hidden;'>";
             sHtml += v.title;
             sHtml += "</div>";
             sHtml += "</div></div>";
