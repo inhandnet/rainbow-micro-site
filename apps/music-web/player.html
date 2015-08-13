@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+<meta charset="utf-8">
+<title>航美在线</title>
+<link rel="stylesheet" type="text/css" href="player/resource/common.css"/>
+<script type="text/javascript" src="player/js/jquery172.js"></script>
+<script type="text/javascript" src="player/js/action.js"></script>
+<script type="text/javascript" src="./vlist.js"></script>
+</head>
+<body>
+<style>
+    .this_header{
+        background: #0998d4;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        line-height: 51px;
+        height: 51px;
+        padding: 0 50px;
+    }
+    .this_header span{
+        font-size: 20px;
+        font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+        padding:0px;
+    }
+    .this_header a{
+        display: block;
+        width: 60px;
+        height: 50px;
+        color: #Ffffff;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: inherit;
+    }
+    #head-left
+    {
+        background: url('../../resource/css/fonts/icons.svg') no-repeat -97px -303px;
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 5px;
+        left: 10px;
+    }
+</style>
+<div id="header_top" class="this_header">
+    <script>
+        function goBack(){
+            history.back();
+        }
+    </script>
+    <a id="head-left" onclick="goBack()"></a>
+            <span id="logo_header" class="svg">
+                时尚MV
+            </span>
+    <a href="../../home.html"><img src="../../resource/img/home/goback.png"></a>
+</div>
+<div id="content" style="border: 1px;border-style: groove;">
+<div class="close_light_bg" id="close_light_bg"></div>
+<div class="video" id="CuPlayer" >
+<script type="text/javascript" src="player/js/player.js"></script>
+<script class="CuPlayerVideo" data-mce-role="CuPlayerVideo" type="text/javascript" src="player/js/CuSunX1.min.js"></script>
+</div>
+</div>
+</body>
+<script type="text/javascript" src="player/js/screen.js"></script>
+</html>

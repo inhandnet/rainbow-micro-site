@@ -12,8 +12,11 @@ var VideoPlayer = function(view, data) {
     var currentPlayer=document.getElementById("_player");
 
     this.player = currentPlayer;
-    console.log("_player : ");
-    console.log(this.player);
+
+
+    this.playerTrigger = this.view.find("#player_trigger");
+    this.playerBigBtn = this.view.find("#player_bigBtn");
+    this.adTimeCountBox = this.view.find("#adTimeCount");
 
 	// 执行初始化操作
 	this.init();
@@ -35,6 +38,37 @@ VideoPlayer.prototype.init = function() {
 	this.player.addEventListener('ended', function() {
 		self.onVideoEnd();
 	}, false);
+
+    var self = this;
+    this.playerBigBtn.on("click", this, function() {
+
+        if($(self.player).is(":hidden")){
+            $(self.player).show();
+            self.adTimeCountBox.show();
+            self.view.find("[sid=posterBox]").hide();
+            self.playerBigBtn.addClass("stop");
+            self.playerBigBtn.removeClass("start");
+            self.player.play();
+            self.playerBigBtn.hide();
+        } else if (self.player.paused) {
+
+            self.playerBigBtn.addClass("stop");
+            self.playerBigBtn.removeClass("start");
+            self.player.play();
+            self.playerBigBtn.hide();
+        } else {
+            self.player.pause();
+            self.playerBigBtn.removeClass("stop");
+            self.playerBigBtn.addClass("start");
+            clearTimeout(self.timeoutId);
+        }
+    });
+
+
+    $("#playerSwitch").on("click", this, function() {
+        playVideo();
+        self.player.src = self.videoUrl;
+    });
 
 };
 
@@ -149,7 +183,7 @@ AndroidPlayer.prototype.init = function() {
 			self.player.play();
 			self.playerBigBtn.hide();
 		} else if (self.player.paused) {
-			
+
 			self.playerBigBtn.addClass("stop");
 			self.playerBigBtn.removeClass("start");
 			self.player.play();
@@ -161,11 +195,6 @@ AndroidPlayer.prototype.init = function() {
 			clearTimeout(self.timeoutId);
 		}
 	});
-
-    $("#playerSwitch").on("click", this, function() {
-        playVideo();
-        self.player.src = self.videoUrl;
-    });
 	
 	this.player.addEventListener('ended', function() {
 		self.onVideoEnd();

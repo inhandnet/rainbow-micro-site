@@ -93,7 +93,12 @@ $(function() {
         var classId=event.target.id;
         $(".tag_selector").css("color","black");
         $(event.target).css("color","green");
-        var selectedList=media._getListByClassId(classId);
+        var selectedList;
+        if(classId=="0"){
+            selectedList=media.data;
+        }else{
+            selectedList=media._getListByClassId(classId);
+        }
         var sHtml="";
         $(selectedList).each(function(k, v) {
             sHtml += "<div class='box' videoId='"+ v.id+"'>";

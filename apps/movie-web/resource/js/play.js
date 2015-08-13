@@ -32,7 +32,6 @@ $(function() {
 
 	commonSelector = new CommonSelector([$("#recommendBtn"), $("#overviewBtn")], [$("#recommendBox"), $("#overviewBox")]);
 	$("#recommendBox").find(".box").on("click", function() {
-
 		window.location.href = 'play.html?wefun-videoId=' + $(this).attr("videoId");
 	});
 
@@ -42,46 +41,16 @@ $(function() {
             if(result.length>0){
                 videoData=result[0];
                 initVideoInfo(result[0]);
-                initPlayer(videoData);
+                /*bind video player render event*/
+                $("#playerSwitch").on("click", this, function() {
+                    window.location.href = 'player.html?wefun-videoId=' + videoId;
+                });
                 sendPvuv(videoData.title,"movie.play");
             }
         }
     });
 });
 
-//function loadAdData() {
-//
-//	myAjax({
-//		type: "get",
-//		url: "../../adList.xml",
-//		dataType: 'xml',
-//		success: function(data) {
-//
-//			if (!data || $(data).find("ad").length == 0) {
-//				initPlayer(videoData, adData);
-//				return;
-//			}
-//			var size = $(data).find("ad").length;
-//			var index = Math.floor(Math.random() * size)
-//			var adXml = $(data).find("ad").eq(index)
-//			adData = {};
-//			adData.adUrl = adXml.find("adUrl").text();
-//			adData.adLength = adXml.find("adLength").text();
-//
-//			initPlayer(videoData, adData);
-//		},
-//		error: function(e) {
-//
-//		}
-//	});
-//};
-//var imgPlay =document.getElementById("imgPlay");
-//   imgPlay.setAttribute("src","sid=vPosterUrl");
-
-function initPlayer(videoData) {
-    $("#_video_box ").removeClass("dn");
-    player = new AndroidPlayer($("#_video_box"), videoData);
-}
 
 function initVideoInfo(videoData) {
 

@@ -12,8 +12,11 @@ var VideoPlayer = function(view, data) {
     var currentPlayer=document.getElementById("_player");
 
     this.player = currentPlayer;
-    console.log("_player : ");
-    console.log(this.player);
+
+
+    this.playerTrigger = this.view.find("#player_trigger");
+    this.playerBigBtn = this.view.find("#player_bigBtn");
+    this.adTimeCountBox = this.view.find("#adTimeCount");
 
 	// 执行初始化操作
 	this.init();
@@ -24,7 +27,7 @@ VideoPlayer.prototype.init = function() {
 		this.isAdEnd = true;
 	//}
 	this.view.find("[sid=title]").html(this.data.title);
-	this.view.find("[sid=playLength]").html(this.data.playLength );
+	this.view.find("[sid=playLength]").html(this.data.playLength + "");
 	this.view.find("[sid=poster]").attr("src", this.data.hPosterUrl);
 	this.view.find("#player_trigger").on("click", this, this.onPlayBtnClick);
 	var self = this;
@@ -35,6 +38,37 @@ VideoPlayer.prototype.init = function() {
 	this.player.addEventListener('ended', function() {
 		self.onVideoEnd();
 	}, false);
+
+    var self = this;
+    this.playerBigBtn.on("click", this, function() {
+
+        if($(self.player).is(":hidden")){
+            $(self.player).show();
+            self.adTimeCountBox.show();
+            self.view.find("[sid=posterBox]").hide();
+            self.playerBigBtn.addClass("stop");
+            self.playerBigBtn.removeClass("start");
+            self.player.play();
+            self.playerBigBtn.hide();
+        } else if (self.player.paused) {
+
+            self.playerBigBtn.addClass("stop");
+            self.playerBigBtn.removeClass("start");
+            self.player.play();
+            self.playerBigBtn.hide();
+        } else {
+            self.player.pause();
+            self.playerBigBtn.removeClass("stop");
+            self.playerBigBtn.addClass("start");
+            clearTimeout(self.timeoutId);
+        }
+    });
+
+
+    $("#playerSwitch").on("click", this, function() {
+        playVideo();
+        self.player.src = self.videoUrl;
+    });
 
 };
 
@@ -132,14 +166,14 @@ AndroidPlayer.prototype.init = function() {
 	//}
 
 	this.view.find("[sid=title]").html(this.data.title);
-	this.view.find("[sid=playLength]").html(this.data.playLength);
+	this.view.find("[sid=playLength]").html(this.data.playLength + "");
 	this.view.find("[sid=poster]").attr("src", this.data.hPosterUrl);
 	
 	this.playerTrigger.on("click", this, this.onPlayerTriggerClick);
 
 	var self = this;
 	this.playerBigBtn.on("click", this, function() {
-		
+
 		if($(self.player).is(":hidden")){
 			$(self.player).show();
 			self.adTimeCountBox.show();
@@ -149,7 +183,7 @@ AndroidPlayer.prototype.init = function() {
 			self.player.play();
 			self.playerBigBtn.hide();
 		} else if (self.player.paused) {
-			
+
 			self.playerBigBtn.addClass("stop");
 			self.playerBigBtn.removeClass("start");
 			self.player.play();
@@ -176,9 +210,18 @@ AndroidPlayer.prototype.init = function() {
 	
 };
 
+function playVideo(){
+    document.getElementById("videoPlay").style.display="block";
+    document.getElementById("introduce").style.display="none";
+    //document.getElementById("_player").autoplay="autoplay";
+    //document.getElementById("_player").style.display="block";
+    //document.getElementById("posterBox").style.display="none";
+    //document.getElementById("player_bigBtn").style.display="none";
+    document.getElementsByClassName("float")[0].style.display="none";
+    document.getElementById("videoPlay").style.backgroundColor="#000000";
+}
+
 AndroidPlayer.prototype.initVideo = function() {
-		
-		this.player.src = this.videoUrl;
 		$(this.player).attr("controls", "controls");
 		this.player.controls = true;
 		this.isAdEnd = true;
@@ -252,7 +295,7 @@ AndroidPlayer.prototype.onPlayerTriggerClick = function(event) {
 		return false;
 	}
 	self.playerBigBtn.show();
-	self.timeoutId = setTimeout("$('#android_video_box').find('#player_bigBtn').hide();", 2000)
+	self.timeoutId = setTimeout("$('#_video_box').find('#player_bigBtn').hide();", 10)
 };
 
 AndroidPlayer.prototype.launchFullScreen = function(element) {
