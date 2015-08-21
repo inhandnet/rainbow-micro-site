@@ -117,7 +117,7 @@ var formStr=""+
 //初始化cloud各个dom属性
 cloud.initializeComponents= function () {
     //获取手机码间隔
-    cloud.number=90;
+    cloud.number=60;
     //查询设备状态间隔
     cloud.statusInterval=3000;
     cloud.wait=true;
@@ -165,7 +165,7 @@ cloud.bindEvents= function () {
                 }
                 else{
                     clearInterval(cloud.textCycle);
-                    cloud.number=90;
+                    cloud.number=60;
                     cloud.getSMSBtn.removeAttr("disabled");
                     cloud.getSMSBtn.text(Rainbow.locale.get("get_code"));
                     cloud.wait=true;
