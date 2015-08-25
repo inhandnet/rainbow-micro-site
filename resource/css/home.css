@@ -5,10 +5,13 @@ ul{
 a{
     text-decoration: none;
 }
-
+p,img{
+    margin:0;
+    padding:0;
+}
 #content
 {
-    padding:35px 15px 100px 15px;
+    padding:15px 13px 100px 13px;
     background:url(../img/home/bg.jpg);
     background-size:cover;
     /*overflow: hidden;*/
@@ -23,18 +26,7 @@ a{
 .flexslider{margin:0;  }
 .i-pane.i-blue {  background-color: #Ffffff;  }
 /*********** ICONS */
-.i-pane  {
-    width:73px;
-    height:65px;
-    position:relative;
-    float: left;
-    border-radius: 15%;
-    text-align: center;
-    font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
-    color: #Ffffff ;
-    padding:10px 20px;
-    border:1px solid #878787;
-}
+
 
 .rowNav{
     display: inline-block;
@@ -46,11 +38,8 @@ a{
     height:27px;
 }
 .rowNav div{
-    width:73px;
-    height:45px;
     font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
     color: #Ffffff ;
-    padding:10px 5px;
     border:1px solid #878787;
     background-color: #Ffffff;
 }
@@ -72,4 +61,59 @@ a{
 .application div{
     border-radius:15%;
     vertical-align:top;
+}
+.i-pane P{
+    margin:0;
+    padding:0;
+}
+.rowNav{
+    display: inline-block;
+    vertical-align: top;
+}
+@media (max-width: 700px) {
+    .menu_up,.menu_down{
+        width:100%;
+    }
+    .i-pane  {
+        width:100%;
+        /*height:65px;*/
+        position:relative;
+        float: left;
+        border-radius: 15%;
+        text-align: center;
+        font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+        color: #Ffffff ;
+        padding:3px 10px;
+        border:1px solid #878787;
+    }
+    .rowNav{
+        width:100%;
+    }
+    .mainIconPane{
+        width:24.4%;
+        margin-right:-3px;
+    }
+    .rowNav div{
+        width:24.4%;
+        padding:6px 5px;
+    }
+}
+@media (min-width: 701px) {
+    .i-pane  {
+        width:73px;
+        height:65px;
+        position:relative;
+        float: left;
+        border-radius: 15%;
+        text-align: center;
+        font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+        color: #Ffffff ;
+        padding:10px 20px;
+        border:1px solid #878787;
+    }
+    .rowNav div {
+        width: 73px;
+        height: 45px;
+        padding:10px 5px;
+    }
 }
