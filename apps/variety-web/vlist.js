@@ -29,6 +29,9 @@
         {
             id: "1",
             classId: [3],
+            classId1:"生活服务类",
+            country:"中国",
+            time:"2015年",
             title: "时尚美食",
             playLength: "约90分钟",
             banner: {
@@ -47,14 +50,17 @@
             director: "",
             writer: "",
             starring: "",
-            intro: ""
+            intro: "时尚美食节目由时尚星光传媒强力推出的一档大型生活服务类节目。节目以外景拍摄结合棚内录制的创新模式，开创了美食节目的新天地。并将国际美食与国内传统美食相结合，打造出最时尚、最前沿、最国际化的时尚美食栏目。"
         },
 
         {
             id: "2",
             classId: [ 3],
+            classId1:"生活服务类",
             title: "时尚旅游",
-            playLength: "约20分钟",
+            country:"中国",
+            time:"2015年",
+            playLength: "约40分钟",
             banner: {
                 isBanner: true,
                 bannerImg: "./img/banner2.jpg"
@@ -69,10 +75,37 @@
             vPosterUrl: "./img/i_v_2.jpg",
             fileSize: "",
             director: " ",
-            writer: "",
+            writer: "黄芸",
             starring: "",
-            intro: ""
+            intro: "时尚旅游TV是国内首档，以明星作为体验者身份的深度旅游类节目。以旅行体验者个人魅力，展现以及目的地人文风情为主体的，与国内顶尖旅游杂志同名内容共享的一档高端旅游类电视精品节目。"
+        },
+        {
+            id: "3",
+            classId: [ 3],
+            classId1:"大型户外竞技真人秀",
+            title: "奔跑吧兄弟第二季",
+            country:"中国",
+            playLength: "约90分钟",
+            time:"2015年",
+            banner: {
+                isBanner: false,
+                bannerImg: "./img/banner3.jpg"
+            },
+            isRecommand: true,
+            hot: {
+                isTop: true,
+                isContent: false
+            },
+            videoUrl: "./video/shishanglvyou.mp4",
+            hPosterUrl: "./img/i_h_3.jpg",
+            vPosterUrl: "./img/i_v_3.jpg",
+            fileSize: "",
+            director: " ",
+            writer: "",
+            starring: "邓超、Angelababy（杨颖）、李晨、郑恺、陈赫、王祖蓝等",
+            intro: "《奔跑吧兄弟第二季》共12期，第二季“奔跑团”阵容：邓超、Angelababy（杨颖）、郑恺、李晨、王祖蓝、陈赫、包贝尔。主要嘉宾有范冰冰、韩庚、黄晓明、欧弟、宋佳、林更新、李治廷、叶祖新、蒋劲夫、张艺兴、吴奇隆、陈乔恩等。"
         }
+
 
     ];
 
