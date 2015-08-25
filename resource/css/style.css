@@ -69,10 +69,6 @@ pre
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
 }
-#page nav
-{
-	display: none;
-}
 
 #header,
 #header-index,
@@ -104,19 +100,6 @@ pre
  
 .subHeader i.i-small { position: absolute; left: 16px !important; top: 11px !important; margin: 0px; }
 
-
-
-/*#header-index #head-left,*/
-/*.header a*/
-/*{*/
-    /*background: url('fonts/icons.svg') no-repeat -21px -303px;*/
-    /*display: block;*/
-    /*width: 40px;*/
-    /*height: 40px;*/
-    /*position: absolute;*/
-    /*top: 5px;*/
-    /*left: 10px;*/
-/*}*/
 #header-index a.LoginPage
 {
     /*background: url('fonts/icons.svg') no-repeat 0px -72px;*/
@@ -171,11 +154,6 @@ pre
 	padding-left:10px;
     padding-top:0px;
 
-}
-.slides li:last-child img
-{
-	width:50%;
-	display: none;
 }
 /*********************/
 
@@ -252,7 +230,7 @@ i.i-calendar.i-small { width:16px; height:16px; background-position: -172px -388
 
 i.i-small { margin: 0px 10px 0px 0px; left: 0px; }
 
-.mainIconPane { display:inline-block; margin-bottom: 15px; }
+.mainIconPane { display:inline-block; }
 .mainIconPane h4 { margin: 0px 0px 5px; }
 .mainIconPane p { color:#979797; font-size:13px; }
 
