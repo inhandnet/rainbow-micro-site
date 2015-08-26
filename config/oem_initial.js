@@ -1,6 +1,6 @@
 ﻿var oemInfo={
         name:"航美在线",
-        title:"航美在线传媒",
+        title:"航美在线",
         support:"航美传媒在线支持"
 };
 function initRender(){
