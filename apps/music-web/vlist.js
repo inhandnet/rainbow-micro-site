@@ -88,7 +88,7 @@
                 isTop: false,
                 isContent: false
             },
-           videoUrl: "/video/music/damogebi.mp4",
+            videoUrl: "/video/music/damogebi.mp4",
             hPosterUrl: "./img/i_h_3.jpg",
             vPosterUrl: "./img/i_v_3.jpg",
             fileSize: "15M",
@@ -112,11 +112,11 @@
                 isTop: true,
                 isContent: false
             },
-           videoUrl: "/video/music/gongyuanzhongguomeng.mp4",
+            videoUrl: "/video/music/gongyuanzhongguomeng.mp4",
             hPosterUrl: "./img/i_h_4.jpg",
             vPosterUrl: "./img/i_v_4.jpg",
             fileSize: "",
-           director: "",
+            director: "",
             writer: "",
             starring: "",
             intro: ""
@@ -160,7 +160,7 @@
                 isTop: false,
                 isContent: true
             },
-             videoUrl: "/video/music/yameidie.mp4",
+            videoUrl: "/video/music/yameidie.mp4",
             hPosterUrl: "./img/i_h_6.jpg",
             vPosterUrl: "./img/i_v_6.jpg",
             fileSize: "",
