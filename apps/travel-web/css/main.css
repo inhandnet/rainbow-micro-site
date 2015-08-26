@@ -41,7 +41,7 @@
 .Message div{
     display: inline-block;
 }
-@media (max-width: 640px) {
+@media (max-width: 320px) {
     .Message p {
         width: 160px;
     }
