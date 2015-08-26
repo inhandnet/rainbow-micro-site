@@ -202,7 +202,7 @@ var RecommandVideoItem = function(data, container) {
 	this.id = data.id;
 	this.classId = data.classId;
 	this.title = data.title;
-	this.posterUrl = data.hPosterUrl;
+	this.posterUrl = data.vPosterUrl;
 	this.playLength = data.playLength;
 	
 	// 定义视图和父容器

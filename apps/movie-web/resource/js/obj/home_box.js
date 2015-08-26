@@ -154,7 +154,6 @@ var ClassVideoItem = function(data, container) {
 	this.title = data.title;
 	this.posterUrl = data.vPosterUrl;
 	this.playLength = data.playLength;
-	
 	// 定义视图和父容器
 	this.view = null;
 	this.container = container;
@@ -166,7 +165,6 @@ var ClassVideoItem = function(data, container) {
 ClassVideoItem.template = null;
 
 ClassVideoItem.prototype.init = function() {
-
 	if (ClassVideoItem.template == null)
 		ClassVideoItem.template = $("#class_video_item_template").html();
 
@@ -179,7 +177,6 @@ ClassVideoItem.prototype.init = function() {
 };
 
 ClassVideoItem.prototype.onViewClick = function(event) {
-
 	var self = event.data;
 	window.location.href = "play.html?wefun-videoId="+self.id;
 };
@@ -202,7 +199,7 @@ var RecommandVideoItem = function(data, container) {
 	this.id = data.id;
 	this.classId = data.classId;
 	this.title = data.title;
-	this.posterUrl = data.hPosterUrl;
+	this.posterUrl = data.vPosterUrl;
 	this.playLength = data.playLength;
 	
 	// 定义视图和父容器
