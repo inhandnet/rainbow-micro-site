@@ -11,51 +11,7 @@
         <link type="text/css" rel="stylesheet" href="../../../resource/css/jquery.mmenu.all.css" />
         <link type="text/css" rel="stylesheet" href="../../../resource/css/style.css" />
         <link type="text/css" rel="stylesheet" href="../css/main.css" />
-
-		<script type="text/javascript" src="../js/util/tween.js" ></script>
-		<script type="text/javascript" src="../js/util/jquery.js"></script>
-		<script type="text/javascript" src="../js/util/my-ajax.js"></script>
-		<script type="text/javascript" src="../js/obj/main-selector.js"></script>
-		<script type="text/javascript" src="../js/obj/home_box.js"></script>
-		<script type="text/javascript" src="../js/obj/banner.js" ></script>
-		<script type="text/javascript" src="../js/main.js"></script>
-        <script type="text/javascript" src="../../../resource/js/pvuv.handler.js"></script>
-
-        <script type="text/javascript" src="../../../resource/js/jquery.min.js"></script>
-		<script>
-//            $(function() {
-//                $(".table_tr").on("click", this, function(event) {
-//                    console.log(event.target);
-//                    var id=event.target.id;
-//                    console.log("click me!"+id);
-//                });
-//            });
-
-
-
-//		window.onload=function()
-//		{
-//		var oT=document.getElementsByTagName("tr");
-//		console.log(oT);
-//         for(var i=0;i<oT.length;i++)
-//        {
-//		 oT[i].addEventListener('click', function(e){
-//             alert(e.target.id);
-//             trClick(e.target.id);
-//         }, false);
-//
-//		}
-//        }
-//
-        function trClick(index){
-            console.log(index);
-            location.href=index+".html"
-//            location.href=index+".html";
-        }
-
-		</script>
 	</head>
-
 	<body>
 		<!--<div class="indextop">-->
             <!-- Header -->
@@ -139,9 +95,23 @@
 		<div class ="float">
 			<img src="gg.png">
 		</div>
-		</div>
 	</body>
+	<script type="text/javascript" src="../js/util/tween.js" ></script>
+	<script type="text/javascript" src="../js/util/jquery.js"></script>
+	<script type="text/javascript" src="../js/util/my-ajax.js"></script>
+	<script type="text/javascript" src="../js/obj/main-selector.js"></script>
+	<script type="text/javascript" src="../js/obj/home_box.js"></script>
+	<script type="text/javascript" src="../js/obj/banner.js" ></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+	<script type="text/javascript" src="../../../resource/js/pvuv.handler.js"></script>
+	<script type="text/javascript" src="../../../config/oem_initial.js"></script>
+	<script type="text/javascript" src="../../../resource/js/jquery.min.js"></script>
 	<script type="text/javascript">
+		function trClick(index){
+			console.log(index);
+			location.href=index+".html";
+	//            location.href=index+".html";
+		}
 		function touchEndFunc() {}
 		document.addEventListener('touchend', touchEndFunc);
 

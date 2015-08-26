@@ -41,9 +41,13 @@
 .Message div{
     display: inline-block;
 }
-@media (max-width: 640px) {
+@media (max-width: 450px) {
+    .Message div{
+        width:30%;
+    }
     .Message p {
-        width: 160px;
+        width: 60%;
+        word-wrap:break-word;
     }
     .bl
     {

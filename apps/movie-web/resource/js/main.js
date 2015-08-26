@@ -131,3 +131,10 @@ function Compression(){
         }
     }
 }
+
+$(document).ready(function(){
+    var movies=$(".box");
+    for(var i=6;i<28;i++){
+        movies[i].style.display="none";
+    }
+});

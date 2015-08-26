@@ -10,25 +10,6 @@
     <link type="text/css" rel="stylesheet" href="../../../resource/css/flexslider.css" />
     <link type="text/css" rel="stylesheet" href="../../../resource/css/jquery.mmenu.all.css" />
     <link type="text/css" rel="stylesheet" href="../../../resource/css/style.css" />
-
-    <script type="text/javascript" src="../js/util/tween.js" ></script>
-    <script type="text/javascript" src="../js/util/jquery.js"></script>
-    <script type="text/javascript" src="../js/util/my-ajax.js"></script>
-    <script type="text/javascript" src="../js/obj/main-selector.js"></script>
-    <script type="text/javascript" src="../js/obj/home_box.js"></script>
-    <script type="text/javascript" src="../js/obj/banner.js" ></script>
-    <script type="text/javascript" src="../js/main.js"></script>
-    <script type="text/javascript" src="../../../resource/js/pvuv.handler.js"></script>
-
-    <script>
-        var oD=document.getElementByID('table1');
-        var oT=oD.getElementsByTagname('tr');
-        for(var i=0;i<oT.length;i++)
-        {
-            oT[i].onclick="location.href='i.html'"
-        }
-
-    </script>
     <style type="text/css">
         table{
             width:100% ;
@@ -73,15 +54,10 @@
 </div>
 <div>
     <p style="margin:20px 20px 10px 20px;text-align:center"><font size="4px">中航国旅超级旅行团在天门侨乡客运站尊享温馨出行优质服务</font></p>
-    <table  style="border:none;margin:0px">
-        <tr>
-            <td ><font size="2px" color="808080" >时间：2015年7月21日</font>
-            </td>
-            <td >
-                <p style="text-align:right"><font size="2px" color="808080" >来源：天门汉羽运输公司</font>
-            </td>
-        </tr>
-    </table>
+    <div class="date">
+        <span>时间：2015年7月21日</span>
+        <span>来源：天门汉羽运输公司</span>
+    </div>
 </div>
 <hr/>
 <img class="imgCenter" src="../img/6.png">
@@ -104,11 +80,26 @@
 <div class ="float">
     <img src="ad_bottom.gif">
 </div>
-</div>
 </body>
+<script type="text/javascript" src="../js/util/tween.js" ></script>
+<script type="text/javascript" src="../js/util/jquery.js"></script>
+<script type="text/javascript" src="../js/util/my-ajax.js"></script>
+<script type="text/javascript" src="../js/obj/main-selector.js"></script>
+<script type="text/javascript" src="../js/obj/home_box.js"></script>
+<script type="text/javascript" src="../js/obj/banner.js" ></script>
+<script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../../../resource/js/pvuv.handler.js"></script>
+<script type="text/javascript" src="../../../config/oem_initial.js"></script>
 <script type="text/javascript">
     function touchEndFunc() {}
     document.addEventListener('touchend', touchEndFunc);
+
+    var oD=document.getElementByID('table1');
+    var oT=oD.getElementsByTagname('tr');
+    for(var i=0;i<oT.length;i++)
+    {
+        oT[i].onclick="location.href='i.html'"
+    }
 
 </script>
 
