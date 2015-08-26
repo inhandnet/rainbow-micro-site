@@ -43,7 +43,7 @@
                 isTop: true,
                 isContent: false
             },
-            videoUrl: "./video/shishangmeishi.mp4",
+            videoUrl: "/video/variety/shishangmeishi.mp4",
             hPosterUrl: "./img/i_h_1.jpg",
             vPosterUrl: "./img/i_v_1.jpg",
             fileSize: "",
@@ -70,7 +70,7 @@
                 isTop: true,
                 isContent: false
             },
-            videoUrl: "./video/shishanglvyou.mp4",
+            videoUrl: "/video/variety/shishanglvyou.mp4",
             hPosterUrl: "./img/i_h_2.jpg",
             vPosterUrl: "./img/i_v_2.jpg",
             fileSize: "",
@@ -96,7 +96,7 @@
                 isTop: true,
                 isContent: false
             },
-            videoUrl: "./video/shishanglvyou.mp4",
+            videoUrl: "/video/variety/shishanglvyou.mp4",
             hPosterUrl: "./img/i_h_3.jpg",
             vPosterUrl: "./img/i_v_3.jpg",
             fileSize: "",

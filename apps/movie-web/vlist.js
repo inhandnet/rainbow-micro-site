@@ -43,7 +43,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/xinhuanufang.mp4",
+            videoUrl: "/video/movie/xinhuanufang.mp4",
             hPosterUrl: "./img/i_h_4.jpg",
             vPosterUrl: "./img/i_v_4.jpg",
             fileSize: "661M",
@@ -69,7 +69,7 @@
                 isTop: true,
                 isContent: false
             },
-            videoUrl: "./video/huangfeihong.mp4",
+            videoUrl: "/video/movie/huangfeihong.mp4",
             hPosterUrl: "./img/i_h_1.jpg",
             vPosterUrl: "./img/i_v_1.jpg",
             fileSize: "",
@@ -95,7 +95,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/yichangfenghuaxueyuedeshi.mp4",
+            videoUrl: "/video/movie/yichangfenghuaxueyuedeshi.mp4",
             hPosterUrl: "./img/i_h_28.jpg",
             vPosterUrl: "./img/i_v_28.jpg",
             fileSize: "586M",
@@ -121,7 +121,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/nvrengongdi.mp4",
+            videoUrl: "/video/movie/nvrengongdi.mp4",
             hPosterUrl: "./img/i_h_18.jpg",
             vPosterUrl: "./img/i_v_18.jpg",
             fileSize: "586M",
@@ -147,7 +147,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/baozoubanvren.mp4",
+            videoUrl: "/video/movie/baozoubanvren.mp4",
             hPosterUrl: "./img/i_h_7.jpg",
             vPosterUrl: "./img/i_v_7.jpg",
             fileSize: "586M",
@@ -173,7 +173,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/yangguangdekuaileshenghuo.mp4",
+            videoUrl: "/video/movie/yangguangdekuaileshenghuo.mp4",
             hPosterUrl: "./img/i_h_27.jpg",
             vPosterUrl: "./img/i_v_27.jpg",
             fileSize: "586M",
@@ -199,7 +199,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/dashuwoaini.mp4",
+            videoUrl: "/video/movie/dashuwoaini.mp4",
             hPosterUrl: "./img/i_h_9.jpg",
             vPosterUrl: "./img/i_v_9.jpg",
             fileSize: "586M",
@@ -225,7 +225,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/duobaolianmeng.mp4",
+            videoUrl: "/video/movie/duobaolianmeng.mp4",
             hPosterUrl: "./img/i_h_11.jpg",
             vPosterUrl: "./img/i_v_11.jpg",
             fileSize: "586M",
@@ -251,7 +251,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/xiayigeqiji.mp4",
+            videoUrl: "/video/movie/xiayigeqiji.mp4",
             hPosterUrl: "./img/i_h_23.jpg",
             vPosterUrl: "./img/i_v_23.jpg",
             fileSize: "586M",
@@ -277,7 +277,7 @@
                 isTop: true,
                 isContent: false
             },
-            videoUrl: "./video/chaoshikongjiubing.mp4",
+            videoUrl: "/video/movie/chaoshikongjiubing.mp4",
             hPosterUrl: "./img/i_h_2.jpg",
             vPosterUrl: "./img/i_v_2.jpg",
             fileSize: "535M",
@@ -303,7 +303,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/guanyuaiqinghenaxiemogui.mp4",
+            videoUrl: "/video/movie/guanyuaiqinghenaxiemogui.mp4",
             hPosterUrl: "./img/i_h_12.jpg",
             vPosterUrl: "./img/i_v_12.jpg",
             fileSize: "586M",
@@ -329,7 +329,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/wuxia.mp4",
+            videoUrl: "/video/movie/wuxia.mp4",
             hPosterUrl: "./img/i_h_5.jpg",
             vPosterUrl: "./img/i_v_5.jpg",
             fileSize: "586M",
@@ -355,7 +355,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/shibozongdongyuan.mp4",
+            videoUrl: "/video/movie/shibozongdongyuan.mp4",
             hPosterUrl: "./img/i_h_20.jpg",
             vPosterUrl: "./img/i_v_20.jpg",
             fileSize: "586M",
@@ -381,7 +381,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/kuxiaobude.mp4",
+            videoUrl: "/video/movie/kuxiaobude.mp4",
             hPosterUrl: "./img/i_h_15.jpg",
             vPosterUrl: "./img/i_v_15.jpg",
             fileSize: "586M",
@@ -407,7 +407,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/dazhongjiaoyu.mp4",
+            videoUrl: "/video/movie/dazhongjiaoyu.mp4",
             hPosterUrl: "./img/i_h_10.jpg",
             vPosterUrl: "./img/i_v_10.jpg",
             fileSize: "586M",
@@ -433,7 +433,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/yanpin.mp4",
+            videoUrl: "/video/movie/yanpin.mp4",
             hPosterUrl: "./img/i_h_26.jpg",
             vPosterUrl: "./img/i_v_26.jpg",
             fileSize: "586M",
@@ -459,7 +459,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/xianshimiyao.mp4",
+            videoUrl: "/video/movie/xianshimiyao.mp4",
             hPosterUrl: "./img/i_h_24.jpg",
             vPosterUrl: "./img/i_v_24.jpg",
             fileSize: "586M",
@@ -485,7 +485,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/xiongdiqingzhen.mp4",
+            videoUrl: "/video/movie/xiongdiqingzhen.mp4",
             hPosterUrl: "./img/i_h_25.jpg",
             vPosterUrl: "./img/i_v_25.jpg",
             fileSize: "586M",
@@ -511,7 +511,7 @@
                 isTop: true,
                 isContent: false
             },
-            videoUrl: "./video/chekuyuedui.mp4",
+            videoUrl: "/video/movie/chekuyuedui.mp4",
             hPosterUrl: "./img/i_h_3.jpg",
             vPosterUrl: "./img/i_v_3.jpg",
             fileSize: "40000",
@@ -537,7 +537,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/lengxue.mp4",
+            videoUrl: "/video/movie/lengxue.mp4",
             hPosterUrl: "./img/i_h_16.jpg",
             vPosterUrl: "./img/i_v_16.jpg",
             fileSize: "586M",
@@ -563,7 +563,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/huoliquankai.mp4",
+            videoUrl: "/video/movie/huoliquankai.mp4",
             hPosterUrl: "./img/i_h_6.jpg",
             vPosterUrl: "./img/i_v_6.jpg",
             fileSize: "40000",
@@ -589,7 +589,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/weiyizhongren.mp4",
+            videoUrl: "/video/movie/weiyizhongren.mp4",
             hPosterUrl: "./img/i_h_21.jpg",
             vPosterUrl: "./img/i_v_21.jpg",
             fileSize: "586M",
@@ -615,7 +615,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/heibangshaonian.mp4",
+            videoUrl: "/video/movie/heibangshaonian.mp4",
             hPosterUrl: "./img/i_h_13.jpg",
             vPosterUrl: "./img/i_v_13.jpg",
             fileSize: "586M",
@@ -641,7 +641,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/jiazhoumiju.mp4",
+            videoUrl: "/video/movie/jiazhoumiju.mp4",
             hPosterUrl: "./img/i_h_14.jpg",
             vPosterUrl: "./img/i_v_14.jpg",
             fileSize: "586M",
@@ -667,7 +667,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/mitang.mp4",
+            videoUrl: "/video/movie/mitang.mp4",
             hPosterUrl: "./img/i_h_17.jpg",
             vPosterUrl: "./img/i_v_17.jpg",
             fileSize: "586M",
@@ -693,7 +693,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/chentudiguo.mp4",
+            videoUrl: "/video/movie/chentudiguo.mp4",
             hPosterUrl: "./img/i_h_8.jpg",
             vPosterUrl: "./img/i_v_8.jpg",
             fileSize: "586M",
@@ -719,7 +719,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/woguxiongshani.mp4",
+            videoUrl: "/video/movie/woguxiongshani.mp4",
             hPosterUrl: "./img/i_h_22.jpg",
             vPosterUrl: "./img/i_v_22.jpg",
             fileSize: "586M",
@@ -745,7 +745,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "./video/pangniuxunaiji.mp4",
+            videoUrl: "/video/movie/pangniuxunaiji.mp4",
             hPosterUrl: "./img/i_h_19.jpg",
             vPosterUrl: "./img/i_v_19.jpg",
             fileSize: "586M",
