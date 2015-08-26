@@ -40,9 +40,42 @@
 .Message div{
     display: inline-block;
 }
-@media (max-width: 320px) {
+.Message li div{
+    vertical-align: top;
+}
+@media (max-width: 360px) {
     .Message p {
-        width: 160px;
+        width: 190px;
+    }
+    .bl
+    {
+        width:100px;
+        height:76px;
+    }
+}
+@media (min-width: 361px) {
+    .Message p {
+        width:240px;
+    }
+    .bl
+    {
+        width:100px;
+        height:76px;
+    }
+}
+@media (min-width: 470px) {
+    .Message p {
+        width:350px;
+    }
+    .bl
+    {
+        width:100px;
+        height:76px;
+    }
+}
+@media (min-width: 800px) {
+    .Message p {
+        width:520px;
     }
     .bl
     {
