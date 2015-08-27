@@ -12,7 +12,13 @@ $(function() {
     /**
      * @desc render recommand list box
      */
-    var recommandList=media._getRecommandList();
+    var recommandListPre=media._getRecommandList();
+    var recommandList=new Array();
+    if(recommandListPre.length>=3){
+        recommandList.push(recommandListPre[0]);
+        recommandList.push(recommandListPre[1]);
+        recommandList.push(recommandListPre[2]);
+    }
     var recommandHtml="";
     $(recommandList).each(function(k, v) {
         recommandHtml += "<div class='box' videoId='"+ v.id+"'>";
