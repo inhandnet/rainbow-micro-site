@@ -2029,3 +2029,9 @@ nav span.on:before {
   background-color: white;
   text-indent: 5px;
 }
+
+
+/*新添加的样式*/
+#home_box{
+  margin-bottom: 80px;
+}
