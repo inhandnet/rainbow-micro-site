@@ -1,0 +1,60 @@
+.Message{
+    width:100% ;
+    padding-left:10px;
+    margin-bottom: 71px;
+}
+.zt
+{
+    text-indent:30px;
+    padding:20px 20px 100px;
+    font-size: 120%;
+
+}
+.bl
+{
+    width:123px;
+    height:92px;
+    word-wrap:break-word;
+}
+.bl img{
+    width:100%;
+    height:100%;
+}
+.blz
+{
+    display:inline-block;
+    word-wrap:break-word;
+    font-size:14px
+}
+.slides{
+    width:100%;
+}
+.slides img{
+    width:100%;
+    height:100%;
+}
+.Message li{
+    border-bottom: 1px solid #EFEFEF;
+    padding:10px 0;
+    width:100%;
+}
+.Message div{
+    display: inline-block;
+}
+@media (max-width: 410px) {
+    .bl
+    {
+        width:100px;
+        height:80px;
+    }
+    .blz{
+        width:190px;
+    }
+}
+.Message li p{
+    margin:0 0 0 10px;
+}
+ul {
+    width: 100%;
+    margin-bottom: 100px;
+}
