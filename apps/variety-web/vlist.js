@@ -43,7 +43,7 @@
                 isTop: true,
                 isContent: false
             },
-            videoUrl: "/video/variety/shishangmeishi.mp4",
+            videoUrl: "/video/variety/shishangmeishi10.mp4",
             hPosterUrl: "./img/i_h_1.jpg",
             vPosterUrl: "./img/i_v_1.jpg",
             fileSize: "",
@@ -70,7 +70,7 @@
                 isTop: true,
                 isContent: false
             },
-            videoUrl: "/video/variety/shishanglvyou.mp4",
+            videoUrl: "/video/variety/shishanglvyou10.mp4",
             hPosterUrl: "./img/i_h_2.jpg",
             vPosterUrl: "./img/i_v_2.jpg",
             fileSize: "",
@@ -78,7 +78,9 @@
             writer: "黄芸",
             starring: "",
             intro: "时尚旅游TV是国内首档，以明星作为体验者身份的深度旅游类节目。以旅行体验者个人魅力，展现以及目的地人文风情为主体的，与国内顶尖旅游杂志同名内容共享的一档高端旅游类电视精品节目。"
-        },
+        }
+        /*
+        ,
         {
             id: "3",
             classId: [ 3],
@@ -104,7 +106,7 @@
             writer: "",
             starring: "邓超、Angelababy（杨颖）、李晨、郑恺、陈赫、王祖蓝等",
             intro: "《奔跑吧兄弟第二季》共12期，第二季“奔跑团”阵容：邓超、Angelababy（杨颖）、郑恺、李晨、王祖蓝、陈赫、包贝尔。主要嘉宾有范冰冰、韩庚、黄晓明、欧弟、宋佳、林更新、李治廷、叶祖新、蒋劲夫、张艺兴、吴奇隆、陈乔恩等。"
-        }
+        }*/
 
 
     ];
