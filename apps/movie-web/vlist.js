@@ -32,7 +32,7 @@
             country:"中国",
             time:"2014年",
             classId1:"爱情，剧情，喜剧",
-            title: "心花怒放",
+            title: "心花路放",
             playLength: "117 min",
             banner: {
                 isBanner: false,
@@ -43,7 +43,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "/video/movie/xinhuanufang.mp4",
+            videoUrl: "/video/movie/xinhualufang.mp4",
             hPosterUrl: "./img/i_h_4.jpg",
             vPosterUrl: "./img/i_v_4.jpg",
             fileSize: "661M",

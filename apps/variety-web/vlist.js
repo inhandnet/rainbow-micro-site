@@ -32,7 +32,241 @@
             classId1:"生活服务类",
             country:"中国",
             time:"2015年",
-            title: "时尚美食",
+            title: "时尚美食01",
+            playLength: "约90分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: "./img/banner1.jpg"
+            },
+            isRecommand: false,
+            hot: {
+                isTop: false,
+                isContent: false
+            },
+            videoUrl: "/video/variety/shishangmeishi1.mp4",
+            hPosterUrl: "./img/i_h_1.jpg",
+            vPosterUrl: "./img/i_v_1.jpg",
+            fileSize: "",
+            director: "",
+            writer: "",
+            starring: "",
+            intro: "时尚美食节目由时尚星光传媒强力推出的一档大型生活服务类节目。节目以外景拍摄结合棚内录制的创新模式，开创了美食节目的新天地。并将国际美食与国内传统美食相结合，打造出最时尚、最前沿、最国际化的时尚美食栏目。"
+        },
+        {
+            id: "2",
+            classId: [3],
+            classId1:"生活服务类",
+            country:"中国",
+            time:"2015年",
+            title: "时尚美食02",
+            playLength: "约90分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: "./img/banner1.jpg"
+            },
+            isRecommand: false,
+            hot: {
+                isTop: false,
+                isContent: false
+            },
+            videoUrl: "/video/variety/shishangmeishi2.mp4",
+            hPosterUrl: "./img/i_h_1.jpg",
+            vPosterUrl: "./img/i_v_1.jpg",
+            fileSize: "",
+            director: "",
+            writer: "",
+            starring: "",
+            intro: "时尚美食节目由时尚星光传媒强力推出的一档大型生活服务类节目。节目以外景拍摄结合棚内录制的创新模式，开创了美食节目的新天地。并将国际美食与国内传统美食相结合，打造出最时尚、最前沿、最国际化的时尚美食栏目。"
+        },
+        {
+            id: "3",
+            classId: [3],
+            classId1:"生活服务类",
+            country:"中国",
+            time:"2015年",
+            title: "时尚美食03",
+            playLength: "约90分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: "./img/banner1.jpg"
+            },
+            isRecommand: false,
+            hot: {
+                isTop: false,
+                isContent: false
+            },
+            videoUrl: "/video/variety/shishangmeishi3.mp4",
+            hPosterUrl: "./img/i_h_1.jpg",
+            vPosterUrl: "./img/i_v_1.jpg",
+            fileSize: "",
+            director: "",
+            writer: "",
+            starring: "",
+            intro: "时尚美食节目由时尚星光传媒强力推出的一档大型生活服务类节目。节目以外景拍摄结合棚内录制的创新模式，开创了美食节目的新天地。并将国际美食与国内传统美食相结合，打造出最时尚、最前沿、最国际化的时尚美食栏目。"
+        },
+        {
+            id: "4",
+            classId: [3],
+            classId1:"生活服务类",
+            country:"中国",
+            time:"2015年",
+            title: "时尚美食04",
+            playLength: "约90分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: "./img/banner1.jpg"
+            },
+            isRecommand: false,
+            hot: {
+                isTop: false,
+                isContent: false
+            },
+            videoUrl: "/video/variety/shishangmeishi4.mp4",
+            hPosterUrl: "./img/i_h_1.jpg",
+            vPosterUrl: "./img/i_v_1.jpg",
+            fileSize: "",
+            director: "",
+            writer: "",
+            starring: "",
+            intro: "时尚美食节目由时尚星光传媒强力推出的一档大型生活服务类节目。节目以外景拍摄结合棚内录制的创新模式，开创了美食节目的新天地。并将国际美食与国内传统美食相结合，打造出最时尚、最前沿、最国际化的时尚美食栏目。"
+        },
+        {
+            id: "5",
+            classId: [3],
+            classId1:"生活服务类",
+            country:"中国",
+            time:"2015年",
+            title: "时尚美食05",
+            playLength: "约90分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: "./img/banner1.jpg"
+            },
+            isRecommand: false,
+            hot: {
+                isTop: false,
+                isContent: false
+            },
+            videoUrl: "/video/variety/shishangmeishi5.mp4",
+            hPosterUrl: "./img/i_h_1.jpg",
+            vPosterUrl: "./img/i_v_1.jpg",
+            fileSize: "",
+            director: "",
+            writer: "",
+            starring: "",
+            intro: "时尚美食节目由时尚星光传媒强力推出的一档大型生活服务类节目。节目以外景拍摄结合棚内录制的创新模式，开创了美食节目的新天地。并将国际美食与国内传统美食相结合，打造出最时尚、最前沿、最国际化的时尚美食栏目。"
+        },
+        {
+            id: "6",
+            classId: [3],
+            classId1:"生活服务类",
+            country:"中国",
+            time:"2015年",
+            title: "时尚美食06",
+            playLength: "约90分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: "./img/banner1.jpg"
+            },
+            isRecommand: false,
+            hot: {
+                isTop: false,
+                isContent: false
+            },
+            videoUrl: "/video/variety/shishangmeishi6.mp4",
+            hPosterUrl: "./img/i_h_1.jpg",
+            vPosterUrl: "./img/i_v_1.jpg",
+            fileSize: "",
+            director: "",
+            writer: "",
+            starring: "",
+            intro: "时尚美食节目由时尚星光传媒强力推出的一档大型生活服务类节目。节目以外景拍摄结合棚内录制的创新模式，开创了美食节目的新天地。并将国际美食与国内传统美食相结合，打造出最时尚、最前沿、最国际化的时尚美食栏目。"
+        },
+        {
+            id: "7",
+            classId: [3],
+            classId1:"生活服务类",
+            country:"中国",
+            time:"2015年",
+            title: "时尚美食07",
+            playLength: "约90分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: "./img/banner1.jpg"
+            },
+            isRecommand: false,
+            hot: {
+                isTop: false,
+                isContent: false
+            },
+            videoUrl: "/video/variety/shishangmeishi7.mp4",
+            hPosterUrl: "./img/i_h_1.jpg",
+            vPosterUrl: "./img/i_v_1.jpg",
+            fileSize: "",
+            director: "",
+            writer: "",
+            starring: "",
+            intro: "时尚美食节目由时尚星光传媒强力推出的一档大型生活服务类节目。节目以外景拍摄结合棚内录制的创新模式，开创了美食节目的新天地。并将国际美食与国内传统美食相结合，打造出最时尚、最前沿、最国际化的时尚美食栏目。"
+        },
+        {
+            id: "8",
+            classId: [3],
+            classId1:"生活服务类",
+            country:"中国",
+            time:"2015年",
+            title: "时尚美食08",
+            playLength: "约90分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: "./img/banner1.jpg"
+            },
+            isRecommand: false,
+            hot: {
+                isTop: false,
+                isContent: false
+            },
+            videoUrl: "/video/variety/shishangmeishi8.mp4",
+            hPosterUrl: "./img/i_h_1.jpg",
+            vPosterUrl: "./img/i_v_1.jpg",
+            fileSize: "",
+            director: "",
+            writer: "",
+            starring: "",
+            intro: "时尚美食节目由时尚星光传媒强力推出的一档大型生活服务类节目。节目以外景拍摄结合棚内录制的创新模式，开创了美食节目的新天地。并将国际美食与国内传统美食相结合，打造出最时尚、最前沿、最国际化的时尚美食栏目。"
+        },
+        {
+            id: "9",
+            classId: [3],
+            classId1:"生活服务类",
+            country:"中国",
+            time:"2015年",
+            title: "时尚美食09",
+            playLength: "约90分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: "./img/banner1.jpg"
+            },
+            isRecommand: false,
+            hot: {
+                isTop: false,
+                isContent: false
+            },
+            videoUrl: "/video/variety/shishangmeishi9.mp4",
+            hPosterUrl: "./img/i_h_1.jpg",
+            vPosterUrl: "./img/i_v_1.jpg",
+            fileSize: "",
+            director: "",
+            writer: "",
+            starring: "",
+            intro: "时尚美食节目由时尚星光传媒强力推出的一档大型生活服务类节目。节目以外景拍摄结合棚内录制的创新模式，开创了美食节目的新天地。并将国际美食与国内传统美食相结合，打造出最时尚、最前沿、最国际化的时尚美食栏目。"
+        },
+        {
+            id: "10",
+            classId: [3],
+            classId1:"生活服务类",
+            country:"中国",
+            time:"2015年",
+            title: "时尚美食10",
             playLength: "约90分钟",
             banner: {
                 isBanner: true,
@@ -52,12 +286,253 @@
             starring: "",
             intro: "时尚美食节目由时尚星光传媒强力推出的一档大型生活服务类节目。节目以外景拍摄结合棚内录制的创新模式，开创了美食节目的新天地。并将国际美食与国内传统美食相结合，打造出最时尚、最前沿、最国际化的时尚美食栏目。"
         },
-
         {
-            id: "2",
-            classId: [ 3],
+            id: "11",
+            classId: [2],
             classId1:"生活服务类",
-            title: "时尚旅游",
+            title: "时尚旅游01",
+            country:"中国",
+            time:"2015年",
+            playLength: "约40分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: "./img/banner2.jpg"
+            },
+            isRecommand: false,
+            hot: {
+                isTop: false,
+                isContent: false
+            },
+            videoUrl: "/video/variety/shishanglvyou1.mp4",
+            hPosterUrl: "./img/i_h_2.jpg",
+            vPosterUrl: "./img/i_v_2.jpg",
+            fileSize: "",
+            director: " ",
+            writer: "黄芸",
+            starring: "",
+            intro: "时尚旅游TV是国内首档，以明星作为体验者身份的深度旅游类节目。以旅行体验者个人魅力，展现以及目的地人文风情为主体的，与国内顶尖旅游杂志同名内容共享的一档高端旅游类电视精品节目。"
+        },
+        {
+            id: "12",
+            classId: [2],
+            classId1:"生活服务类",
+            title: "时尚旅游02",
+            country:"中国",
+            time:"2015年",
+            playLength: "约40分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: "./img/banner2.jpg"
+            },
+            isRecommand: false,
+            hot: {
+                isTop: false,
+                isContent: false
+            },
+            videoUrl: "/video/variety/shishanglvyou2.mp4",
+            hPosterUrl: "./img/i_h_2.jpg",
+            vPosterUrl: "./img/i_v_2.jpg",
+            fileSize: "",
+            director: " ",
+            writer: "黄芸",
+            starring: "",
+            intro: "时尚旅游TV是国内首档，以明星作为体验者身份的深度旅游类节目。以旅行体验者个人魅力，展现以及目的地人文风情为主体的，与国内顶尖旅游杂志同名内容共享的一档高端旅游类电视精品节目。"
+        }
+        ,
+        {
+            id: "13",
+            classId: [2],
+            classId1:"生活服务类",
+            title: "时尚旅游03",
+            country:"中国",
+            time:"2015年",
+            playLength: "约40分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: "./img/banner2.jpg"
+            },
+            isRecommand: false,
+            hot: {
+                isTop: false,
+                isContent: false
+            },
+            videoUrl: "/video/variety/shishanglvyou3.mp4",
+            hPosterUrl: "./img/i_h_2.jpg",
+            vPosterUrl: "./img/i_v_2.jpg",
+            fileSize: "",
+            director: " ",
+            writer: "黄芸",
+            starring: "",
+            intro: "时尚旅游TV是国内首档，以明星作为体验者身份的深度旅游类节目。以旅行体验者个人魅力，展现以及目的地人文风情为主体的，与国内顶尖旅游杂志同名内容共享的一档高端旅游类电视精品节目。"
+        }
+        ,
+        {
+            id: "14",
+            classId: [2],
+            classId1:"生活服务类",
+            title: "时尚旅游04",
+            country:"中国",
+            time:"2015年",
+            playLength: "约40分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: "./img/banner2.jpg"
+            },
+            isRecommand: false,
+            hot: {
+                isTop: false,
+                isContent: false
+            },
+            videoUrl: "/video/variety/shishanglvyou4.mp4",
+            hPosterUrl: "./img/i_h_2.jpg",
+            vPosterUrl: "./img/i_v_2.jpg",
+            fileSize: "",
+            director: " ",
+            writer: "黄芸",
+            starring: "",
+            intro: "时尚旅游TV是国内首档，以明星作为体验者身份的深度旅游类节目。以旅行体验者个人魅力，展现以及目的地人文风情为主体的，与国内顶尖旅游杂志同名内容共享的一档高端旅游类电视精品节目。"
+        }
+        ,
+        {
+            id: "15",
+            classId: [2],
+            classId1:"生活服务类",
+            title: "时尚旅游05",
+            country:"中国",
+            time:"2015年",
+            playLength: "约40分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: "./img/banner2.jpg"
+            },
+            isRecommand: false,
+            hot: {
+                isTop: false,
+                isContent: false
+            },
+            videoUrl: "/video/variety/shishanglvyou5.mp4",
+            hPosterUrl: "./img/i_h_2.jpg",
+            vPosterUrl: "./img/i_v_2.jpg",
+            fileSize: "",
+            director: " ",
+            writer: "黄芸",
+            starring: "",
+            intro: "时尚旅游TV是国内首档，以明星作为体验者身份的深度旅游类节目。以旅行体验者个人魅力，展现以及目的地人文风情为主体的，与国内顶尖旅游杂志同名内容共享的一档高端旅游类电视精品节目。"
+        }
+        ,
+        {
+            id: "16",
+            classId: [2],
+            classId1:"生活服务类",
+            title: "时尚旅游06",
+            country:"中国",
+            time:"2015年",
+            playLength: "约40分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: "./img/banner2.jpg"
+            },
+            isRecommand: false,
+            hot: {
+                isTop: false,
+                isContent: false
+            },
+            videoUrl: "/video/variety/shishanglvyou6.mp4",
+            hPosterUrl: "./img/i_h_2.jpg",
+            vPosterUrl: "./img/i_v_2.jpg",
+            fileSize: "",
+            director: " ",
+            writer: "黄芸",
+            starring: "",
+            intro: "时尚旅游TV是国内首档，以明星作为体验者身份的深度旅游类节目。以旅行体验者个人魅力，展现以及目的地人文风情为主体的，与国内顶尖旅游杂志同名内容共享的一档高端旅游类电视精品节目。"
+        }
+        ,
+        {
+            id: "17",
+            classId: [2],
+            classId1:"生活服务类",
+            title: "时尚旅游07",
+            country:"中国",
+            time:"2015年",
+            playLength: "约40分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: "./img/banner2.jpg"
+            },
+            isRecommand: false,
+            hot: {
+                isTop: false,
+                isContent: false
+            },
+            videoUrl: "/video/variety/shishanglvyou7.mp4",
+            hPosterUrl: "./img/i_h_2.jpg",
+            vPosterUrl: "./img/i_v_2.jpg",
+            fileSize: "",
+            director: " ",
+            writer: "黄芸",
+            starring: "",
+            intro: "时尚旅游TV是国内首档，以明星作为体验者身份的深度旅游类节目。以旅行体验者个人魅力，展现以及目的地人文风情为主体的，与国内顶尖旅游杂志同名内容共享的一档高端旅游类电视精品节目。"
+        }
+        ,
+        {
+            id: "18",
+            classId: [2],
+            classId1:"生活服务类",
+            title: "时尚旅游08",
+            country:"中国",
+            time:"2015年",
+            playLength: "约40分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: "./img/banner2.jpg"
+            },
+            isRecommand: false,
+            hot: {
+                isTop: false,
+                isContent: false
+            },
+            videoUrl: "/video/variety/shishanglvyou8.mp4",
+            hPosterUrl: "./img/i_h_2.jpg",
+            vPosterUrl: "./img/i_v_2.jpg",
+            fileSize: "",
+            director: " ",
+            writer: "黄芸",
+            starring: "",
+            intro: "时尚旅游TV是国内首档，以明星作为体验者身份的深度旅游类节目。以旅行体验者个人魅力，展现以及目的地人文风情为主体的，与国内顶尖旅游杂志同名内容共享的一档高端旅游类电视精品节目。"
+        }
+        ,
+        {
+            id: "19",
+            classId: [2],
+            classId1:"生活服务类",
+            title: "时尚旅游09",
+            country:"中国",
+            time:"2015年",
+            playLength: "约40分钟",
+            banner: {
+                isBanner: false,
+                bannerImg: "./img/banner2.jpg"
+            },
+            isRecommand: false,
+            hot: {
+                isTop: false,
+                isContent: false
+            },
+            videoUrl: "/video/variety/shishanglvyou9.mp4",
+            hPosterUrl: "./img/i_h_2.jpg",
+            vPosterUrl: "./img/i_v_2.jpg",
+            fileSize: "",
+            director: " ",
+            writer: "黄芸",
+            starring: "",
+            intro: "时尚旅游TV是国内首档，以明星作为体验者身份的深度旅游类节目。以旅行体验者个人魅力，展现以及目的地人文风情为主体的，与国内顶尖旅游杂志同名内容共享的一档高端旅游类电视精品节目。"
+        }
+        ,
+        {
+            id: "20",
+            classId: [2],
+            classId1:"生活服务类",
+            title: "时尚旅游10",
             country:"中国",
             time:"2015年",
             playLength: "约40分钟",

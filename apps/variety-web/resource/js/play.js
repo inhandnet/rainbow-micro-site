@@ -12,7 +12,17 @@ $(function() {
     /**
      * @desc render recommand list box
      */
-    var recommandList=media._getRecommandList();
+    var video_id = getUrlParam("wefun-videoId");
+    var classIds;
+    var mediaFile=media._getListById(video_id,function(id,result){
+        if(result){
+            if(result.length>0){
+                classIds=result[0].classId;
+            }
+        }
+    });
+
+    var recommandList=media._getListByClassId(classIds[0]);
     var recommandHtml="";
     $(recommandList).each(function(k, v) {
         recommandHtml += "<div class='box' videoId='"+ v.id+"'>";
