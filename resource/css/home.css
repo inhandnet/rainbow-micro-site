@@ -12,9 +12,13 @@ p,img{
 #content
 {
     padding:30px 13px 130px 13px;
-    background:url(../img/home/bg.jpg);
-    background-size:cover;
+
     line-height: 20px;
+
+    background:url(../img/home/bg.jpg);
+    filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+    -moz-background-size:100% 100%;
+    background-size:100% 100%;
 }
 .slider{padding:0;}
 .slider{
