@@ -52,7 +52,7 @@
                 "    </a>"+
                 "    </div>"+
                 "    <div class='row row_min_width' style='font-size:12px;line-height: 70px;'>"+
-                "    <div class='col-lg-15 text-center'>技术支持&nbsp;|&nbsp;&nbsp;|&nbsp;86-021-53965495-715</div>"+
+                "    <div class='col-lg-15 text-center' style='display: none'>技术支持&nbsp;|&nbsp;&nbsp;|&nbsp;86-021-53965495-715</div>"+
                 "</div>"+
                 "</div>"+
                 "</div>"+
