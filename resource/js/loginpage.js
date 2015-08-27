@@ -11,7 +11,7 @@ window.client_info_cb=function(data){
     if(data.login=="1"){
       var a1= document.getElementById("head-right");
         a1.href="javascript:void(0)";
-        a1.style.border.top.color="#D3D3D3";
+        a1.style.borderColor="#D3D3D3";
         a1.style.color="#D3D3D3"
     }else if(data.login=="0"){
         //TODO
