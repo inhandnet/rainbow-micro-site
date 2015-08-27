@@ -43,7 +43,7 @@
                 isTop: false,
                 isContent: true
             },
-            videoUrl: "/video/movie/xinhuaufang.mp4",
+            videoUrl: "/video/movie/xinhualufang.mp4",
             hPosterUrl: "./img/i_h_4.jpg",
             vPosterUrl: "./img/i_v_4.jpg",
             fileSize: "661M",
