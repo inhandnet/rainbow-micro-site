@@ -22,7 +22,7 @@
         <script type="text/javascript" src="../../resource/js/pvuv.handler.js"></script>
 
 	</head>
-	<body class="o-page">
+	<body class="o-page" style="line-height: 0px;">
 		<div id="page">
 			<!-- Header -->
 			<div id="header-index">
@@ -36,16 +36,8 @@
 			<div style="display: none" class="subHeader"><i class="i-home i-small"></i>Welcome friend!</div>
 			
 			<!-- Banner -->
-			<div class="bannerPane">
-			  <section class="slider">
-				<div class="flexslider">
-				  <ul class="slides">
-                      <li>
-                          <img src="resource/img/home/banner1.png" style="height: 218px"/>
-                      </li>
-				  </ul>
-				</div>
-			  </section>
+			<div>
+                <img id="bannerImageHome" src="resource/img/home/banner2.png" style="height: 100%;width: 100%"/>
 			</div>
 			<!-- End Banner -->
 			<!-- Content -->
@@ -134,8 +126,14 @@
                 document.getElementById("home_apps").style.display="none";
             }
         }
+        function initialScreen(){
+            var bannerImg = document.getElementById("bannerImageHome");
+            var bannerHeight=bannerImg.offsetHeight;
+            console.log(bannerHeight);
+            $("#content").css("height",(bannerHeight*1.6)+"px");
+        }
         initialApps();
-
+        initialScreen();
     </script>
     <script type="text/javascript" src="config/oem_initial.js"></script>
 </html>
