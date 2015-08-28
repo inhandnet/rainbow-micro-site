@@ -2032,9 +2032,9 @@ nav span.on:before {
 .editor{
     text-align:right;
 }
-.imgCenter{
-    width: 100%;
-}
+/*.imgCenter{*/
+    /*width: 100%;*/
+/*}*/
 
 
 /*新增样式*/
@@ -2051,4 +2051,9 @@ nav span.on:before {
 }
 .date span:last-child{
   float:right;
+}
+
+.images{
+  text-align: center;
+  margin:20px 0;
 }
