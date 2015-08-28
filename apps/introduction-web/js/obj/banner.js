@@ -25,7 +25,7 @@ $(document).ready(function() {
 	});
 	bindEvent();
 
-    $('.ad_btn_wrap').hide();
+    //$('.ad_btn_wrap').hide();
 });
 var adIndex = 0,
 	timer,

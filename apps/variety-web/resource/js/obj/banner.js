@@ -21,7 +21,7 @@ $(document).ready(function() {
 			$(".ad_btn_wrap a").eq(k1).css("margin-left", "2%");
 	});
 	bindEvent();
-    $('.ad_btn_wrap').hide();
+    //$('.ad_btn_wrap').hide();
 });
 var adIndex = 0,
 	timer,

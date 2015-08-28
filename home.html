@@ -129,8 +129,11 @@
         function initialScreen(){
             var bannerImg = document.getElementById("bannerImageHome");
             var bannerHeight=bannerImg.offsetHeight;
-            console.log(bannerHeight);
-            $("#content").css("height",(bannerHeight*1.6)+"px");
+            var windowScreen = document.documentElement;
+            var screenWidth=windowScreen.clientWidth;
+            console.log(screenWidth);
+
+            $("#content").css("height",(screenWidth*1.1)+"px");
         }
         initialApps();
         initialScreen();
