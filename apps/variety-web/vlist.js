@@ -266,7 +266,7 @@
             classId1:"生活服务类",
             country:"中国",
             time:"2015年",
-            title: "时尚美食10",
+            title: "时尚美食",
             playLength: "约90分钟",
             banner: {
                 isBanner: true,
@@ -532,7 +532,7 @@
             id: "20",
             classId: [2],
             classId1:"生活服务类",
-            title: "时尚旅游10",
+            title: "时尚旅游",
             country:"中国",
             time:"2015年",
             playLength: "约40分钟",
