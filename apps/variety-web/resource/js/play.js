@@ -49,7 +49,7 @@ $(function() {
 
 	commonSelector = new CommonSelector([$("#recommendBtn"), $("#overviewBtn")], [$("#recommendBox"), $("#overviewBox")]);
 	$("#recommendBox").find(".box").on("click", function() {
-		window.location.href = 'play.html?wefun-videoId=' + $(this).attr("videoId");
+		window.location.href = 'player.html?wefun-videoId=' + $(this).attr("videoId");
 	});
 
     var videoId = getUrlParam("wefun-videoId");

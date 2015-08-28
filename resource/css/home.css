@@ -12,9 +12,6 @@ p,img{
 #content
 {
     padding:30px 13px 130px 13px;
-
-    line-height: 20px;
-
     background:url(../img/home/bg.jpg);
     filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
     -moz-background-size:100% 100%;
@@ -95,7 +92,7 @@ p,img{
         width:24%;
     }
     .mainIconPane{
-        width:23.4%;
+        width:20%;
     }
     .rowNav li{
         width:100%;
