@@ -58,7 +58,7 @@
             classId1:"爱情，剧情，动作",
             time:"2014年",
             country:"中国",
-            title: "黄飞鸿",
+            title: "黄飞鸿之英雄有梦",
             playLength: "124 min",
             banner: {
                 isBanner: true,

@@ -33,7 +33,14 @@ $(function() {
         recommandHtml += "<span>"+ v.playLength+"</span>";
         recommandHtml += "</div></div>";
         recommandHtml += "<div class='text'style='white-space: nowrap;text-overflow:ellipsis; overflow:hidden;'>";
-        recommandHtml += v.title;
+
+        if(v.id==10|| v.id==20){
+            recommandHtml += v.title+"10";
+        }
+        else{
+            recommandHtml += v.title;
+        }
+
         recommandHtml += "</div>";
         recommandHtml += "</div></div>";
     });
