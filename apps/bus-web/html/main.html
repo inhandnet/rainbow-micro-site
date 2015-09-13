@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
         <meta id="pvuvparameters" data-rid="0" data-rtype="bus_home" />
-
+        <title lang="text:index_title"></title>
 		<link rel="stylesheet" href="../css/style.css">
         <link type="text/css" rel="stylesheet" href="../../../resource/css/flexslider.css" />
         <link type="text/css" rel="stylesheet" href="../../../resource/css/jquery.mmenu.all.css" />
@@ -19,15 +19,15 @@
             <!-- Header -->
             <div id="header">
                 <a href="../../../home.html"></a>
-				<span id="Logo" class="svg">
-					大巴
+				<span id="Logo" class="svg" lang="text:bus_title">
+
 				</span>
                 <a class="HomeBtn" href="../../../home.html"></a>
             </div>
 
 			<nav id="main_selector" class="navigator_movie">
-				<span sid="homeBtn" class="on">公司简介</span>
-				<span sid="hotBtn">新闻公告</span>
+				<span sid="homeBtn" class="on" lang="text:bus_company_intro"></span>
+				<span sid="hotBtn" lang="text:bus_news"></span>
 			</nav>
 			<div id="home_box" >
 				<div align=center><img style="height: auto;width: 100%;" src ="../img/jj.png"></div>
@@ -103,5 +103,5 @@
 		document.addEventListener('touchend', touchEndFunc);
 
 	</script>
-
+    <script type="text/javascript" src="../../../resource/js/locale.js"></script>
 </html>

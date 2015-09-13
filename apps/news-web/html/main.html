@@ -6,7 +6,7 @@
     <meta name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <meta id="pvuvparameters" data-rid="0" data-rtype="news_home"/>
-
+    <title lang="text:index_title"></title>
     <link rel="stylesheet" href="../css/style1.css">
     <link type="text/css" rel="stylesheet" href="../../../resource/css/flexslider.css"/>
     <link type="text/css" rel="stylesheet" href="../../../resource/css/jquery.mmenu.all.css"/>
@@ -18,16 +18,16 @@
 <!-- Header -->
 <div id="header">
     <a href="../../../home.html"></a>
-        <span id="Logo" class="svg">
-            资讯
+        <span id="Logo" class="svg" lang="text:news_title">
+
         </span>
     <a class="HomeBtn" href="../../../home.html"></a>
 </div>
 
 <nav id="main_selector" class="navigator_movie">
-    <span sid="homeBtn" class="on">热点</span>
-    <span sid="hotBtn" class>体育</span>
-    <span sid="categoryBtn" class>文娱</span>
+    <span sid="homeBtn" class="on" lang="text:news_hot">热点</span>
+    <span sid="hotBtn" lang="text:news_sport" class>体育</span>
+    <span sid="categoryBtn" lang="text:news_entertainment" class>文娱</span>
 </nav>
 <div id="home_box">
     <ul class="Message">
@@ -254,7 +254,10 @@
 <script type="text/javascript" src="../js/obj/banner.js"></script>
 <script type="text/javascript" src="../js/main.js"></script>
 <script type="text/javascript" src="../../../resource/js/pvuv.handler.js"></script>
-<script type="text/javascript" src="../../../config/oem_initial.js"></script>
+
+
+<script type="text/javascript" src="../../../resource/js/locale.js"></script>
+
 <script type="text/javascript">
     function liClick(index) {
         location.href = "./hotspot/" + index + ".html"

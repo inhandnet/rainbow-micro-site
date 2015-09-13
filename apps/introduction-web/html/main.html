@@ -1,160 +1,176 @@
 <!DOCTYPE html>
 <html>
-<title></title>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-        <meta id="pvuvparameters" data-rid="0" data-rtype="introduction_home" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta id="pvuvparameters" data-rid="0" data-rtype="introduction_home"/>
+    <title lang="text:index_title"></title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/flexslider.css"/>
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/jquery.mmenu.all.css"/>
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/style.css"/>
+    <style>
+        #adWrap {
+            overflow: hidden;
+        }
 
-		<link rel="stylesheet" href="../css/style.css">
-        <link type="text/css" rel="stylesheet" href="../../../resource/css/flexslider.css" />
-        <link type="text/css" rel="stylesheet" href="../../../resource/css/jquery.mmenu.all.css" />
-        <link type="text/css" rel="stylesheet" href="../../../resource/css/style.css" />
-		<style>
-			#adWrap {
-				overflow: hidden;
-			}
-			.banner {
-				position: relative;
-				/*margin-top: 50px;*/
-			}
-			.banner ul {
-				overflow: hidden;
-				width: 400%;
-			}
-			.banner li {
-				float: left;
-				width: 25%;
-				position: relative;
-			}
-			.banner img {
-				display: block;
-				width: 100%;
-			}
-			.ad_btn_wrap {
-				position: absolute;
-                bottom: 20px;
-				width: 100%;
-			}
-			.ad_btn_wrap a {
-				display: block;
-				float: left;
-				width: 6px;
-				height: 6px;
-				border-radius: 3px;
-				background: rgba(255, 255, 255, 0.8);
-			}
-			.ad_btn_wrap a:nth-child(1) {
-				background: #ff7b23;
-				margin-left: 45%;
-			}
-			#out {
-				overflow: hidden;
-				width: 100%;
-			}
-			#in {
-				overflow: hidden;
-			}
-			#in img {
-				display: block;
-				width: 100%;
-				float: left;
-			}
-			.article {
-				margin-top: 50px;
-				width: 100%;
-				height: auto;
-			}
-			#out {
-				overflow: hidden;
-				width: 100%;
-				/* height: 124px;  */
-				/* margin: 0px auto; */
-			}
-			#in {
-				overflow: hidden;
-				/* width: 640px; */
-				/*  height: 124px;  */
-			}
-			#in img {
-				display: block;
-				width: 100%;
-				float: left;
+        .banner {
+            position: relative;
+            /*margin-top: 50px;*/
+        }
 
-			}
-		    .zt
-			{
-			 text-indent:30px;
-			}
-			.content{
-				padding:20px 20px 80px;
-			}
-			.content div img{
-				margin-bottom: 10px;
-			}
-			.content p{
-				font-size: 14px;
-			}
-		</style>
-	</head>
+        .banner ul {
+            overflow: hidden;
+            width: 400%;
+        }
 
-	<body>
-		<div >
-            <!-- Header -->
-            <div id="header">
-                <a href="../../../home.html"></a>
-				<span id="Logo" class="svg">
-					航美
+        .banner li {
+            float: left;
+            width: 25%;
+            position: relative;
+        }
+
+        .banner img {
+            display: block;
+            width: 100%;
+        }
+
+        .ad_btn_wrap {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+        }
+
+        .ad_btn_wrap a {
+            display: block;
+            float: left;
+            width: 6px;
+            height: 6px;
+            border-radius: 3px;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .ad_btn_wrap a:nth-child(1) {
+            background: #ff7b23;
+            margin-left: 45%;
+        }
+
+        #out {
+            overflow: hidden;
+            width: 100%;
+        }
+
+        #in {
+            overflow: hidden;
+        }
+
+        #in img {
+            display: block;
+            width: 100%;
+            float: left;
+        }
+
+        .article {
+            margin-top: 50px;
+            width: 100%;
+            height: auto;
+        }
+
+        #out {
+            overflow: hidden;
+            width: 100%;
+            /* height: 124px;  */
+            /* margin: 0px auto; */
+        }
+
+        #in {
+            overflow: hidden;
+            /* width: 640px; */
+            /*  height: 124px;  */
+        }
+
+        #in img {
+            display: block;
+            width: 100%;
+            float: left;
+
+        }
+
+        .zt {
+            text-indent: 30px;
+        }
+
+        .content {
+            padding: 20px 20px 80px;
+        }
+
+        .content div img {
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <!-- Header -->
+    <div id="header">
+        <a href="../../../home.html"></a>
+				<span id="Logo" class="svg" lang="text:index_title">
+
 				</span>
-                <a class="HomeBtn" href="../../../home.html"></a>
+        <a class="HomeBtn" href="../../../home.html"></a>
+    </div>
+</div>
+<div style="position: fixed;bottom: 0px;width: 100%;height: 71px;">
+    <img style="width: 100%;height: 100%" src="../../../resource/img/ad/ad_bottom.png">
+</div>
+<div id="home_box">
+    <div class="banner">
+        <div id="out">
+            <div id="in">
+                <ul></ul>
             </div>
-			</div>
-			<div style="position: fixed;bottom: 0px;width: 100%;height: 71px;">
-			<img style="width: 100%;height: 100%" src="../img/gg.png">
-			</div>
-		<div id="home_box">
-			<div class="banner">
-				<div id="out">
-					<div id="in">
-						<ul></ul>
-					</div>
-					<div class="ad_btn_wrap"></div>
-				</div>
-			</div>
-		</div>
-		<div class="content">
-			<p  class="zt" align=left>
-				航美在线为用户提供高铁、航空、大巴wifi上网，打破空中互联网信息孤岛，填补互联网在高空领域的空白，实现空地一体的wifi服务，并将交通工具上的服务延续至地面，营造闭环的上网体验，满足用户随时随地的上网需求。
-			</p>
-			<div style="text-align: center">
-				<img src="../img/bus.jpg"/>
-			</div>
-			<p>
-				用户连接本产品的wifi后可享受本产品提供的服务，包括电影、音乐、综艺、MV、资讯、阅读、财经、旅游、健康、租车、酒店、买票、音乐、有声读物、曲艺、评书、相声、游戏、应用、商城、汽车等。
-			</p>
-			<div style="text-align: center">
-				<img src="../img/application.jpg" />
-			</div>
-			<p>
-				根据用户连接不同交通工具的wifi，展示不同的服务栏目，满足用户个性化的上网需求，丰富用户的旅途体验。
-			</p>
-		</div>
+            <div class="ad_btn_wrap"></div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <p class="zt" align=left>
+        <span lang="text:index_title"></span>为用户提供高铁、航空、大巴wifi上网，打破空中互联网信息孤岛，填补互联网在高空领域的空白，实现空地一体的wifi服务，并将交通工具上的服务延续至地面，营造闭环的上网体验，满足用户随时随地的上网需求。
+    </p>
 
-		
-	</body>
-	<script type="text/javascript" src="../js/util/tween.js" ></script>
-	<script type="text/javascript" src="../js/util/jquery.js"></script>
-	<script type="text/javascript" src="../js/util/my-ajax.js"></script>
-	<script type="text/javascript" src="../js/obj/main-selector.js"></script>
-	<script type="text/javascript" src="../js/obj/home_box.js"></script>
-	<script type="text/javascript" src="../js/obj/banner.js" ></script>
-	<script type="text/javascript" src="../js/main.js"></script>
+    <div style="text-align: center">
+        <img src="../img/bus.jpg"/>
+    </div>
+    <p>
+        用户连接本产品的wifi后可享受本产品提供的服务，包括电影、音乐、综艺、MV、资讯、阅读、财经、旅游、健康、租车、酒店、买票、音乐、有声读物、曲艺、评书、相声、游戏、应用、商城、汽车等。
+    </p>
+
+    <div style="text-align: center">
+        <img src="../img/application.jpg"/>
+    </div>
+    <p>
+        根据用户连接不同交通工具的wifi，展示不同的服务栏目，满足用户个性化的上网需求，丰富用户的旅途体验。
+    </p>
+</div>
+
+
+</body>
+<script type="text/javascript" src="../js/util/tween.js"></script>
+<script type="text/javascript" src="../js/util/jquery.js"></script>
+<script type="text/javascript" src="../js/util/my-ajax.js"></script>
+<script type="text/javascript" src="../js/obj/banner.js"></script>
 <script type="text/javascript" src="../../../resource/js/pvuv.handler.js"></script>
-<script type="text/javascript" src="../../../config/oem_initial.js"></script>
-	<script type="text/javascript">
-		function touchEndFunc() {}
-		document.addEventListener('touchend', touchEndFunc);
+<script type="text/javascript">
+    function touchEndFunc() {
+    }
+    document.addEventListener('touchend', touchEndFunc);
 
-	</script>
-
+</script>
+<script type="text/javascript" src="../../../resource/js/locale.js"></script>
 </html>

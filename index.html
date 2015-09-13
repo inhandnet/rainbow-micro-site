@@ -6,7 +6,7 @@
 		<meta name="author" content="www.frebsite.nl" />
 		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
 
-		<title>航美在线</title>
+		<title lang="text:index_title"></title>
 		<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
 		<link type="text/css" rel="stylesheet" href="resource/css/flexslider.css" />
@@ -14,7 +14,7 @@
 		<link type="text/css" rel="stylesheet" href="resource/css/style.css" />
 		<link type="text/css" rel="stylesheet" href="resource/css/loopPlayer.css" />
 
-        <script type="text/javascript" src="../../resource/js/pvuv.handler.js"></script>
+        <script type="text/javascript" src="resource/js/pvuv.handler.js"></script>
 		<script type="text/javascript" src="resource/js/jquery.min.js"></script>
 		<script type="text/javascript" src="resource/js/jquery.mmenu.min.all.js"></script>
 		<script type="text/javascript" src="resource/js/jquery.flexslider.js"></script>
@@ -29,7 +29,7 @@
 			<!-- Header -->
 			<div id="header">
 				<span id="Logo" class="svg">
-					<span id="org_name">航美在线</span>
+					<span id="org_name" lang="text:index_title"></span>
 				</span>
 			</div>
 			<!-- Banner -->
@@ -66,24 +66,15 @@
 				switchLoad:"_src" //切换加载，真实图片路径为"_src"
 			});
 		</script>
-		<script type="text/javascript" src="config/oem_initial.js"></script>
 	</body>
     <script type="text/javascript">
         var imgDiv=document.getElementsByClassName("hd")[0];
         var imgBlock=document.getElementsByClassName("img1");
-//        var imgDiv=document.getElementById("picScroll");
        function displayN(){
 
             imgBlock[0].style.display = "none";
             imgBlock[1].style.display = "none";
         }
-//        function displayB(){
-//
-//            imgBlock[0].style.display = "block";
-//            imgBlock[1].style.display = "block";
-//
-//
-//        }
         function displayB() {
             var sUserAgent = navigator.userAgent.toLowerCase();
             var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
@@ -99,15 +90,7 @@
                 imgBlock[1].style.display = "block";
             }
         }
-        browserRedirect();
-        //     function mouseMove(){
-//         if(window.screen.width>900){
-//             onmouseover="displayB";
-//         }
-//         else
-//         {
-//             onmouseover="displayN";
-//         }
-//     }
+
     </script>
+    <script type="text/javascript" src="resource/js/locale.js"></script>
 </html>

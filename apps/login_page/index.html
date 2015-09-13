@@ -9,7 +9,7 @@ width = device-width,target-densitydpi = medium-dpi "/>
     <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
     <meta HTTP-EQUIV="Expires" CONTENT="0">
     <meta id="pvuvparameters" data-rid="0" data-rtype="login_page" />
-
+    <title lang="text:index_title"></title>
     <link rel="icon" href="" type="image/x-icon" />
     <title lang="text:free_wifi_access"></title>
     <link href="resoureces/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -61,8 +61,8 @@ width = device-width,target-densitydpi = medium-dpi "/>
 </style>
 <div id="header" class="this_header">
     <a id="head-left" href="../../home.html"></a>
-				<span id="Logo" class="svg">
-					航美在线
+				<span id="Logo" class="svg" lang="text:one_key_net">
+
 				</span>
     <a href="../../home.html"><img src="../../resource/img/home/goback.png"></a>
 </div>
@@ -85,27 +85,32 @@ width = device-width,target-densitydpi = medium-dpi "/>
 <script src="resoureces/js/bootstrap.min.js"></script>
 <script src="resoureces/js/ripples.min.js"></script>
 <script src="resoureces/js/material.min.js"></script>
+
+<script type="text/javascript" src="../../resource/js/locale.js"></script>
+
 <script type="text/javascript">
-   $(document).ready(function(){
-           $.material.input();
+    $(document).ready(function(){
+        $.material.input();
 //设置页面语言
-           var option={};
-           var lang=navigator.language?navigator.language:navigator.userLanguage;
-           switch (lang.toLowerCase()){
-               case "zh-cn":
-                   option.lang="zh_CN";
-                   break;
-               case "en":
-                   break;
-               default :
-                   option.lang="en";
-           };
-           Rainbow.locale.set(option);
+        var option={};
+        option.lang=locale.lang;
+//        var lang=navigator.language?navigator.language:navigator.userLanguage;
+//        switch (lang.toLowerCase()){
+//            case "zh_CN":
+//                option.lang="zh_CN";
+//                break;
+//            case "en":
+//                break;
+//            default :
+//                option.lang="en";
+//        };
+        Rainbow.locale.set(option);
 //渲染页面文字
-            cloud.insertLoginBox({
-                selector:"#wrapper"
-            });
-   });
+        cloud.insertLoginBox({
+            selector:"#wrapper"
+        });
+    });
 </script>
+
 </body>
 </html>

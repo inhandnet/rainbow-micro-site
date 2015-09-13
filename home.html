@@ -6,7 +6,7 @@
 		<meta name="author" content="www.frebsite.nl" />
 		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
 
-		<title>航美在线</title>
+		<title lang="text:index_title"></title>
 		<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
 		<link type="text/css" rel="stylesheet" href="resource/css/flexslider.css" />
@@ -19,7 +19,7 @@
 		<script type="text/javascript" src="resource/js/jquery.flexslider.js"></script>
 		<script type="text/javascript" src="resource/js/o-script.js"></script>
         <script type="text/javascript" src="resource/js/loginpage.js"></script>
-        <script type="text/javascript" src="../../resource/js/pvuv.handler.js"></script>
+        <script type="text/javascript" src="resource/js/pvuv.handler.js"></script>
 
 	</head>
 	<body class="o-page" style="line-height: 0px;">
@@ -28,10 +28,10 @@
 			<div id="header-index">
                 <a id="head-left" href="#menu"></a>
 				<span id="Logo" class="svg">
-					<span id="org_name">航美在线</span>
+					<span id="org_name" lang="text:index_title"></span>
 				</span>
                 <a id="head-right" class="LoginPage" href="apps/login_page/index.html" style="padding-left: 8px;height:30px ;vertical-align: middle;border: 1px solid white;margin-top: 10px" >
-                 <div style="vertical-align: middle;position: absolute;top: -10px; right:px; left: inherit;font-size:14px;"><b >一键上网</b></div></a>
+                 <div style="vertical-align: middle;position: absolute;top: -10px; right:px; left: inherit;font-size:14px;"><b lang="text:one_key_net"></b></div></a>
 			</div>
 			<div style="display: none" class="subHeader"><i class="i-home i-small"></i>Welcome friend!</div>
 			
@@ -46,22 +46,22 @@
                 <div class="menu_up">
                     <div class="mainIconPane" style="width: 20%">
                         <a  href="apps/movie-web/main.html">
-                            <img src="./resource/img/buttons/movie.png" />
+                            <img id="index_button_movie" />
                         </a>
                     </div>
                     <div class="mainIconPane" style="width: 20%">
                         <a href="apps/variety-web/main.html">
-                            <img src="./resource/img/buttons/variety.png" />
+                            <img id="index_button_variety" />
                         </a>
                     </div>
                     <div class="mainIconPane" style="width: 20%">
                         <a href="apps/music-web/main.html">
-                            <img src="./resource/img/buttons/music.png" />
+                            <img id="index_button_music" />
                         </a>
                     </div>
                     <div class="mainIconPane" style="width: 20%">
                         <a href="apps/travel-web/html/main.html">
-                            <img src="./resource/img/buttons/travel.png" />
+                            <img id="index_button_travel"  />
                         </a>
                     </div>
                 </div>
@@ -69,12 +69,12 @@
                 <div class="menu_up" style="margin-top: 10px;">
                     <div class="mainIconPane" style="width: 20%">
                             <a href="apps/news-web/html/main.html">
-                                <img src="./resource/img/buttons/news.png" />
+                                <img id="index_button_news"  />
                             </a>
                     </div>
                     <div id="home_apps" class="mainIconPane" style="width: 20%">
                             <a href="apps/application-web/main.html">
-                                <img src="./resource/img/buttons/apps.png" />
+                                <img id="index_button_apps"  />
                             </a>
                     </div>
                 </div>
@@ -84,12 +84,12 @@
                         <ul style="line-height: 0px;">
                             <li>
                                 <a href="apps/bus-web/html/main.html" >
-                                    <img src="./resource/img/buttons/bus.png"/>
+                                    <img id="index_button_bus" />
                                 </a>
                             </li>
                             <li>
                                 <a href="apps/introduction-web/html/main.html">
-                                    <img src="./resource/img/buttons/instruct.png"/>
+                                    <img id="index_button_instruct" />
                                 </a>
                             </li>
                         </ul>
@@ -122,5 +122,19 @@
         initialApps();
         initialScreen();
     </script>
-    <script type="text/javascript" src="config/oem_initial.js"></script>
+    <script type="text/javascript" src="resource/js/locale.js"></script>
+    <script type="text/javascript">
+        function initialIndexButtonLanguage(){
+            var lang=locale.lang;
+            $("#index_button_movie").attr("src","./resource/img/buttons/"+lang+"/movie.png");
+            $("#index_button_variety").attr("src","./resource/img/buttons/"+lang+"/variety.png");
+            $("#index_button_music").attr("src","./resource/img/buttons/"+lang+"/music.png");
+            $("#index_button_travel").attr("src","./resource/img/buttons/"+lang+"/travel.png");
+            $("#index_button_news").attr("src","./resource/img/buttons/"+lang+"/news.png");
+            $("#index_button_apps").attr("src","./resource/img/buttons/"+lang+"/apps.png");
+            $("#index_button_bus").attr("src","./resource/img/buttons/"+lang+"/bus.png");
+            $("#index_button_instruct").attr("src","./resource/img/buttons/"+lang+"/instruct.png");
+        }
+        initialIndexButtonLanguage();
+    </script>
 </html>

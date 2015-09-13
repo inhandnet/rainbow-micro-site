@@ -7,13 +7,13 @@
 		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
         <meta id="pvuvparameters" data-rid="0" data-rtype="news_home" />
 
-		<title>免费声明</title>
+        <title lang="text:index_title"></title>
 		<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
 		<link type="text/css" rel="stylesheet" href="../../resource/css/flexslider.css" />
 		<link type="text/css" rel="stylesheet" href="../../resource/css/jquery.mmenu.all.css" />
 		<link type="text/css" rel="stylesheet" href="../../resource/css/style.css" />
-
+        <script type="text/javascript" src="./js/jquery-min.js"></script>
         <script type="text/javascript" src="../../resource/js/pvuv.handler.js"></script>
         <!--<script>-->
             <!--var sp=document.getElementById("sp1")-->
@@ -83,14 +83,14 @@
             <!-- Header -->
             <div id="header">
                 <a href="./index.html"></a>
-				<span id="Logo" class="svg">
-					航美在线产品免责声明
+				<span id="Logo" class="svg" lang="text:free_declare">
+
 				</span>
                 <a class="HomeBtn" href="../../home.html"></a>
             </div>
             <div id="div2">
             <p id="p1">尊敬的用户，您好！</p>
-			<p id="p2">欢迎您使用由北京航美在线网络技术有限公司免费提供的无线WIFI。但在使用无线WIFI前，请您务必阅读并注意如下事项，用户使用该WIFI系统都将被视作是对本声明全部内容的无异议的认可。</p>
+			<p id="p2">欢迎您使用由<span lang="text:index_title"></span>免费提供的无线WIFI。但在使用无线WIFI前，请您务必阅读并注意如下事项，用户使用该WIFI系统都将被视作是对本声明全部内容的无异议的认可。</p>
 		    <p id="p2">一、用户在使用该无线WIFI网络时，必须遵守以下规则：</p>
 			<p id="p2">1.在使用无线WIFI前，请及时装载安全防护软件，积极防范各类网络病毒，切实保护好个人信息安全。<br/>
 			2.在使用无线WIFI过程中，请务必核实网站的真实性，不登录非法网站，不轻信网络宣传，用户应对自身的账户、密码等信息保密，若由于用户自身疏忽导致信息泄露或财产损失的，自行承担一切责任。<br/>
@@ -105,10 +105,11 @@
 我司有权根据实际情况决定及调整提供网络服务的内容，并对其所提供之服务拥有最终解释权。</p>
 		</div>
             <div class="close1"style="">
-          <button class="button1"onclick="openpage()">关闭</button></div>
+          <button class="button1"onclick="openpage()" lang="text:button_close"></button></div>
             </div>
         <!--<div id="div1">-->
             <!--<b  id="sp1">关闭</b>-->
         <!--</div>-->
-	</body>
+        <script type="text/javascript" src="../../resource/js/locale.js"></script>
+    </body>
 </html>

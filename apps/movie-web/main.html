@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
         <meta id="pvuvparameters" data-rid="0" data-rtype="movie_home" />
-
+        <title lang="text:index_title"></title>
 		<link rel="stylesheet" href="./resource/css/style.css">
         <link rel="stylesheet" href="./resource/css/vedio.css" />
         <link type="text/css" rel="stylesheet" href="../../resource/css/flexslider.css" />
@@ -87,15 +87,15 @@
             <!-- Header -->
             <div id="header">
                 <a href="../../home.html"></a>
-				<span id="Logo" class="svg">
-					电影
+				<span id="Logo" class="svg" lang="text:movie_title">
+
 				</span>
                 <a class="HomeBtn" href="../../home.html"></a>
             </div>
 			<div class="navigator_movie" id="main_selector">
-				<span sid="homeBtn" class="on">新上线</span>
-				<span sid="hotBtn">排行榜</span>
-				<span sid="categoryBtn">片库</span>
+				<span sid="homeBtn" class="on" lang="text:movie_recom"></span>
+				<span sid="hotBtn" lang="text:movie_top"></span>
+				<span sid="categoryBtn" lang="text:movie_store"></span>
 			</div>
 		</div>
 		<!-- home -->
@@ -139,12 +139,12 @@
 		<!-- category -->
         <div class="play mgt50 dn" id="category_box" style="margin-top: 90px;margin-bottom: 0px " onload="Compression()">
                 <div style="padding-top: 10px;padding-bottom: 5px;" >
-                    分类：&nbsp;
-                    <span class="tag_selector" id="0">全部</span> &nbsp;
-                    <span class="tag_selector" id="3">动作</span> &nbsp;
-                    <span class="tag_selector" id="9">犯罪</span> &nbsp;
-                    <span class="tag_selector" id="5">科幻</span> &nbsp;
-                    <span class="tag_selector" id="4">剧情</span> &nbsp;
+                    <span lang="text:movie_select_catagory"></span>：&nbsp;
+                    <span class="tag_selector" id="0" lang="text:movie_select_all"></span> &nbsp;
+                    <span class="tag_selector" id="3" lang="text:movie_select_action"></span> &nbsp;
+                    <span class="tag_selector" id="9" lang="text:movie_select_crime"></span> &nbsp;
+                    <span class="tag_selector" id="5" lang="text:movie_select_science"></span> &nbsp;
+                    <span class="tag_selector" id="4" lang="text:movie_select_story"></span> &nbsp;
                 </div>
                 <hr/>
                 <div id="recommendBox" class="recommend">
@@ -231,5 +231,5 @@
 		function touchEndFunc() {}
 		document.addEventListener('touchend', touchEndFunc);
 	</script>
-
+    <script type="text/javascript" src="../../resource/js/locale.js"></script>
 </html>
