@@ -1,6 +1,6 @@
 var lang = {
     zh_CN: {
-        index_title: "航美在线",
+        index_title: "Wi-Fi服务",
         button_open:"开启",
         button_close:"关闭",
         one_key_net: "一键上网",
@@ -55,6 +55,6 @@ var lang = {
         bus_company_intro: "公司简介",
         bus_news: "新闻公告",
         apps_title:"应用",
-        free_declare:"航美在线产品免费声明"
+        free_declare:"免费声明"
     }
 }
