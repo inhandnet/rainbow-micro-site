@@ -35,7 +35,7 @@
                 "    </div>"+
                 "    <div id='third_pc_wrapper'>"+
                 "    <div>"+
-                "    <div style='width: 270px;height: 55px;background-color: #Ffffff;margin-left: auto;margin-right: auto;text-align: center;vertical-align: middle ;display: none'>"+
+                "    <div style='width: 270px;height: 55px;background-color: #Ffffff;margin-left: auto;margin-right: auto;text-align: center;vertical-align: middle ;'>"+
                 "    <div style='height: 5px;'></div>"+
                 "    <a style='padding-left: 5px;' lang='{title:qq}' id='dv_rainbow_qqLoginBtn' href='https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101149405&redirect_uri=http://qq.u2wifi.cn/login_page/QQ/servercallbackpage.html&scope=get_user_info'>"+
                 "    <img src='./resoureces/images/qq_login.png' />"+
