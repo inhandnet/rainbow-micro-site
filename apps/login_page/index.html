@@ -1,79 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-    <meta name="renderer" content="webkit|ie-stand">
-    <meta name="viewport" content="height = device-height,
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+  <meta name="renderer" content="webkit|ie-stand">
+  <meta name="viewport" content="height = device-height,
 width = device-width,target-densitydpi = medium-dpi "/>
-    <meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
-    <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
-    <meta HTTP-EQUIV="Expires" CONTENT="0">
-    <meta id="pvuvparameters" data-rid="0" data-rtype="login_page" />
-    <title lang="text:index_title"></title>
-    <link rel="icon" href="" type="image/x-icon" />
-    <title lang="text:free_wifi_access"></title>
-    <link href="resoureces/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link href="resoureces/css/ripples.min.css" rel="stylesheet">
-    <link href="resoureces/css/material-wfont.min.css" rel="stylesheet">
-    <link href="resoureces/css/Rainbow.css" type="text/css" rel="stylesheet" />
-    <link href="resoureces/css/button_style.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="../../resource/css/flexslider.css" />
+  <meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+  <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+  <meta HTTP-EQUIV="Expires" CONTENT="0">
+  <meta id="pvuvparameters" data-rid="0" data-rtype="login_page"/>
+  <title lang="text:index_title"></title>
+  <link rel="icon" href="" type="image/x-icon"/>
+  <title lang="text:free_wifi_access"></title>
+  <link href="resoureces/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="resoureces/css/ripples.min.css" rel="stylesheet">
+  <link href="resoureces/css/material-wfont.min.css" rel="stylesheet">
+  <link href="resoureces/css/Rainbow.css" type="text/css" rel="stylesheet"/>
+  <link href="resoureces/css/button_style.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../../resource/css/flexslider.css"/>
 
 </head>
 <body style="">
 <!-- Header -->
 <style>
-    .this_header{
-        background: #0998d4;
-        font-size: 16px;
-        font-weight: bold;
-        color: #fff;
-        text-align: center;
-        line-height: 51px;
-        height: 51px;
-        padding: 0 50px;
-    }
-    .this_header span{
-        font-size: 20px;
-        font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
-        padding:0px;
-    }
-    .this_header a{
-        display: block;
-        width: 60px;
-        height: 50px;
-        color: #Ffffff;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        left: inherit;
-    }
-    #head-left
-    {
-        background: url('../../resource/css/fonts/icons.svg') no-repeat -97px -303px;
-        display: block;
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        top: 5px;
-        left: 10px;
-    }
+  .this_header {
+    background: #0998d4;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    line-height: 51px;
+    height: 51px;
+    padding: 0 50px;
+  }
+
+  .this_header span {
+    font-size: 20px;
+    font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+    padding: 0px;
+  }
+
+  .this_header a {
+    display: block;
+    width: 60px;
+    height: 50px;
+    color: #Ffffff;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: inherit;
+  }
+
+  #head-left {
+    background: url('../../resource/css/fonts/icons.svg') no-repeat -97px -303px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+  }
 </style>
 <div id="header" class="this_header">
-    <a id="head-left" href="../../home.html"></a>
+  <a id="head-left" href="../../home.html"></a>
 				<span id="Logo" class="svg" lang="text:one_key_net">
 
 				</span>
-    <a href="../../home.html"><img src="../../resource/img/home/goback.png"></a>
+  <a href="../../home.html"><img src="../../resource/img/home/goback.png"></a>
 </div>
 <div class="bannerPane">
-    <section>
-        <div class="flexslider">
-            <ul class="slides">
-                <img src="./resoureces/images/login_banner01.png" />
-            </ul>
-        </div>
-    </section>
+  <section>
+    <div class="flexslider">
+      <ul class="slides">
+        <img src="./resoureces/images/login_banner01.png"/>
+      </ul>
+    </div>
+  </section>
 </div>
 <div id="wrapper">
 </div>
@@ -89,11 +91,11 @@ width = device-width,target-densitydpi = medium-dpi "/>
 <script type="text/javascript" src="../../resource/js/locale.js"></script>
 
 <script type="text/javascript">
-    $(document).ready(function(){
-        $.material.input();
+  $(document).ready(function () {
+    $.material.input();
 //设置页面语言
-        var option={};
-        option.lang=locale.lang;
+    var option = {};
+    option.lang = locale.lang;
 //        var lang=navigator.language?navigator.language:navigator.userLanguage;
 //        switch (lang.toLowerCase()){
 //            case "zh_CN":
@@ -104,12 +106,12 @@ width = device-width,target-densitydpi = medium-dpi "/>
 //            default :
 //                option.lang="en";
 //        };
-        Rainbow.locale.set(option);
+    Rainbow.locale.set(option);
 //渲染页面文字
-        cloud.insertLoginBox({
-            selector:"#wrapper"
-        });
+    cloud.insertLoginBox({
+      selector: "#wrapper"
     });
+  });
 </script>
 
 </body>
