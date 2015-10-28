@@ -2,116 +2,6 @@
  * Created by zhouyunkui on 14-7-2.
  */
 var cloud = new Object();
-//动态二维码优先
-var qrCodeHtmlStr = "" +
-    "   <div id='dynamic_div' style='width: 270px;height: 290px;background-color: #Ffffff;margin-left: auto;margin-right: auto;text-align: center;vertical-align: middle'>" +
-    "    <h4 class='dynamic_qr_code'>微信扫描二维码，登录Wi-Fi</h4>" +
-    "    <img style='width: 150px;height: 150px;' src='resoureces/images/loading.gif' />" +
-    "    <hr style='border: 1px solid #E7E6E6'/>" +
-    "    <a id='wechatwifi-to-sms' class='button blue bigrounded' disabled='disabled'>短信验证登录</a>" +
-    "   </div>";
-
-var htmlStr = "" +
-    "<div>" +
-    " <div>" +
-    "  <div class='row text-center div_pc_show'>" +
-    "    <div class='text-center row_min_width col-lg-offset-6 col-lg-3 col-md-offset-6 col-md-3'>" +
-    "    <img class='img_pc_show' src='resoureces/images/logo.png'>" +
-    "    </div>" +
-    "    </div>" +
-    "    <div class='row all_title_div' style=''>" +
-    "    <div style='' class='col-lg-offset-6 col-lg-3 text-center'>" +
-    "    <h4 style='color: #Ffffff'>自由无线，快乐分享</h4>" +
-    "</div>" +
-    "</div>" +
-    "<div id='form_wrapper'>" +
-    "        <!-- formStr start" +
-    "        -->" +
-    "        <!-- formStr end -->" +
-    "        <!-- qrCodeHtmlStr start" +
-    "        -->" +
-    "       <!-- qrCodeHtmlStr end -->" +
-    "    </div>" +
-    "    </div>" +
-    "    <div id='third_pc_wrapper'>" +
-    "    <div>" +
-    "    <div style='width: 270px;height: 55px;background-color: #Ffffff;margin-left: auto;margin-right: auto;text-align: center;vertical-align: middle ;'>" +
-    "    <div style='height: 5px;'></div>" +
-    "    <a style='padding-left: 5px;' lang='{title:qq}' id='dv_rainbow_qqLoginBtn' href='https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101149405&redirect_uri=http://qq.u2wifi.cn/login_page/QQ/servercallbackpage.html&scope=get_user_info'>" +
-    "    <img src='./resoureces/images/qq_login.png' />" +
-    "    </a>" +
-    "    <a style='padding-left: 5px;' lang='{title:sina}' id='dv_rainbow_sinaLoginBtn' href='https://api.weibo.com/oauth2/authorize?client_id=427142461&response_type=code&redirect_uri=http://qq.360yutu.cn/login_page/sina/servercallbackpage.html'>" +
-    "    <img src='./resoureces/images/sina_login.png' />" +
-    "    </a>" +
-    "    <a style='padding-left: 5px;' lang='{title:wechat}' id='dv_rainbow_wechatLoginBtn' href='./sub/wechat.html'>" +
-    "    <img src='./resoureces/images/wechat.png' />" +
-    "    </a>" +
-    "    <span class='pc_specific diff_buttons'></span>" +
-    "    <a  style='padding-left: 5px;' data-toggle='tooltip' data-placement='right' title='' data-original-title='Tooltip on left' href='javascript:void(0)' lang='{title:one_click}' id='dv_one_click'>" +
-    "    <img src='./resoureces/images/one_click.png' />" +
-    "    </a>" +
-    "    </div>" +
-    "    <div class='row row_min_width' style='font-size:12px;line-height: 70px;'>" +
-    "    <div class='col-lg-15 text-center' style='display: none'>技术支持&nbsp;|&nbsp;&nbsp;|&nbsp;86-021-53965495-715</div>" +
-    "</div>" +
-    "</div>" +
-    "</div>" +
-    "</div>";
-
-var formStr = "" +
-    "<form id='sms_form' role='form' style='width: 95%;height: 250px;background-color: #Ffffff;margin-left: auto;margin-right: auto;text-align: center;vertical-align: middle'>" +
-    "    <div>" +
-    "    </div>" +
-    "    <div style='padding-left: 5px;text-align: left;'>" +
-      //"    <label for='rainbow_user_phone_number'>手机号</label>"+
-    "    </div>" +
-    "    <div style='padding-bottom: 10px'>" +
-    "    <div style='text-align: left;padding-left: 5px;'>" +
-    "    <input type='text' id='rainbow_user_phone_number' style='width:60%;margin-top: 20px ;height:40px;BORDER-RIGHT:1px solid #C8C8C8; BORDER-TOP:1px solid #C8C8C8; FONT-SIZE: 9pt; BORDER-LEFT:1px solid #C8C8C8; BORDER-BOTTOM:1px solid #C8C8C8;border-bottom-color: #C8C8C8' lang='{placeholder:enter_mobile_number}' />" +
-    "    <a class='button blue small' style='padding-top:12px;vertical-align: middle;height:40px ;width: 35%;background: #8FC52D ;font-size: 14px;' href='javascript:void(0)' id='rainbow_get_user_password' lang='text:get_code'>GET CODE</a>" +
-    "    </div>" +
-    "    </div>" +
-    "    <div>" +
-    "    <div>" +
-    "    <span id='rainbow_phone_number_error' class='' role='alert'></span>" +
-    "    </div>" +
-    "    </div>" +
-    "    <div style='padding-left: 5px;text-align: left;padding-top: 10px;'>" +
-      //"    <label for='rainbow_user_phone_number'>验证码</label>"+
-    "    </div>" +
-    "    <div style='padding-bottom: 10px'>" +
-    "    <div>" +
-    "    <div>" +
-    "    <div style='text-align: left;padding-left: 5px;'>" +
-    "    <input type='text' id='rainbow_user_password' style='width:95%; height:40px;BORDER-RIGHT:1px solid #C8C8C8; BORDER-TOP:1px solid #C8C8C8; FONT-SIZE: 9pt; BORDER-LEFT:1px solid #C8C8C8; BORDER-BOTTOM:1px solid #C8C8C8;border-bottom-color: #C8C8C8' lang='{placeholder:enter_password}'>" +
-
-    "</div>" +
-    "</div>" +
-    "</div>" +
-    "</div>" +
-    "<div>" +
-    "<span id='rainbow_password_error' class='rainbow_error_tips'></span>" +
-    "</div>" +
-    "<div class='row row_min_width' style='font-size: 12px'>" +
-    "    <div class='col-lg-15 col-xs-15' style='text-align: left'>" +
-    "    <label id='agree' for='rainbow_agree_conditions_terms'>" +
-    "    <input type='checkbox' id='rainbow_agree_conditions_terms' />" +
-    "    <span class='check color_white'></span>" +
-    "    </label>" +
-    "    <a href='./FreeStatement.html' id='conditions_terms' style='color:#114A7B;font-weight: 700' href=''>航美在线免费声明</a>" +
-    "    </div>" +
-    "</div>" +
-    "<div>" +
-    "    <div style=''>" +
-    "    <a href='javascript:void(0)' style='width: 98%' class='btn btn-info btn-raised log_btn_pc_show no_border_radius ' id='rainbow_loginBtn'></a>" +
-    "    <a href='javascript:void(0)' style='width: 200px;display:none' class='btn btn-info btn-raised log_btn_pc_show no_border_radius ' id='rainbow_loginBtn_bak' disabled='disabled'></a>" +
-    "    </div>" +
-    "    </div>" +
-    "    <p style='top:7px;font-weight: 700;height: 20px;color: red;' id='error_line'></p>" +
-    "    <div>" +
-    "    <span id='rainbow_login_error'></span>" +
-    "</div>" +
-    "</form>";
 
 //初始化cloud各个dom属性
 cloud.initializeComponents = function () {
@@ -122,6 +12,7 @@ cloud.initializeComponents = function () {
   cloud.wait = true;
   cloud.oneClickPc = cloud.html.find("#dv_one_click");
   cloud.qqBtnPc = cloud.html.find("#dv_rainbow_qqLoginBtn");
+  cloud.facebookBtnPc = cloud.html.find("#btn-oauth2-facebook");
   cloud.sinaBtnPc = cloud.html.find("#dv_rainbow_sinaLoginBtn");
   cloud.wechatBtnPc = cloud.html.find("#dv_rainbow_wechatLoginBtn");
 
@@ -147,7 +38,7 @@ cloud.initializeComponents = function () {
   cloud.passwordError = cloud.errorLine;
   cloud.weixin_wrapper = cloud.errorLine;
   cloud.loginErrorTipEle = cloud.errorLine;
-}
+};
 //dom事件绑定
 cloud.bindEvents = function () {
   //获取手机码点击事件
@@ -169,7 +60,7 @@ cloud.bindEvents = function () {
           cloud.getSMSBtn.text(Rainbow.locale.get("get_code"));
           cloud.wait = true;
         }
-      };
+      }
       cloud.textCycle = setInterval(textLoop, "1000");
       var uri = Rainbow.cloud.inPortalApiHost + Rainbow.cloud.getSmsCodeApiUri;
       var language = Rainbow.locale.language.substring(0, 2);
@@ -239,6 +130,7 @@ cloud.bindEvents = function () {
       cloud.qqBtnPc.attr("disabled", "disabled");
       cloud.sinaBtnPc.attr("disabled", "disabled");
       cloud.wechatBtnPc.attr("disabled", "disabled");
+      cloud.facebookBtnPc.attr("disabled", "disabled");
       $("span.check").removeClass("color_white").addClass("color_green");
     } else {
       cloud.loginBtn.removeAttr("disabled");
@@ -247,6 +139,7 @@ cloud.bindEvents = function () {
       cloud.qqBtnPc.removeAttr("disabled");
       cloud.sinaBtnPc.removeAttr("disabled");
       cloud.wechatBtnPc.removeAttr("disabled");
+      cloud.facebookBtnPc.removeAttr("disabled");
       $("span.check").removeClass("color_green").addClass("color_white");
     }
   });
@@ -259,18 +152,16 @@ cloud.bindEvents = function () {
 };
 //关于所有dom的初始化工作
 cloud.initializeDom = function () {
-  cloud.html = $(htmlStr);
+  cloud.html = $("#wrapper").children();
   cloud.transformBlock();
   cloud.initializeComponents();
   cloud.bindEvents();
   //同意服务协议和自动登录
   cloud.agreeElement.attr("checked", true) || cloud.agreeElement.prop("checked", true);
-}
+};
 //拼接动态二维码和手机验证码登录框
 cloud.transformBlock = function () {
   var formWrapper = cloud.html.find("#form_wrapper");
-  $(formStr).appendTo(formWrapper);
-  $(qrCodeHtmlStr).appendTo(formWrapper);
   cloud.qrCode = cloud.html.find("#dynamic_div").hide();
   cloud.form = cloud.html.find("#sms_form");
   cloud.qrCode.find("#wechatwifi-to-sms").bind("click", function (e) {
@@ -280,7 +171,7 @@ cloud.transformBlock = function () {
       clearInterval(cloud.statusQuery);
     }
   });
-}
+};
 //设置页面文字
 cloud.renderCharacter = function () {
   cloud.conditionTerm.text(Rainbow.locale.get("conditions_terms"));
@@ -334,7 +225,7 @@ window.client_info_cb = function (data) {
     //TODO
   }
   //TODO
-}
+};
 //每三秒去查询一次设备的登录状态,如果已登录则跳转到登录成功页面
 window.checkDeviceStatus = function () {
   var uri = Rainbow.cloud.inPortalApiHost + Rainbow.cloud.deviceStatus;
@@ -347,26 +238,22 @@ window.checkDeviceStatus = function () {
 };
 //发送jsonp请求
 cloud.sendJsonp = function (uri, callback, callbackFuc, timeout, showTimeout, params) {
-  $.ajax({
+  return $.ajax({
     url: uri,
     dataType: "jsonp",
     jsonp: callback,
     jsonpCallback: callbackFuc,
     timeout: timeout,
-    data: params,
-    success: function (data) {
-
-    },
-    error: function (err, ms, ex) {
-      if (showTimeout) {
-        //TODO
-        cloud.loginErrorTipEle.text(Rainbow.locale.get("rquest_timeout"));
-      }
-      if (cloud.oncClickJudge) {
-        cloud.currentClickedOneClick.removeAttr("disabled");
-      }
-      cloud.loginBtn.removeAttr("disabled");
+    data: params
+  }).error(function (err, ms, ex) {
+    if (showTimeout) {
+      //TODO
+      cloud.loginErrorTipEle.text(Rainbow.locale.get("rquest_timeout"));
     }
+    if (cloud.oncClickJudge) {
+      cloud.currentClickedOneClick.removeAttr("disabled");
+    }
+    cloud.loginBtn.removeAttr("disabled");
   });
 };
 //获取机构id、后台ip和会员认证方式
@@ -391,7 +278,6 @@ cloud.checkPhoneInput = function () {
       cloud.phoneError.text("");
       return true;
     }
-    ;
   }
 };
 //密码输入框错误提示
@@ -446,7 +332,6 @@ cloud.getCookie = function () {
       nameCodeObj.checkboxvalue = value;
     }
   }
-  ;
   return nameCodeObj;
 };
 //自动填充，并判断是否自动登录
@@ -516,6 +401,10 @@ window.callback_get_static_param = function (data) {
         flag = true;
         compareTrans.authThird.sina = true;
         leftArr.push(methodArr[i]);
+      } else if (methodArr[i] == "facebook") {
+        flag = true;
+        compareTrans.authThird.facebook = true;
+        leftArr.push(methodArr[i]);
       } else if (methodArr[i] == "qq") {
         flag = true;
         compareTrans.authThird.qq = true;
@@ -573,6 +462,9 @@ cloud.modifyMemberLoginMethod = function (compareTrans) {
     if (!compareTrans.authThird.qq) {
       cloud.qqBtnPc.addClass("config_display");
     }
+    if (!compareTrans.authThird.facebook) {
+      cloud.facebookBtnPc.addClass("config_display");
+    }
     if (!compareTrans.authThird.weixin || compareTrans.authThird.wechat) {
       cloud.wechatBtnPc.addClass("config_display");
     }
@@ -605,7 +497,7 @@ cloud.modifyMemberLoginMethod = function (compareTrans) {
     cloud.phoneInput.attr("disabled", "disabled");
     cloud.passwordInput.attr("disabled", "disabled");
   }
-}
+};
 //申请手机smscode的回调函数
 window.callback_sms = function (data) {
   arguments.callee.timeout = false;

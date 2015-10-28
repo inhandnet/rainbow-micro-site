@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<script type="text/javascript">
+  var cloud = new Object();
+  cloud.inPortalApiHost = "http://api.m.inhand.com.cn:5280";
+  cloud.afterLoginSucessPage = "http://www.baidu.com";
+  cloud.twitterCallBackPage = "http://qq.u2wifi.cn/login_page/twitter/servercallbackpage.html";
+  //回调函数
+  function getTwitterVerier_callback(data) {
+    //获取auth_token和oauth_verifier后
+    console.log(data);
+    if (data.error_code) {
+      alert("Failed");
+    } else {
+      window.location.href = cloud.afterLoginSucessPage;
+    }
+  }
+</script>
+<script type="text/javascript">
+
+  //序列化查询参数
+  function formatData(uri, jsonObj, callbackName) {
+    var urlParams = "";
+    for (i in jsonObj) {
+      urlParams = urlParams + i + "=" + encodeURIComponent(jsonObj[i]) + "&";
+    }
+    if (callbackName) {
+      urlParams = urlParams + "call_back=" + callbackName;
+    }
+    return uri + "?" + urlParams;
+  }
+  ;
+  if (location.search.indexOf("oauth_verified") != -1) {
+    //这里需要去截取auth_token和oauth_verifier(通过uri来判断)
+    var uri = window.location.search;
+    var prenum = uri.indexOf("=");
+    var authorizationCode = uri.substring(prenum + 1);
+    var scriptELe = document.createElement("script");
+    scriptELe.type = "text/javascript";
+    var uri = cloud.inPortalApiHost + "/api/gateway/validate_code";
+    var jsonObj = {
+      "as_type": 9,
+      "auth_token": "",
+      "oauth_verifier": ""
+    };
+    var url = formatData(uri, jsonObj, "getTwitterVerier_callback");
+    scriptELe.src = url;
+    document.body.appendChild(scriptELe);
+  } else {
+    //这里需要截取request_token(通过uri来判断)
+    var uri = window.location.search;
+    var prenum = uri.indexOf("=");
+    var authorizationCode = uri.substring(prenum + 1);
+    var scriptELe = document.createElement("script");
+    scriptELe.type = "text/javascript";
+    var uri = "https://api.twitter.com/oauth/authenticate";
+    var jsonObj = {
+      "oauth_token": "",
+      "redirect_uri": cloud.twitterCallBackPage
+    };
+    var url = formatData(uri, jsonObj);
+    location.href = url;
+  }
+
+</script>
+</body>
+</html>
