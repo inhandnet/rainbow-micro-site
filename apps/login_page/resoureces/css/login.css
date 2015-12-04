@@ -1,0 +1,220 @@
+.this_header {
+  background: #0998d4;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  line-height: 51px;
+  height: 51px;
+  padding: 0 50px;
+}
+
+.this_header span {
+  font-size: 20px;
+  font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+  padding: 0;
+}
+
+.this_header a {
+  display: block;
+  width: 60px;
+  height: 50px;
+  color: #Ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: inherit;
+}
+
+#head-left {
+  background: url('../../../../resource/css/fonts/icons.svg') no-repeat -97px -303px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+.btn-login > img {
+  width: 43px;
+  height: 43px;
+}
+.btn-login{
+  padding-left: 5px;
+}
+
+.key,.mobile{
+  width:25px;
+  height:25px;
+}
+#wrapper{
+  background: #ffffff;
+}
+#rainbow_user_phone_number,#rainbow_user_password{
+  outline: none;
+  border:none;
+  padding-left:5px;
+  height:40px;
+  FONT-SIZE: 11pt;
+}
+#rainbow_user_phone_number{
+  width:80%;
+}
+#rainbow_user_password{
+  width:80%;
+}
+.dynamic_password,.mobile_number{
+  border:1px solid #C8C8C8;
+}
+#rainbow_get_user_password{
+  width:24%;
+  height:38px;
+  text-align: center;
+  background: #8FC52D;
+  font-size: 10px;
+  padding:5px 0;
+  margin:0 0 0 8px;
+}
+#dynamic_div{
+  width: 270px;
+  height: 290px;
+  background-color: #Ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+.dynamic_password{
+  padding-left: 5px;
+}
+#error_line{
+  top:7px;
+  font-weight: 700;
+  height: 20px;
+  color: red;
+  font-size: 13px;
+  margin-top:10px;
+  text-align: center;
+}
+.mobile_number{
+  margin-bottom:10px;
+}
+.condition{
+  text-align: left;
+  margin:30px 0 0;
+}
+.wifi_logo{
+  padding: 20px 0;
+}
+
+
+
+@media (max-width: 500px) {
+  .container{
+    margin:0;
+    padding:0;
+    width:100%;
+  }
+  #wrapper{
+    padding: 5% 5% 0;
+  }
+  #sms_form{
+    height: 250px;
+    background-color: #Ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    vertical-align: middle;
+  }
+  #rainbow_user_password{
+    width:81%;
+  }
+  .dynamic_password{
+    width:66%;
+    display: inline-block;
+    border:1px solid #C8C8C8;
+  }
+  .mobile_number{
+    width:100%;
+    border:1px solid #C8C8C8;
+  }
+  #rainbow_get_user_password{
+    width:31%;
+    font-size: 12px;
+    height:38px;
+    padding:8px 0;
+    margin:0 0 0 8px;
+  }
+  .bannerPane{
+    margin:0;
+    padding:0;
+   }
+  .wifi_logo{
+    padding: 0;
+  }
+  #rainbow_user_phone_number,#rainbow_user_password{
+    FONT-SIZE: 10pt;
+  }
+  #error_line{
+    font-size: 11px;
+  }
+}
+
+
+
+
+/*bootstrap*/
+
+.row{
+  margin:0;
+  padding:0;
+}
+.wrapper{
+  padding: 3% 2% 0;
+}
+@media (min-width: 520px) and (max-width: 991px){
+  .wrapper{
+    font-size: 11pt;
+    padding: 8% 10% 0;
+  }
+  .bannerPane{
+    width:100%;
+    height:200px;
+    padding:0;
+    overflow: hidden;
+  }
+  .dynamic_password,.mobile_number{
+    line-height: 45px;
+  }
+  #rainbow_loginBtn{
+    height: 40px;
+  }
+  #rainbow_get_user_password{
+    width:24%;
+    height: 45px;
+    font-size: 11pt;
+    padding:8px 0;
+    margin:0 0 0 10px
+  }
+  .mobile_number{
+    margin-bottom:15px;
+  }
+  .condition{
+    margin:50px 0 0;
+  }
+  .wifi_logo{
+    padding: 15px 0;
+  }
+  #error_line{
+    font-size: 13px;
+  }
+  .btn-login > img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+  #rainbow_get_user_password{
+    width:30%;
+  }
+}

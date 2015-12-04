@@ -164,7 +164,7 @@ div.company_bg{
         background-size: cover;
     }
     form{
-        margin-top: 50px;
+        /*margin-top: 50px;*/
     }
     .mobile_specific{
         display: none;
@@ -178,7 +178,7 @@ div.company_bg{
         color: #fff
     }
 }
-@media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 769px) and (max-width: 991px){
     html,body{
         height: 100%;
     }
@@ -186,9 +186,9 @@ div.company_bg{
         margin-top: 11px;
     }
     form{
-        margin-top: 50px;
+        /*margin-top: 50px;*/
     }
-    .pc_specific,.pc_show,.all_title_div,.div_pc_show{
+    .pc_specific,.pc_show,.all_title_div{
         display: none;
     }
     /*.check{*/
@@ -203,9 +203,10 @@ div.company_bg{
         margin-top: 11px;
     }
     form{
-        margin-top: 50px;
+        /*margin-top: 50px;*/
     }
-    .pc_specific,.pc_show,.all_title_div,.div_pc_show{
+    /*.pc_specific,.pc_show,.all_title_div,.div_pc_show{*/
+    .pc_specific,.pc_show{
         display: none;
     }
     #dynamic_div{
