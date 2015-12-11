@@ -5,11 +5,11 @@
 </head>
 <body>
 <script type="text/javascript">
-  var cloud = new Object();
+  var cloud = {};
   cloud.inPortalApiHost = "http://api.m.inhand.com.cn:5280";
   cloud.afterLoginSucessPage = "http://www.baidu.com";
   //qq的回调地址（就是指向本页的）
-  cloud.qqCallBackPage = "http://qq.u2wifi.cn/login_page/fb/servercallbackpage.html";
+  cloud.qqCallBackPage = window.location.href;
   //回调函数
   function getQqToken_callback(data) {
     //获取三方token的回调函数
